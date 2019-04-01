@@ -1,0 +1,68 @@
+// 
+    // Forms parts
+
+    // @package astute
+    // @author  Dennis Dickson <itztonye@gmail.com>
+
+form, .form
+    margin:                 0
+    label
+        display:            block
+        font-family:        $bodyfont
+        background-color:   rgba(255,255,255,0.1)
+        border:             0.5px solid rgba(255,255,255,0.3)
+        padding:            3px 3px 3px 0px
+        font-size:          microfont
+    input
+        width:              100%
+        font-size:          $microfont
+        border:             #D4D4D4
+        background-color:   #f0f0f0
+        color:              #000
+        outline:            none
+        padding:            1rem
+        border-radius:      4px
+        @media #{ $mediumdown }
+            flex:           1
+        &::placeholder
+            color:          rgba(0,0,0,0.4)
+        &:focus
+            outline:        none
+        &[type="submit"]
+            @extend .btn, .btn-brand
+            cursor:         pointer
+            border:         0
+            font-family:    $headingfont
+    button
+        font-size:          $nanofont
+
+    textarea
+        width:              100%
+        resize:             vertical
+        font-size:          $microfont
+        border:             #D4D4D4
+        background-color:   #f0f0f0
+        color:              #000
+        outline:            none
+        padding:            1rem
+        border-radius:      4px
+
+table 
+    border-collapse:        separate
+    border-spacing:         0 0.7rem
+    width:                  100%
+    margin-bottom:          2rem
+
+
+th, td 
+    text-align:             left
+    padding:                1rem
+
+tbody
+    tr
+        background-color:       white
+        border-radius:          4px
+        margin:                 1rem 0
+        box-shadow:             0px 1px 3px rgba(122, 131, 142, 0.15)
+    tr:hover
+        box-shadow:             1px 1px 12px rgba(122, 131, 142, 0.25)

@@ -1,0 +1,112 @@
+// 
+    // Text Decorations
+
+    // @package astute
+    // @author  Dennis Dickson <itztonye@gmail.com>
+
+// Texts
+
+
+.tx-c
+    text-align:         center
+.tx-rl
+    text-align:         right
+    @media screen and (max-width: 700px)
+        text-align:     left
+.tx-l
+    text-align:         left
+.tx-r
+    text-align:         right
+
+.uline
+    text-decoration:    underline
+
+.ff-serif
+    font-family:        $bodyfont
+.ff-sans-serif
+    font-family:        $headingfont
+.fw-normal
+    font-weight:        normal
+.fw-bold
+    font-weight:        bold
+.fw-bolder
+    font-weight:        500
+.fs-i
+    font-style:         italic
+
+.tx-shadow-light
+    text-shadow:        0 1px 2px rgba( 0, 0, 0, 0.3 )
+.tx-indent-space
+    text-indent:        $space
+
+.headinglh
+    line-height:        $headinglh
+.ls-h
+    letter-spacing:     0.5px
+.blog-featurelh
+    line-height:        1.5
+
+.small-caps
+    +text-treatment( $smallfont, uppercase, 2px )
+.micro-caps
+    +text-treatment( $microfont, uppercase, 2px )
+.nano-caps
+    +text-treatment( $nanofont, uppercase, 2px )
+.small-nano-caps
+    +text-treatment( $smallnanofont, uppercase, 2px )
+
+
+// Sizes
+.picotext
+    font-size:          $picofont
+.nanotext
+    font-size:          $nanofont
+.microtext
+    font-size:          $microfont
+.smalltext
+    font-size:          $smallfont
+.mediumtext
+    font-size:          $mediumfont
+.largetext
+    font-size:          $largefont
+.largertext
+    font-size:          2rem
+    @media #{ $smallup }
+        font-size:          3rem
+
+.lead
+    @extend .smalltext
+
+.hometext
+    font-size:              0.8rem
+    @media #{ $smallup }
+        font-size:          1rem
+
+
+
+// Headings
+h1, h2, h3, h4
+    font-family:        $headingfont
+    margin-top:         $space-sm
+    margin-bottom:      $space-xxs
+    line-height:        $headinglh
+    font-weight:        bold
+h1, .h1
+    font-size:          2.22rem
+    @media #{ $smallup }
+        font-size:      2.96rem
+h2, .h2
+    font-size:          1.56rem
+    @media #{ $smallup }
+        font-size:      1.72rem
+h3, .h3
+    font-size:          1.32rem
+    @media #{ $smallup }
+        font-size:      1.48rem
+
+.very-large-text
+    font-size:          7rem
+    line-height:        100%
+
+.almost-largetext
+    font-size:          2.5rem

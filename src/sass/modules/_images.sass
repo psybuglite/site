@@ -1,0 +1,51 @@
+// 
+    // Images
+
+    // @package astute
+    // @author  Dennis Dickson <itztonye@gmail.com>
+
+
+.post-content
+    figure
+        margin:             $space-sm calc(-50vw + 50%)
+        padding:            $space
+        background-color:   $platinum
+        @media #{$smallup}
+            margin:         $space-md 0
+        img
+            margin-bottom:  $space
+        &.none
+            margin:             unset
+            padding-top:        unset
+            padding-right:      unset
+            padding-left:       unset
+            background-color:   unset
+
+.avatar
+    width:                  100px
+    height:                 100px
+    object-fit:             cover
+
+.big-avatar
+    width:                  200px
+    height:                 200px
+    object-fit:             cover
+
+.small-avatar
+    width:                  40px
+    height:                 40px
+    object-fit:             cover
+
+.logo-contain
+    height:                 40px
+    object-fit:             contain
+
+.overflow-hidden
+    overflow:               hidden
+
+.about-height
+    height:                 60vh
+
+.fit-cover
+    object-fit:             cover
+    height:                 100%

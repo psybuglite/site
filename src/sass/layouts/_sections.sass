@@ -1,0 +1,58 @@
+// 
+    // Sections
+
+    // @package astute
+    // @author  Dennis Dickson <itztonye@gmail.com>
+
+
+.main-top
+    @media screen and (max-width: 767px)
+        margin-top:             110px
+.work-top
+    margin-top:                 110px
+    @media screen and (max-width: 767px)
+        margin-top:             0px
+
+
+
+.small-section
+    position:               absolute
+    width:                  100%
+    transform:              translateY(-147px)
+    .top-borders
+        border-top-left-radius: 10px
+        color:              #000
+    @media screen and (max-width: 1024px)
+        position:               relative
+        width:                  100%
+        transform:              translateY(0px)
+        .top-borders
+            border-top-left-radius: 10px
+            border-top-right-radius: 10px
+
+.hover-move
+    transition:                 0.3s
+.hover-move:hover
+    transform:                  translateY(-2px)
+
+.succeed
+    margin-bottom:         120px
+    .mid-feature
+        transform:              translateY(100px)
+    .mid-feature.hover-move:hover
+        transform:                  translateY(90px)
+    @media screen and (max-width: 1005px)
+        margin-bottom:         0px
+    @media screen and (max-width: 672px)
+        .mid-feature
+            transform:              translateY(0px)
+
+.p-left
+    padding-left:           15px
+    @media #{$mediumup}
+        padding-left:       50px
+.p-right
+    padding-right:           15px
+    @media #{$mediumup}
+        padding-right:       100px
+

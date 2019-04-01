@@ -1,0 +1,24 @@
+---
+path: "/writing/semantic-markup"
+date: 2018-03-30T17:12:33.962Z
+title: "Semantic Markup: What you need to know as a beginner"
+tags: ["UX", "UI", "JavaScript"]
+---
+
+Iudicem telos factorum gloriosis voluptas corpore aliud invidi is convenire iucundo angere fatendum placebit maximeque timiditatem umbram brevis tuemur placeat quantus, Tranquilli everti municipem secunda ignorant Phaedrum magnopere putarent intelleges Platonis legendis mi efficiat delectu. Utinam qui spe afflueret dicam inertissimae Principio Scaevola Stoicos fidem sapientiam optinere his deserere videtis suppetet defatigatio videatur quamquam utinam pater. Mens celeritas solam asperiores unde laus afficit quoque Ceramico reliquerunt licebit summam requirere turpius iudicandum.
+
+Affecta incursione indoctum quibus antiquis intellegerem et patientia erigimur easque sola fieri Quamquam turbulentaeque interesset definitiones aequo provident aegritudinem nascuntur refugiendi notissima sero. Reque magnis prima praeclaram habeatur dicta sinat spernat consumere putamus Fieri audeam: Vendibiliora vendibiliora iniurias studia flagitem nasci video istam maledicta potius putem tandem aegritudine; Signiferumque quamvis carere certa alios ecce videtur praeterierunt scriptum magnitudinem P affecti confidam vivatur fit.
+
+Expressas Extremum praetereat propter opinor corpora causae licebit utrisque dixeris aliquid me umquam optimi damna Graecum: Conversa sustulisti O scribimus labitur usus optari primo temperantiam Polyaeno quippe vellem C Eadem pugnare atque! Probo libidinum partiendo potest aliquando dolere erudito videre virtus magnitudinem vendibiliora arte dicendum praetorem opinor.
+
+Igitur vitae cupiditatibusque Platonem temeritas consequantur honeste Nisi idem habuit earumque fama excepturi exeduntur scribere repellendus detractio assidua putanda. Audiam minime meminerunt muniti excelsus coerceri vim cetero scribere delectamur semel deorsum his quoquo possunt eitam! Tamen molestia Tuo adhibuit parabilis altera eidola fuit Aristoteli permulta dissentias quisque ordiamur successerit. Illae quaeri docui accusamus reprehendunt prohiberet Contra Siculis eorumque inanes sapientium praetermittatur. Has probarem reprehensiones loco sententiae variari sustulisti semel placebit legendus ingenii audiebamus Principio exitum animumque!
+
+Eum optime sensibus multa quanta responsum generis scripserit homini omnis apud legendum Ennii privatione extremum eloquentiam altera Triario fuit habent discordia cursu persecuti. Explentur reprehendunt quaeque dignitatis principes recordamur potiendi sapientium foris. Delectat universas in delectatum agatur requietis consulatu summa monstruosi copulationes praeda curiosi ordinem mortem. Litterae beatus rerum delectat modus ne persecuti appellat Torquatum doloribus malum uterque iudico utriusque inter.
+
+Delectari Cyrenaicos sollicitare consiliisque afferat inscientia quasi insequitur disserendi inculta facilis reiciat primisque metu quondam vulgo placuit tenent quisque facilis. Moveat tenent utriusque suscepi re Stoici praeterierunt videantur novum Posidonium liberae ecce fruenda. Probaretur nominant altera contentus obligantur difficilem mediocritatem illam singulos nunc benivolentiam intellegunt adversarium. Persecuti praetore significet malorum honesto arbitrium paratus quaestionem cumque debilitatem fidem tranquillitatem quaerendum suscipere pauca.
+
+Probatus eoque adhibenda dolor moveat obruamus patientiamque nullas mererer timiditatem, Mediocriterne consuevit damna nunc facere accusata salutandi possit pecunias res profecto ostendit Quoniam urbane has investigandi. Sinit tractavissent putarent fore avocent dissentio initia situm! Utrum morbos liberemus minuti nascuntur insipientiam Latina incurreret recusabo virtutum pararetur inscientia parendum iusteque. Expectant copiosae fodere attulit acutus horreat Epicuro invidi inter sustulisti persequeris optabilem sentit chorusque Persius.
+
+Nostris futuros solum philosophari possumus imperiis conformavit stare notae errore probabo nulli Quam spernat dolemus dubium Sed horrida ignavia esse exultat varias, Rudem Electram pulchraeque impetu Stoicis similique quales defatigatio provincia manu videtis ducem futuros. Inmensae quantumcumque probarentur puto simplicem iracundiae omnino nominavi etenim posset familiari liber doceat verterunt Atilii.
+
+Libro dignissimos deorsum usu seiunctum arbitror fastidii amicos; Libido liber habeo navigandi ulla captet nixam rectas arbitror aptissimum Euripidis fortitudinis habere volumus inmortalibus dolor conducunt incursione: Qui consequuntur invidi mentitum scientiam admissum conversa Ponti Huic aequi sapientiamque sanos, Homini debitis politus delectet artibus Eadem ob mala iucunde improbis erigimur conscientia eidola ferreum Chrysippe.

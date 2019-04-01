@@ -1,0 +1,28 @@
+// 
+    // Icons
+
+    // @package astute
+    // @author  Dennis Dickson <itztonye@gmail.com>
+
+.prefix
+    margin-right:           6px
+    &.is-wider
+        margin-right:       15px
+    &.is-even-wider
+        margin-right:       24px
+
+.suffix
+    margin-left:            6px
+    &.is-wider
+        margin-left:        15px
+    &.is-even-wider
+        margin-left:        24px
+
+.icon-move-on-hover
+    svg
+        transform:      translateX(0)
+        transition:     transform .32s ease-in
+        will-change:    transform
+    &:focus, &:hover
+        svg
+            transform:  translateX(6px)

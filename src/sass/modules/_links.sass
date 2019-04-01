@@ -1,0 +1,39 @@
+// 
+    // Links
+
+    // @package astute
+    // @author  Dennis Dickson <itztonye@gmail.com>
+
+.richblack-link
+    color:              $richblack
+    &:active, &:focus, &:hover
+        color:          $primarycolor 
+.opacity-7-link
+    opacity:            0.7
+    transition:         opacity 0.32s ease
+    &:active, &:focus, &:hover, &.is-active
+        opacity:        1
+.opacity-1-link
+    opacity:            1
+    transition:         opacity 0.32s ease
+    &:active, &:focus, &:hover, &.is-active
+        opacity:        0.7
+.sweetgray-link
+    color:              $sweetgray
+    &:active, &:focus, &:hover
+        color:          $primarycolor
+.readablegray-link
+    color:              $readablegray
+    &:active, &:focus, &:hover
+        color:          $primarycolor
+.gray-filtered-link
+    filter:             grayscale(1)
+    opacity:            0.7
+    transition:         filter 1s ease, opacity 0.5s ease
+    &:active, &:focus, &:hover
+        opacity:        1
+        filter:         none
+
+.is-disabled
+    cursor:             none
+    pointer-events:     none

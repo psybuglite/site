@@ -1,0 +1,51 @@
+// 
+    // Homepage
+
+    // @package astute
+    // @author  Dennis Dickson <itztonye@gmail.com>
+
+.hero
+    h2
+        font-size:              2.1rem
+        @media #{$smallup}
+            font-size:          2.5rem
+        @media #{$mediumup}
+            font-size:          3rem
+        span
+            font-weight:        normal
+            display:            block
+            font-size:          85%
+.newsletter-cta
+    img
+        height:                 496px
+        @media #{$smallup}
+            height:             576px
+        @media #{$mediumup}
+            height:             680px
+    .newsletter-form
+        position:               absolute
+        top:                    10%
+        left:                   50%
+        transform:              translate(-50%,-10%)
+        max-width:              $maxwidth-xs
+        @media #{$mediumup}
+            top:                -4rem
+            left:               unset
+            right:              4rem
+            transform:          none
+        @media #{$largeup}
+            top:                -8rem
+            right:              10rem
+.business-definition
+    .card
+        @media #{$mediumup}
+            position:           relative
+            margin-top:         -11.595rem
+            background-color:   rgba(34,116,165,0.9)
+.is-home
+    .what-we-do ul
+        @extend .grid, .is-multi-col, .mostly-2
+        a
+            @extend .co-readablegray
+            p
+                width:          93%
