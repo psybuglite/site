@@ -3,13 +3,22 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
+import Background from "../images/pic.jpg"
+
+
 const IndexPage = () => (
+
+
   <Layout>
     <SEO title="Dennis Dickson" keywords={[`Designer in Nigeria`, `Designer`, `Developer`]} />
     <section className="width-100-pc main-top">
         <div className="clearfix">
           <div className="right-50 mobile-wrapper-x">
-            <div className="min-height-60-vh h-100 bg-pic">
+            <div className="min-height-60-vh h-100 bg-pic" 
+              style={{
+                backgroundImage: "url(" + Background + ")"
+              }}
+            >
               <div className="bg-t-white w-100 h-100 d-flx flex-dir-col j-c-fe">
                 <div className="bg-t-black px-1 pt-1 pb-3">
                   <p className="co-white hometext mb-2">

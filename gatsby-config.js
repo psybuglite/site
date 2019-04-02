@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Dennis Dickson`,
-    description: `Dennis Dickson | Frontend Designer and Developer.`,
+    title: `Tonye Dickson`,
+    description: `Tonye Dickson | Frontend Designer and Developer.`,
     author: `@psybuglite`,
   },
   plugins: [
@@ -43,12 +43,12 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Dennis Dickson`,
+        name: `Tonye Dickson`,
         short_name: `Tonye`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
-        display: `minimal-ui`,
+        background_color: `#045894`,
+        theme_color: `#045894`,
+        display: `minimal`,
         icon: `src/images/tonye-icon.png`, // This path is relative to the root of the site.
       },
     },
