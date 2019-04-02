@@ -18,7 +18,7 @@ const Tags = ({ pageContext, data }) => {
 
   return (
     <Layout>
-    <SEO title="Tags | Dennis Dickson | Frontend Designer and Developer." />
+    <SEO title="Tags" />
     
       <section className="width-100-pc hide-flow-x main-top">
         <div className=" maxwidth-sl wrapper-x clearfix writing-m-top mx-auto">

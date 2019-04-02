@@ -9,7 +9,7 @@ import photo from "../images/pic.jpg"
 
 const About = () => (
   <Layout>
-    <SEO title="About | Dennis Dickson | Frontend Designer and Developer." />
+    <SEO title="About" />
     <section className="width-100-pc hide-flow-x main-top">
         <div className="wrapper grid-2 maxwidth-sl writing-m-top mx-auto">
           <div className="p-1 d-flx flex-dir-col j-c-c al-i-c pos-r mb-2 min-h-80">

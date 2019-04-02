@@ -16,7 +16,7 @@ export default function Template({ pageContext, data }) {
   return (
     <Layout>
       <section className="width-100-pc hide-flow-x main-top">
-        <Helmet title={`${post.frontmatter.title} | Dennis Dickson | Frontend Designer and Developer.`} />
+        <Helmet title={`${post.frontmatter.title}`} />
         <div className="maxwidth-sl mx-auto wrapper work-top">
           <article>
             <h2 className="mt-0 largertext fw-normal">

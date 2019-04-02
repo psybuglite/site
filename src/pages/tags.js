@@ -17,7 +17,7 @@ const TagsPage = ({
 }) => (
 
   <Layout>
-    <SEO title="Tags | Dennis Dickson | Frontend Designer and Developer." />
+    <SEO title="Tags | Tonye Dickson | Frontend Designer and Developer." />
     
       <section className="width-100-pc hide-flow-x main-top">
         <div className=" maxwidth-sl desired-height-3qtr wrapper-x writing-m-top mx-auto">

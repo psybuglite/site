@@ -18,7 +18,7 @@ import festivesave from "../images/festivesave.png"
 
 const Work = () => (
   <Layout>
-    <SEO title="Work | Dennis Dickson | Frontend Designer and Developer." />
+    <SEO title="Work" />
 
     <section className="width-100-pc hide-flow-x main-top">
       <div className="maxwidth-sl mx-auto wrapper work-top tx-c h-100">

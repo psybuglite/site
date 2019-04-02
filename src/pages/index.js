@@ -10,7 +10,7 @@ const IndexPage = () => (
 
 
   <Layout>
-    <SEO title="Dennis Dickson" keywords={[`Designer in Nigeria`, `Designer`, `Developer`]} />
+    <SEO title="Home" keywords={[`Designer in Nigeria`, `Designer`, `Developer`]} />
     <section className="width-100-pc main-top">
         <div className="clearfix">
           <div className="right-50 mobile-wrapper-x">

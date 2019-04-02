@@ -45,7 +45,7 @@ export default function Writing({ data, pageContext }) {
 
   return (
     <Layout>
-    <SEO title="Writing | Dennis Dickson | Frontend Designer and Developer." />
+    <SEO title="Writing" />
     
     <section className="width-100-pc hide-flow-x main-top">
         <div className="clearfix maxwidth-sl writing-m-top mx-auto">
