@@ -1,9 +1,11 @@
 import React from "react"
+import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 import Background from "../images/pic.jpg"
+import Resume from "../files/resume.pdf"
 
 
 const IndexPage = () => (
@@ -34,13 +36,19 @@ const IndexPage = () => (
               <h2 className="very-large-text mt-0 show-mediumup">
                 I'm Tonye
               </h2>
+              <div className="pt-2">
+                <p>I have a keen interest in interface design, web interface development and user experience design.</p>
+                
+                <p>I make use of a variety of tools and software to bring better experiences to people one the web. This touches how people use the web everyday, with careful thought given to accessiblity and usability of digital web products.</p>
+              </div>
               <div className="d-flx py-2 mobile-center">
-                <button className="bg-primary d-ibl thin-primary-border px-3 py-hh co-white">
+          
+                <Link to="/contact" className="bg-primary d-ibl thin-primary-border px-3 py-hh co-white">
                   Say Hello
-                </button>
-                <button className="bg-bg thin-primary-border px-1h suffix is-wider py-hh co-richblack">
+                </Link>
+                <a href="https://res.cloudinary.com/psybug/image/upload/v1554464676/resume_qwtrxa.pdf" className="bg-bg thin-primary-border d-ibl px-1h suffix is-wider py-hh co-richblack">
                   View Resume
-                </button>
+                </a>
               </div>
               <div className="d-flx pb-1 mobile-center">
                 <a href className="d-blk prefix is-even-wider">
