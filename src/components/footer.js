@@ -1,5 +1,6 @@
 import React from "react"
 
+import { Link } from "gatsby"
 
 
 const Footer = ({ siteTitle }) =>  (
@@ -33,9 +34,9 @@ const Footer = ({ siteTitle }) =>  (
           </a>
         </div>
         <div>
-          <button className="bg-primary d-ibl thin-primary-border px-2 py-hh co-white">
+          <Link to="/contact" className="bg-primary d-ibl thin-primary-border px-2 py-hh co-white">
             Say Hello
-          </button>
+          </Link>
         </div>
       </div>
       <div className="wrapper tx-c maxwidth-sl mx-auto">

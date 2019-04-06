@@ -5,8 +5,6 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 import Background from "../images/pic.jpg"
-import Resume from "../files/resume.pdf"
-
 
 const IndexPage = () => (
 
@@ -37,7 +35,6 @@ const IndexPage = () => (
                 I'm Tonye
               </h2>
               <div className="pt-2">
-                <p>I have a keen interest in interface design, web interface development and user experience design.</p>
                 
                 <p>I make use of a variety of tools and software to bring better experiences to people one the web. This touches how people use the web everyday, with careful thought given to accessiblity and usability of digital web products.</p>
               </div>
