@@ -34,8 +34,8 @@ export default function Template({ pageContext, data }) {
           <article className="maxwidth-sl mx-auto wrapper-y clearfix mt-1">
             <div className="left-50">
 
-              {prev && (
-                <Link to={prev.frontmatter.path} className="article-left-nav d-flx al-i-c w-80 next-prev">
+              {next && (
+                <Link to={next.frontmatter.path} className="article-left-nav d-flx al-i-c w-80 next-prev">
                   <span>
                     <svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="feather feather-arrow-left">
                       <line x1={19} y1={12} x2={5} y2={12} />
@@ -43,7 +43,7 @@ export default function Template({ pageContext, data }) {
                     </svg>
                   </span>
                   <p className="suffix is-wider">
-                      {prev.frontmatter.title}
+                      {next.frontmatter.title}
                   </p>
                 </Link>
               )}
@@ -51,10 +51,10 @@ export default function Template({ pageContext, data }) {
             </div>
             <div className="right-50 d-flx j-c-fe">
 
-              {next && (            
-                <Link to={next.frontmatter.path} className="tx-c article-right-nav j-c-fe d-flx al-i-c w-80 next-prev">
+              {prev && (            
+                <Link to={prev.frontmatter.path} className="tx-c article-right-nav j-c-fe d-flx al-i-c w-80 next-prev">
                 <p className="prefix mb-0 is-wider">
-                  {next.frontmatter.title}
+                  {prev.frontmatter.title}
                 </p>
                 <span>
                   <svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="feather feather-arrow-right">

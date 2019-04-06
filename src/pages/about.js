@@ -26,7 +26,7 @@ const About = () => (
             <h3 className="mb-h">Core</h3>
             <p>I have a keen interest in interface design, web interface development and user experience design.</p>
             <h3 className="mb-h">Design &amp; Development</h3>
-            <p>I make use of a variety of tools and software to bring better experiences to people one the web. This touches how people use the web everyday, with careful thought given to accessiblity and usability of digital web products.</p>
+            <p>I make use of a variety of tools and software to bring better experiences to people on the web. This touches how people use the web everyday, with careful thought given to accessiblity and usability of digital web products.</p>
           </div>
         </div>
         <div className="clearfix maxwidth-sl mx-auto">
@@ -44,7 +44,7 @@ const About = () => (
               In 2018, I started publishing my ideas publicly, writing independently, creating content for my blog, and contributing to the design and development community.
             </p>
             <p>
-              Sometimes, when I'm asked why I do what I so, I give a simple answer: I wish to uphold web standards and make content on the internet more accessible to everyone.
+              Sometimes, when I'm asked why I do what I do, I give a simple answer: I wish to uphold web standards and make content on the internet more accessible to everyone.
             </p>
             <p>
               Because, really, the internet shouldn't be a messy place to navigate around.
