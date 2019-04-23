@@ -11,8 +11,9 @@ const About = () => (
   <Layout>
     <SEO title="About" />
     <section className="width-100-pc hide-flow-x main-top">
-        <div className="wrapper grid-2 maxwidth-sl writing-m-top mx-auto">
-          <div className="p-1 d-flx flex-dir-col j-c-c al-i-c pos-r mb-2 min-h-80">
+        <div className="clearfix maxwidth-sl writing-m-top mx-auto">
+
+          <div className="p-1 right-50 wrapper-x d-flx flex-dir-col j-c-c al-i-c pos-r mb-2 min-h-80">
             <div className="absolute-middle">
               <h2 className="d-ibl bg-branddark bigtext1 co-comp py-h px-5 mb-hh">
                 Designer
@@ -22,12 +23,14 @@ const About = () => (
               </h2>
             </div>
           </div>
-          <div>
+
+          <div className="left-50 wrapper-x">
             <h3 className="mb-h">Core</h3>
             <p>I have a keen interest in interface design, web interface development and user experience design.</p>
             <h3 className="mb-h">Design &amp; Development</h3>
             <p>I make use of a variety of tools and software to bring better experiences to people on the web. This touches how people use the web everyday, with careful thought given to accessiblity and usability of digital web products.</p>
           </div>
+        
         </div>
         <div className="clearfix maxwidth-sl mx-auto">
           <div className="right-50 wrapper">

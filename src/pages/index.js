@@ -13,18 +13,13 @@ const IndexPage = () => (
     <SEO title="Home" keywords={[`Designer in Nigeria`, `Designer`, `Developer`]} />
     <section className="width-100-pc main-top">
         <div className="clearfix">
-          <div className="right-50 mobile-wrapper-x">
-            <div className="min-height-60-vh h-100 bg-pic" 
+          <div className="right-50 mobile-wrapper-x d-flx flex-dir-col j-c-c min-height-80-vh">
+            <div className="min-height-60-vh bg-pic" 
               style={{
                 backgroundImage: "url(" + Background + ")"
               }}
             >
               <div className="bg-t-white w-100 h-100 d-flx flex-dir-col j-c-fe">
-                <div className="bg-t-black px-1 pt-1 pb-3">
-                  <p className="co-white hometext mb-2">
-                    I’m a product designer and developer contrubuting to make the web better, one product at a time.
-                  </p>
-                </div>
               </div>
             </div>
           </div>
