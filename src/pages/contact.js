@@ -22,33 +22,32 @@ const Contact = () => (
           </p>
         </div>
         <div className="wrapper left-50">
-          <form name="contact" method="POST" data-netlify="true">
-              <p>
+          <h2 className="m-0">Contact</h2>
+          <form name="contact"  method="POST" action="https://formspree.io/itztonye@gmail.com" data-netlify="true">
                 <label>Your Name: 
                   <input type="text" name="name" />
-                </label>   
-              </p>
-              <p>
+                </label>
                 <label>Your Email: 
                   <input type="email" name="email" />
-                  </label>
-              </p>
-              <p>
-                <label>Your Role: 
-                  <select name="role[]" multiple>
-                    <option value="leader">Leader</option>
-                    <option value="follower">Follower</option>
+                </label>
+                <label>Enquiry 
+                  <select name="">
+                    <option value="leader">-- Choose type of Enquiry --</option>
+                    <option value="follower">Consultation</option>
+                    <option value="follower">Design</option>
+                    <option value="follower">Development</option>
+                    <option value="follower">Event talk</option>
+                    <option value="follower">Other (or just saying hello.)</option>
                   </select>
                 </label>
-              </p>
-              <p>
                 <label>Message: 
                   <textarea name="message"></textarea>
                 </label>
-              </p>
-              <p>
-                <button type="submit">Send</button>
-              </p>
+              <div className="d-flx j-c-fe pt-1">
+                <button type="submit" className="bg-primary d-ibl thin-primary-border px-2 py-hh co-white">
+                    Send
+                </button>
+              </div>
           </form>
         </div>
       </div>
