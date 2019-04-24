@@ -38,7 +38,7 @@ const About = () => (
           </div>
           <div className="left-50 wrapper">
             <p>
-              I’m Tonye – a product designer, developer, and a design advocate.
+              I’m a product designer, developer, and a design advocate.
             </p>
             <p>
               It was shortly after I started working with a company a few years ago, when I discovered that there was something lacking in how digital products were being designed, developed, and deployed. Of course, I tried to fix what I could but realized I needed to do more to change a lot. That was when I started making the web better one product at a time.

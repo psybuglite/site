@@ -35,7 +35,7 @@ const Footer = ({ siteTitle }) =>  (
         </div>
         <div>
           <Link to="/contact" className="bg-primary d-ibl thin-primary-border px-2 py-hh co-white">
-            Say Hello
+            Let's Talk
           </Link>
         </div>
       </div>

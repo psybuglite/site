@@ -36,7 +36,7 @@ const IndexPage = () => (
               <div className="d-flx py-2 mobile-center">
           
                 <Link to="/contact" className="bg-primary d-ibl thin-primary-border px-2 tx-c py-hh co-white">
-                  Say Hello
+                  Let's Talk
                 </Link>
                 <a href="https://res.cloudinary.com/psybug/image/upload/v1554464676/resume_qwtrxa.pdf" className="bg-bg thin-primary-border d-ibl tx-c px-1h suffix is-wider py-hh co-richblack">
                   View Resume
