@@ -4,7 +4,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Footer from "../components/footer"
 
-import photo from "../images/pic.jpg"
+// import photo from "../images/pic.jpg"
 
 
 const About = () => (
@@ -34,7 +34,7 @@ const About = () => (
         </div>
         <div className="clearfix maxwidth-sl mx-auto">
           <div className="right-50 wrapper">
-            <img src={photo} className="w-100 about-height thin-primary-border" alt="Dennis Dickson" />
+            {/* <img src={photo} className="w-100 about-height thin-primary-border" alt="Dennis Dickson" /> */}
           </div>
           <div className="left-50 wrapper">
             <p>

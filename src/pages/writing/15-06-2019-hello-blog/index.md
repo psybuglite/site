@@ -5,4 +5,7 @@ title: "Design Systems"
 tags: ["IA", "UX", "UI"]
 ---
 
-Coming Soon ...
+Comning Soon ...
+
+<!-- Think of Information Architecture as a way of taking inventory of everything a site or application will need to satisfy user needs and provide value to anyone who uses what you’re designing for. -->
+
