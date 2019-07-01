@@ -63,7 +63,7 @@ export default function Writing({ data, pageContext }) {
                       <span className="fw-bold picotext m-0">{post.fields.readingTime.text}</span>
                       </div>
                       <h4 className="m-0 largetext fw-normal">
-                        <Link to={post.frontmatter.path} className="py-h mb-h d-blk co-richblack">
+                        <Link to={post.frontmatter.path} className="py-h mb-h d-ibl co-primary">
                           {post.frontmatter.title}
                         </Link>
                       </h4>
