@@ -26,7 +26,7 @@ const IndexPage = () => (
           <div className="left-50 left-50-content min-height-80-vh wrapper-x h-100">
             <div className="w-100 h-100-break d-flx flex-dir-col j-c-c">
               <p className="almost-largetext mb-0 show-mediumup">Hi</p>
-              <h2 className="very-large-text mt-0 show-mediumup">
+              <h2 className="very-large-text mt-0">
                 I'm Tonye
               </h2>
               <div className="pt-2">
