@@ -20,12 +20,7 @@ const Contact = () => (
         </div>
         <div className="wrapper left-50">
           <h2 className="m-0">Contact</h2>
-          <form 
-              name="contact"
-              method="post" 
-              data-netlify="true"
-              netlify-honeypot="bot-field"
-          >
+          <form name="contact"  method="POST" action="https://formspree.io/itztonye@gmail.com" data-netlify="true">
                 <label>Your Name: 
                   <input type="text" name="name" />
                 </label>
@@ -34,11 +29,12 @@ const Contact = () => (
                 </label>
                 <label>Enquiry:
                   <select name="enquiry">
+                    <option value="">-- Choose type of Enquiry --</option>
                     <option value="Consultation">Consultation</option>
                     <option value="Design">Design</option>
                     <option value="Development">Development</option>
                     <option value="Event talk">Event talk</option>
-                    <option value="Other">Just saying hello</option>
+                    <option value="Other">Other (or just saying hello.)</option>
                   </select>
                 </label>
                 <label>Message: 
