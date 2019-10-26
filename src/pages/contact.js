@@ -24,7 +24,7 @@ const Contact = () => (
               name="contact"
               method="post" 
               data-netlify="true"
-              data-netlify-honeypot="bot-field"
+              netlify-honeypot="bot-field"
           >
                 <label>Your Name: 
                   <input type="text" name="name" />

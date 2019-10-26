@@ -31,7 +31,7 @@ const IndexPage = () => (
               </h2>
               <div className="pt-2">
                 
-                <p>I make use of a variety of tools and software to bring better experiences to people one the web. This touches how people use the web everyday, with careful thought given to accessiblity and usability of digital web products.</p>
+                <p>I make use of a variety of tools and software to bring better experiences to people on the web. This touches how people use the web everyday, with careful thought given to accessiblity and usability of digital web products.</p>
               </div>
               <div className="d-flx py-2 mobile-center">
           
