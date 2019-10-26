@@ -22,7 +22,7 @@ const Contact = () => (
           <h2 className="m-0">Contact</h2>
           <form 
               name="contact"
-              method="POST" 
+              method="post" 
               data-netlify="true"
               data-netlify-honeypot="bot-field"
           >
