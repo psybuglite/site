@@ -30,11 +30,9 @@ const IndexPage = () => (
                 I'm Tonye
               </h2>
               <div className="pt-2">
-                
-                <p>I make use of a variety of tools and software to bring better experiences to people on the web. This touches how people use the web everyday, with careful thought given to accessiblity and usability of digital web products.</p>
+                <p>I'm a product designer. I create design solutions to satisfy business goals and requirements, with skills spanning software engineering and design.</p>
               </div>
               <div className="d-flx py-2 mobile-center">
-          
                 <Link to="/contact" className="bg-primary d-ibl thin-primary-border px-2 tx-c py-hh co-white">
                   Let's Talk
                 </Link>
