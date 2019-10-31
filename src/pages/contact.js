@@ -29,12 +29,11 @@ const Contact = () => (
                 </label>
                 <label>Enquiry:
                   <select name="enquiry">
-                    <option value="">-- Choose type of Enquiry --</option>
-                    <option value="Consultation">Consultation</option>
                     <option value="Design">Design</option>
+                    <option value="Consultation">Consultation</option>
                     <option value="Development">Development</option>
                     <option value="Event talk">Event talk</option>
-                    <option value="Other">Other (or just saying hello.)</option>
+                    <option value="Other">Just saying hello</option>
                   </select>
                 </label>
                 <label>Message: 

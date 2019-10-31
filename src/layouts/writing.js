@@ -48,7 +48,7 @@ export default function Writing({ data, pageContext }) {
     <SEO title="Writing" />
     
     <section className="width-100-pc hide-flow-x main-top">
-        <div className="clearfix maxwidth-sl writing-m-top mx-auto">
+        <div className="clearfix maxwidth-sl work-top mx-auto">
           <div className="left-80 wrapper">
             <ul className="none blog-list">
 

@@ -11,7 +11,7 @@ const About = () => (
   <Layout>
     <SEO title="About" />
     <section className="width-100-pc hide-flow-x main-top">
-        <div className="clearfix maxwidth-sl writing-m-top mx-auto">
+        <div className="clearfix maxwidth-sl work-top mx-auto">
 
           <div className="p-1 right-50 wrapper-x d-flx flex-dir-col j-c-c al-i-c pos-r mb-2 min-h-80">
             <div className="absolute-middle">

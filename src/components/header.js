@@ -35,6 +35,11 @@ const Header = ({ siteTitle }) => (
             </Link>
           </li> */}
           <li className="my-h">
+            <a href="http://psybuglite.dribbble.com" className="tx-c d-blk py-h co-richblack" activeClassName="is-active" target="_blank" rel="noopener noreferrer">
+              Playbook
+            </a>
+          </li>
+          <li className="my-h">
             <Link to="/writing" partiallyActive={true} className="tx-c d-blk py-h co-richblack" activeClassName="is-active">
               Writing
             </Link>
