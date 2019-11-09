@@ -29,16 +29,16 @@ const Header = ({ siteTitle }) => (
               About
             </Link>
           </li>
-          {/* <li className="my-h">
+          <li className="my-h">
             <Link to="/work" className="tx-c d-blk py-h co-richblack" activeClassName="is-active">
               Work
             </Link>
-          </li> */}
-          <li className="my-h">
+          </li>
+          {/* <li className="my-h">
             <a href="http://psybuglite.dribbble.com" className="tx-c d-blk py-h co-richblack" activeClassName="is-active" target="_blank" rel="noopener noreferrer">
               Playbook
             </a>
-          </li>
+          </li> */}
           <li className="my-h">
             <Link to="/writing" partiallyActive={true} className="tx-c d-blk py-h co-richblack" activeClassName="is-active">
               Writing

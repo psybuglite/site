@@ -30,15 +30,12 @@ const IndexPage = () => (
                 I'm Tonye
               </h2>
               <div className="pt-2">
-                <p>I'm a product designer. I create design solutions to satisfy business goals and requirements, with skills spanning software engineering and design.</p>
+                <p>As a front-end designer and developer, my role is mainly to combine business logic and design to achieve a user-facing product. In order to successfully achieve this, a significant skill set is required to generate quality user experience that help to meet business requirements.</p>
               </div>
               <div className="d-flx py-2 mobile-center">
                 <Link to="/contact" className="bg-primary d-ibl thin-primary-border px-2 tx-c py-hh co-white">
                   Let's Talk
                 </Link>
-                <a href="https://res.cloudinary.com/psybug/image/upload/v1554464676/resume_qwtrxa.pdf" className="bg-bg thin-primary-border d-ibl tx-c px-1h suffix is-wider py-hh co-richblack">
-                  View Resume
-                </a>
               </div>
               <div className="d-flx py-1 mobile-center">
                 <a href="https://linkedin.com/in/psybug" className="d-blk prefix is-even-wider p-h hover-outline" title="LinkedIn">
