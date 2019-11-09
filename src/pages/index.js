@@ -29,10 +29,10 @@ const IndexPage = () => (
               <h2 className="very-large-text mt-0">
                 I'm Tonye
               </h2>
-              <div className="pt-2">
+              <div className="pt-1">
                 <p>As a front-end designer and developer, my role is mainly to combine business logic and design to achieve a user-facing product. In order to successfully achieve this, a significant skill set is required to generate quality user experience that help to meet business requirements.</p>
               </div>
-              <div className="d-flx py-2 mobile-center">
+              <div className="d-flx py-1 mobile-center">
                 <Link to="/contact" className="bg-primary d-ibl thin-primary-border px-2 tx-c py-hh co-white">
                   Let's Talk
                 </Link>
