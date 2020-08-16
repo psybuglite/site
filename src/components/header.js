@@ -1,62 +1,68 @@
 import { Link } from "gatsby"
-import PropTypes from "prop-types"
-import React from "react"
+import React, { useState } from "react"
+import disableScroll from 'disable-scroll'
 
 import icon from "../images/tonye-icon.png"
 
+const Header = () => {
 
+  const [navOpen, navToggle] = useState(false);
+  const toggleNav = () => {
+    navToggle(!navOpen);
+  }
+  const mobileClasses = () => {
+    let navClasses = "toggle-area none d-flx al-i-c";
+    if(navOpen) {
+      navClasses += " open";
+      disableScroll.on();
+    } else {
+      disableScroll.off();
+    }
+    return navClasses;
+  }
 
-const Header = ({ siteTitle }) => (
-
+ return (
   <header className="site-header pos-a fixed-to-top w-100">
     <div className="main-wrap wrapper-x py-h mx-auto">
-      <nav className="d-flx j-c-sb al-i-c">
-        <Link to="/">
+      <nav className="d-flx j-c-sb fw-w al-i-c">
+        <Link to="/" className="link">
           <div className="logo-area bg-bg d-flx al-i-c">
-
-            <div className="d-flx al-i-c">
-              <img src={icon} className="small-avatar prefix is-wider" alt="Tonye Dickson" />
-              <p className="text-dance co-richblack show-mediumup">
-                  Tonye Dickson
-              </p>
-            </div>
-
+            <img src={icon} className="small-avatar" alt="Dennis Dickson" />
           </div>
         </Link>
-        <ul className="none d-flx al-i-c topmenu">
-          <li className="my-h">
-            <Link to="/about" className="tx-c d-blk py-h co-richblack" activeClassName="is-active">
-              About
-            </Link>
-          </li>
-          <li className="my-h">
-            <Link to="/work" className="tx-c d-blk py-h co-richblack" activeClassName="is-active">
-              Work
-            </Link>
-          </li>
-          {/* <li className="my-h">
-            <a href="http://psybuglite.dribbble.com" className="tx-c d-blk py-h co-richblack" activeClassName="is-active" target="_blank" rel="noopener noreferrer">
-              Playbook
-            </a>
-          </li> */}
-          <li className="my-h">
-            <Link to="/writing" partiallyActive={true} className="tx-c d-blk py-h co-richblack" activeClassName="is-active">
-              Writing
-            </Link>
-          </li>
-        </ul>
+        <div className={mobileClasses()}>
+          <button type="button" className="nav-menu" onClick={toggleNav}>
+            <span className="bar1"></span>
+            <span className="bar2"></span>
+            <span className="bar3"></span>
+          </button>
+          <ul className="none main-nav d-flx al-i-c">
+            <li className="my-h">
+              <Link to="/about" className="tx-c d-blk py-h link" activeClassName="is-active">
+                About
+              </Link>
+            </li>
+            <li className="my-h">
+              <Link to="/work" className="tx-c d-blk py-h link" activeClassName="is-active">
+                Work
+              </Link>
+            </li>
+            <li className="my-h">
+              <Link to="/writing" partiallyActive={true} className="tx-c d-blk py-h link" activeClassName="is-active">
+                Writing
+              </Link>
+            </li>
+            <li className="my-h">
+              <Link to="/contact" partiallyActive={true} className="tx-c d-blk py-h link" activeClassName="is-active">
+                Contact
+              </Link>
+            </li>
+          </ul>
+        </div>
       </nav>
     </div>
   </header>
-
-)
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: ``,
+ )
 }
 
 export default Header

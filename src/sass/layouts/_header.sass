@@ -1,43 +1,103 @@
 // 
-    // Header
+  // Header
 
-    // @package astute
-    // @author  Tonye Dickson <>
-
+  // @package astute
+  // @author  Tonye Dickson <>
 
 header
-    z-index:                    2
-    font-family:                'Montserrat', sans-serif
-    padding:                    1rem 0rem
-    @media screen and (max-width: 767px)
-        padding:                0.5rem 0rem
+  z-index: 2
+  font-family: 'aquire', sans-serif
+  padding: 0.5rem 0rem
+  @media screen and (max-width: 767px)
+    padding: 0.5rem 0rem
 
-    .logo
-        h3
-            font-family:                'Montserrat', sans-serif
+  nav
+    li a
+      transition: all 0.3s
+      margin-left: 1rem
+      font-family: $aquire
+      letter-spacing: 1px
+      font-size: 0.9rem
+      padding: 0rem 1rem
+      color: #e1e1e1
+      @media screen and (max-width: 767px)
+        padding: 0rem 0.6rem
+        margin-left: 0rem
 
-    nav
-        li a
-            transition:         all 0.3s
-            margin-left:        1rem
-            font-family:        $bodyfont
-            padding:            0rem 1rem
-            @media screen and (max-width: 767px)
-                padding:        0rem 0.6rem
-                margin-left:    1rem
+.bar1
+  background-color: white
+  width: 30px
+  height: 2px
+  margin: 6px 0
+  transition: 0.4s
+  display: block
+.bar2
+  background-color: transparent
+  width: 20px
+  height: 2px
+  margin: 6px 0
+  display: block
+.bar3
+  background-color: white
+  width: 10px
+  height: 2px
+  margin: 6px 0
+  transition: 0.4s
+  display: block
+
+.nav-menu
+  cursor: pointer
+  position: relative
+  z-index: 1
+  display: none
+
+.open .bar1
+  transform: rotate(-45deg) translate(-6px, 4px)
+  background-color: white
+  width: 30px
+.open .bar2
+  opacity: 0
+.open .bar3
+  transform: rotate(45deg) translate(-6px, -7px)
+  background-color: white
+  width: 30px
 
 
-.will-show
-    display:                    none
 
-.is-home .hide
-    display:                    none
+@media screen and (max-width: 650px)
+  .nav-menu
+    display: block
+  .toggle-area
+    ul
+      display: none
+  .toggle-area.open
+    ul
+      display: block
+      li
+        background-color: #0A1629
+        margin: 2rem 0rem
+        display: flex
+        align-items: center
+        justify-content: center
 
-.is-home .will-show
-    display:                    flex
-
+  .open
+    .main-nav
+      position: fixed
+      left: 0
+      top: 0
+      padding: 1rem
+      padding-top: 80px
+      background: $branddark
+      width: 100%
+      height: 100%
+      li
+        margin: 0
+        border-top: 0.5px solid rgba(0, 0, 0, 0.2)
+        a
+          display: block
+          padding: 30px 0rem
+          text-align: center
+          width: 100%
 
 .logo-area
-    font-size:                  1.5rem
-    .text-dance
-        font-family:                'Dancing Script', cursive
+  font-size: 1.5rem

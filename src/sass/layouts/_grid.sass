@@ -1,99 +1,63 @@
 // 
-    // Grid
+  // Grid
 
-    // @package hdy
-    // @author  Dennis Dickson <itztonye@gmail.com>
+  // @package hdy
+  // @author  Dennis Dickson <itztonye@gmail.com>
 
 .grid
-    display:                        grid
-    grid-template-columns:          repeat(12, 1fr)
-    grid-gap:                       $space-sm
-    &.is-multi-col.mostly-2
-        grid-template-columns:      repeat(auto-fill, minmax(250px, 1fr))
-        @media #{ $largeup }
-            grid-template-columns:  repeat(auto-fill, minmax(372px, 1fr))
-    &.is-multi-col.mostly-3
-        grid-template-columns:      repeat(auto-fill, minmax(280px, 1fr))
-    &.is-multi-col.mostly-4
-        grid-template-columns:      repeat(auto-fill, minmax(210px, 1fr))
-    .col-12
-        grid-column:                1 / 13
-    @media #{ $smallup }
-        .col-6-sm
-            grid-column:            1 / 7
-            &.offset-6-cols-from-left
-                grid-column:        7 /13
-    @media #{ $mediumup }
-        .col-4-md
-            grid-column:            1 / 9
-            &.offset-8-cols-from-left
-                grid-column:        9 /13
-        .col-8-md
-            grid-column:            1 / 9
+  display: grid
+  grid-template-columns: repeat(12, 1fr)
+  grid-gap: $space-sm
+  &.is-multi-col.mostly-2
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr))
+    @media #{ $largeup }
+      grid-template-columns: repeat(auto-fill, minmax(372px, 1fr))
+  &.is-multi-col.mostly-3
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr))
+  &.is-multi-col.mostly-4
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr))
+  .col-12
+    grid-column: 1 / 13
+  @media #{ $smallup }
+    .col-6-sm
+      grid-column: 1 / 7
+      &.offset-6-cols-from-left
+        grid-column: 7 /13
+  @media #{ $mediumup }
+    .col-4-md
+      grid-column: 1 / 9
+      &.offset-8-cols-from-left
+        grid-column: 9 /13
+    .col-8-md
+      grid-column: 1 / 9
 
-
-
-.grid-container
-    display: grid
-    grid-template-columns:          1fr
-    grid-gap:                       10px
-    @media #{ $smallup }
-        display: grid
-        grid-template-columns:          repeat(2, 1fr)
-        grid-gap:                       10px
-        .post
-            min-height:                 180px
-    @media #{ $mediumup }
-        display: grid
-        grid-template-columns:          repeat(3, 1fr)
-        grid-gap:                       10px
-        .post
-            min-height:                 180px
-        .post:nth-child(10n + 1), .post:nth-child(10n + 8)
-            grid-row:                   span 2
-
-
-.grid-2-1
-    display:                        grid
-    grid-gap:                       $space-sm
-    grid-template-columns:          1fr
-    @media #{ $mediumup }
-        grid-template-columns:      2fr 1fr
-
-.grid-1-2
-    display:                        grid
-    grid-gap:                       $space-sm
-    grid-template-columns:          1fr
-    @media #{ $mediumup }
-        grid-template-columns:      1fr 2fr
-
-.side-grid
-    display:                        grid
-    grid-gap:                       $space-sm
-    grid-template-columns:          1fr
-    @media #{ $smallup }
-        grid-template-columns:      1fr 1fr
-    @media #{ $mediumup }
-        grid-template-columns:      1fr
+.brand-grid
+  display: grid
+  grid-template-columns: 1fr 1fr
+  grid-gap: $space-sm
+  @media #{ $mediumup }
+    grid-template-columns: 1fr 1fr 1fr 1fr
 
 .grid-2
-    display:                        grid
-    grid-gap:                       $space-sm
-    grid-template-columns:          1fr
-    @media #{ $largeup }
-        grid-template-columns:      1fr 1fr
+  display: grid
+  grid-gap: 32px
+  grid-template-columns: 1fr
+  align-items: flex-end
+  @media #{ $mediumup }
+    grid-template-columns: 1fr 1fr
 
+.faqs-grid
+  display: grid
+  grid-gap: 4rem
+  grid-template-columns: 1fr
+  @media #{ $mediumup }
+    grid-template-columns: 1fr 1fr
 
-.grid-medium-2
-    display:                        grid
-    grid-gap:                       $space-sm
-    grid-template-columns:          1fr
-    @media #{ $mediumup }
-        grid-template-columns:      1fr 1fr
-
-.grid-2-s
-    display:                        grid
-    grid-gap:                       0.8rem
-    grid-template-columns:          1fr
-    @media #{ $mediumup }
-        grid-template-columns:      1fr 1fr
+.about-grid
+  display: grid
+  grid-gap: 4rem
+  grid-template-columns: 1fr
+  @media #{ $mediumup }
+    grid-template-columns: 1fr 1fr
+  @media #{ $largeup }
+    grid-template-columns: 2fr 2fr 1fr

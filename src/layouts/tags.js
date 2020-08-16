@@ -1,13 +1,8 @@
 import React from "react"
 import PropTypes from "prop-types"
-
-// Components
 import { Link, graphql } from "gatsby"
-
-
 import SEO from "../components/seo"
 import Layout from "../components/layout"
-import Footer from "../components/footer"
 
 const Tags = ({ pageContext, data }) => {
   const { tag } = pageContext
@@ -18,41 +13,37 @@ const Tags = ({ pageContext, data }) => {
 
   return (
     <Layout>
-    <SEO title="Tags" />
-    
-      <section className="width-100-pc hide-flow-x main-top">
+      <SEO title="Tags" />
+      <section className="width-100-pc page-padding">
         <div className=" maxwidth-sl wrapper-x clearfix writing-m-top mx-auto">
           <div className="left-70">
-            <h2 className="py-2">
-              {tagHeader}
-            </h2>
+            <h2 className="py-2 largetext">{tagHeader}</h2>
 
-            <ul className="none blog-list">
-                {edges.map(({ node }) => {
+            <ul className="none">
+              {edges.map(({ node }) => {
                 const { slug } = node.fields
                 const { title } = node.frontmatter
                 const { path } = node.frontmatter
                 const { date } = node.frontmatter
                 return (
-                  <li className="borderline-bottom py-1 mb-1" key={slug}>
-                      <span className="fw-bold picotext">{date}</span>
-                      <h4 className="m-0 largetext fw-normal">
-                        <Link to={path} className="py-h mb-h d-blk co-richblack">
-                          {title}
-                        </Link>
-                      </h4>
-                    </li>
-                  )
-                })}
+                  <li className="py-1 mb-1" key={slug}>
+                    <span className="d-blk ff-aquire picotext">{date}</span>
+                    <Link to={path} className="link py-h mb-h d-ibl co-white">
+                      <h4 className="m-0 mediumtext d-ibl">{title}</h4>
+                    </Link>
+                  </li>
+                )
+              })}
             </ul>
             <div className="py-2">
-              <Link to="/tags">All tags</Link>
+              <Link to="/tags" className="co-white linl">
+                All tags
+              </Link>
             </div>
           </div>
         </div>
       </section>
-    <Footer />
-  </Layout>
+    </Layout>
   )
 }
 

@@ -1,45 +1,76 @@
 // 
-    // Wrappers for all Layouts
+  // Wrappers for all Layouts
 
-    // @package astute
-    // @author  Dennis Dickson <itztonye@gmail.com>
+  // @package astute
+  // @author  Dennis Dickson <itztonye@gmail.com>
 
 .wrapper
-    padding:                    $space-sm $space
-    &.will-grow
-        @media #{$smallup}
-            padding-top:        $space-md
-            padding-bottom:     $space-md
-        @media #{$mediumup}
-            padding-top:        $space-lg
-            padding-bottom:     $space-lg
-    &.negate-top
-        padding-top:        0
-    &.negate-bottom
-        padding-bottom:     0
+  padding: $space-sm $space
+  &.will-grow
+    @media #{$smallup}
+      padding-top: $space-md
+      padding-bottom: $space-md
+    @media #{$mediumup}
+      padding-top: $space-lg
+      padding-bottom: $space-lg
+  &.negate-top
+    padding-top: 0
+  &.negate-bottom
+    padding-bottom: 0
+
+.section-wrapper-y
+  padding-top: $space-tb
+  padding-bottom: $space-tb
+  &.will-grow
+    @media #{$smallup}
+      padding-top: $space-tb
+      padding-bottom: $space-tb
+    @media #{$largeup}
+      padding-top: $space-md
+      padding-bottom: $space-md
+    @media #{$xlargeup}
+      padding-top: $space-xl
+      padding-bottom: $space-xl
+
+.page-padding
+  padding-top: $space-tb
+  padding-bottom: $space-tb
+  margin: 4rem 0rem
+  &.will-grow
+    @media #{$smallup}
+      padding-top: $space-tb
+      padding-bottom: $space-tb
+      margin: 6rem 0rem
+    @media #{$largeup}
+      padding-top: $space-md
+      padding-bottom: $space-md
+    @media #{$xlargeup}
+      padding-top: $space-xl
+      padding-bottom: $space-xl
 
 .wrapper-y
-    padding-top:                $space-sm
-    padding-bottom:             $space-sm  
-    &.will-grow
-        @media #{$smallup}
-            padding-top:        $space-md
-            padding-bottom:     $space-md
-        @media #{$mediumup}
-            padding-top:        $space-lg
-            padding-bottom:     $space-lg
-    &.negate-top
-        padding-top:            0
-        
+  padding-top: $space-sm
+  padding-bottom: $space-sm
+  &.will-grow
+    @media #{$smallup}
+      padding-top: $space-md
+      padding-bottom: $space-md
+    @media #{$mediumup}
+      padding-top: $space-lg
+      padding-bottom: $space-lg
+  &.negate-top
+    padding-top: 0
+
 .wrapper-x
-    padding-right:              $space
-    padding-left:               $space
+  padding-right: $space
+  padding-left: $space
 .mobile-wrapper-x
-    @media screen and (max-width: 767px)
-        padding-right:              $space
-        padding-left:               $space
+  @media screen and (max-width: 767px)
+    padding-right: $space
+    padding-left: $space
 
 .wrapper-on-small
-    padding:                    0
-    @media screen and (max-width: 450px)
-        padding:                    $space-sm $space 0 $space
+  padding: 0
+  @media screen and (max-width: 450px)
+    padding: $space-sm $space 0 $space
+

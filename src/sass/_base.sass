@@ -1,69 +1,86 @@
 //
-    // Base
+  // Base
 
-    // @package astute
-    // @author  Dennis Dickson <itztonye@gmail.com>
+  // @package astute
+  // @author  Dennis Dickson <itztonye@gmail.com>
 
+@font-face
+  font-family: 'body'
+  src: url( 'fonts/regular.otf' )
+@font-face
+  font-family: 'bold'
+  src: url( 'fonts/medium.otf' )
+@font-face
+  font-family: 'bold-italic'
+  src: url( 'fonts/medium-italic.otf' )
+@font-face
+  font-family: 'aquire'
+  src: url( 'fonts/aquire.otf' )
+@font-face
+  font-family: 'aquire-light'
+  src: url( 'fonts/aquire-light.otf' )
+
+// Resets
 html
-    font-size:              $basefont
+  font-size: $basefont
 
 *, *::before, *::after
-    box-sizing:             border-box
-
+  box-sizing: border-box
 
 button, a, button:focus, a:focus, input, input:focus
-    outline:                none
-
+  outline: none
 
 body
-    margin:                 0
-    font-family:            $bodyfont
-    font-size:              $basefont
-    line-height:            $defaultlh
-    color:                  $richblack
-    letter-spacing:         0.155px
-    display:                flex
-    flex-direction:         column
-    background-color:       #F9F9F9
-    main
-        flex:               1
+  margin: 0
+  font-family: $bodyfont
+  font-size: $basefont
+  line-height: $defaultlh
+  color: #9b9b9b
+  letter-spacing: 0.155px
+  display: flex
+  flex-direction: column
+  background-color: #00090F
+  main
+    flex: 1
+
+body, a 
+ cursor: none
 
 p
-    margin:                 0
-    margin-bottom:          24px
-    font-weight:            semi-bold
-    &:last-child
-        margin-bottom:      0
+  margin: 0
+  margin-bottom: 24px
+  font-weight: semi-bold
+  &:last-child
+    margin-bottom: 0
 
 a
-    text-decoration:        none
-    transition:             color 0.32s ease
-    &:active, &:focus, &:hover
-        text-decoration:    none
+  text-decoration: none
+  transition: color 0.32s ease
+  &:active, &:focus, &:hover
+    text-decoration: none
 
 audio, canvas, img, video
-    display:                block
-    max-width:              unset
+  display: block
+  max-width: unset
 figure
-    margin:                 0
+  margin: 0
 img
-    width:                  100%
-    object-fit:             cover
+  width: 100%
+  object-fit: cover
 svg
-    pointer-events:         none
-    vertical-align:         middle
+  pointer-events: none
+  vertical-align: middle
 
 ul, ol
-    &.none
-        padding-left:       0
-        list-style:         none
-        margin:             0
-
+  &.none
+    padding-left: 0
+    list-style: none
+    margin: 0
 
 // Buttons, Inputs, 
 button
-    border:                 none
-    background:             none
-    padding:                0
-    cursor:                 pointer
-    font-family:            $bodyfont
+  border: none
+  background: none
+  padding: 0
+  cursor: pointer
+  font-family: $bodyfont

@@ -1,62 +1,23 @@
 import React from "react"
-
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Footer from "../components/footer"
-
-// import photo from "../images/pic.jpg"
-
 
 const About = () => (
   <Layout>
     <SEO title="About" />
-    <section className="width-100-pc hide-flow-x main-top">
-        <div className="clearfix maxwidth-sl work-top mx-auto">
-
-          <div className="p-1 right-50 wrapper-x d-flx flex-dir-col j-c-c al-i-c pos-r mb-2 min-h-80">
-            <div className="absolute-middle">
-              <h2 className="d-ibl bg-branddark bigtext1 co-comp py-h px-5 mb-hh">
-                Designer
-              </h2>
-              <h2 className="d-ibl bg-comp co-richblack bigtext2 py-h px-6 mt-0">
-                Developer
-              </h2>
-            </div>
-          </div>
-
-          <div className="left-50 wrapper-x">
-            <h3 className="mb-h">Core</h3>
-            <p>I have a keen interest in interface design, web interface development and user experience design.</p>
-            <h3 className="mb-h">Design &amp; Development</h3>
-            <p>I make use of a variety of tools and software to bring better experiences to people on the web. This touches how people use the web everyday, with careful thought given to accessiblity and usability of digital web products.</p>
-          </div>
-        
+    <section className="width-100-pc page-padding will-grow">
+      <div className="main-wrap mx-auto wrapper about-grid">
+        <div className="about-image">
         </div>
-        <div className="clearfix maxwidth-sl mx-auto">
-          <div className="right-50 wrapper">
-            {/* <img src={photo} className="w-100 about-height thin-primary-border" alt="Dennis Dickson" /> */}
-          </div>
-          <div className="left-50 wrapper">
-            <p>
-              I’m a product designer, developer, and a design advocate.
-            </p>
-            <p>
-              It was shortly after I started working with a company a few years ago, when I discovered that there was something lacking in how digital products were being designed, developed, and deployed. Of course, I tried to fix what I could but realized I needed to do more to change a lot. That was when I started making the web better one product at a time.
-            </p>
-            <p>
-              In 2018, I started publishing my ideas publicly, writing independently, creating content for my blog, and contributing to the design and development community.
-            </p>
-            <p>
-              Sometimes, when I'm asked why I do what I do, I give a simple answer: I wish to uphold web standards and make content on the internet more accessible to everyone.
-            </p>
-            <p>
-              Because, really, the internet shouldn't be a messy place to navigate around.
-            </p>
-          </div>
+        <div className="about-content mediumtext">
+          <p>I’m a design-minded front-end developer. Sometimes people who do what I do are also called front-end designers, UI developers, UI engineers, or design engineers.</p>
+          <p>As a [choose one of the above titles], I work on the front-end of the front-end. That is, my work lies at the intersection of design and back-end.
+          </p>
+          <p>I collaborate with designers — preferrably in the design phase — to translate designs into live UIs and functional prototypes. As a design engineer, I provide feedback to designers to ensure that the design translates well to the browser, ensuring usability of the product by as many people as possible, regardless of their context and how they use it (screen readers, mobile phones, various browsers, etc.)
+          </p>
         </div>
-      </section>
-
-      <Footer />
+      </div>
+    </section>
   </Layout>
 )
 

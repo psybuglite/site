@@ -1,115 +1,125 @@
 // 
-    // Text Decorations
+  // Text Decorations
 
-    // @package astute
-    // @author  Dennis Dickson <itztonye@gmail.com>
+  // @package astute
+  // @author  Dennis Dickson <itztonye@gmail.com>
 
 // Texts
 
-
 .tx-c
-    text-align:         center
+  text-align: center
 .tx-rl
-    text-align:         right
-    @media screen and (max-width: 700px)
-        text-align:     left
+  text-align: right
+  @media screen and (max-width: 700px)
+    text-align: left
 .tx-l
-    text-align:         left
+  text-align: left
 .tx-r
-    text-align:         right
+  text-align: right
 
 .uline
-    text-decoration:    underline
+  text-decoration: underline
 
-.ff-serif
-    font-family:        $bodyfont
-.ff-sans-serif
-    font-family:        $headingfont
-.fw-normal
-    font-weight:        normal
-.fw-bold
-    font-weight:        bold
-.fw-bolder
-    font-weight:        500
-.fs-i
-    font-style:         italic
+.ff-body
+  font-family: $bodyfont
+.ff-aquire
+  font-family: $aquire
+.ff-bold
+  font-weight: $headingfont
+.ff-bold-italic
+  font-family: $boldItalic
+.ff-aquire-light
+  font-family: $aquireLight
 
 .tx-shadow-light
-    text-shadow:        0 1px 2px rgba( 0, 0, 0, 0.3 )
+  text-shadow: 0 1px 2px rgba( 0, 0, 0, 0.3 )
 .tx-indent-space
-    text-indent:        $space
+  text-indent: $space
 
 .headinglh
-    line-height:        $headinglh
+  line-height: $headinglh
 .ls-h
-    letter-spacing:     0.5px
+  letter-spacing: 0.5px
 .blog-featurelh
-    line-height:        1.5
+  line-height: 1.5
 
 .small-caps
-    +text-treatment( $smallfont, uppercase, 2px )
+  +text-treatment( $smallfont, uppercase, 2px )
 .micro-caps
-    +text-treatment( $microfont, uppercase, 2px )
+  +text-treatment( $microfont, uppercase, 2px )
 .nano-caps
-    +text-treatment( $nanofont, uppercase, 2px )
+  +text-treatment( $nanofont, uppercase, 2px )
 .small-nano-caps
-    +text-treatment( $smallnanofont, uppercase, 2px )
-
+  +text-treatment( $smallnanofont, uppercase, 2px )
 
 // Sizes
 .picotext
-    font-size:          $picofont
+  font-size: $picofont
 .nanotext
-    font-size:          $nanofont
+  font-size: $nanofont
 .microtext
-    font-size:          $microfont
+  font-size: $microfont
 .smalltext
-    font-size:          $smallfont
+  font-size: $nanofont
+  @media #{ $smallup }
+    font-size: $smallfont
 .mediumtext
-    font-size:          $mediumfont
+  font-size: $microfont
+  @media #{ $smallup }
+    font-size: $smallfont
+  @media #{ $largeup }
+    font-size: $mediumfont
 .largetext
-    font-size:          $largefont
-.largertext
-    font-size:          2rem
-    @media #{ $smallup }
-        font-size:          3rem
+  font-size: $mediumfont
+  @media #{ $largeup }
+    font-size: $largefont
+
+.sectionhead-text
+  font-size: 3rem
+  font-family: $aquire
+  color: white
+  @media #{ $smallup }
+    font-size: 5rem
+  @media #{ $largeup }
+    font-size: 6rem
+  @media #{ $xlargeup }
+    font-size: 7rem
 
 .lead
-    @extend .smalltext
-
-.hometext
-    font-size:              0.8rem
-    @media #{ $smallup }
-        font-size:          1rem
-
+  @extend .smalltext
 
 
 // Headings
 h1, h2, h3, h4
-    font-family:        $headingfont
-    margin-top:         $space-sm
-    margin-bottom:      $space-xxs
-    line-height:        $headinglh
-    font-weight:        bold
+  margin-top: $space-sm
+  margin-bottom: $space-xxs
+  line-height: $headinglh
+  font-weight: bold
 h1, .h1
-    font-size:          2.22rem
-    @media #{ $smallup }
-        font-size:      2.96rem
+  font-size: 2.22rem
+  @media #{ $smallup }
+    font-size: 2.96rem
 h2, .h2
-    font-size:          1.56rem
-    @media #{ $smallup }
-        font-size:      1.72rem
+  font-size: 1.56rem
+  @media #{ $smallup }
+    font-size: 1.72rem
 h3, .h3
-    font-size:          1.32rem
-    @media #{ $smallup }
-        font-size:      1.48rem
+  font-size: 1.32rem
+  @media #{ $smallup }
+    font-size: 1.48rem
 
 .very-large-text
-    font-size:          5rem
-    line-height:        100%
-    @media #{ $smallup }
-        font-size:          6rem
-        line-height:        100%
+  font-size: 3rem
+  line-height: 100%
+  @media #{ $smallup }
+    font-size: 5.5rem
+    line-height: 100%
+  @media #{ $largeup }
+    font-size: 8.5rem
+    line-height: 100%
+  @media #{ $xlargeup }
+    font-size: 10.5rem
+    line-height: 100%
 
 .almost-largetext
-    font-size:          2.5rem
+  font-size: 2.5rem
