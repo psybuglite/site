@@ -26,7 +26,7 @@ const Header = () => {
     <div className="main-wrap wrapper-x py-h mx-auto">
       <nav className="d-flx j-c-sb fw-w al-i-c">
         <Link to="/" className="link">
-          <div className="logo-area bg-bg d-flx al-i-c">
+          <div className="logo-area d-flx al-i-c">
             <img src={icon} className="small-avatar" alt="Dennis Dickson" />
           </div>
         </Link>

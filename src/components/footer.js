@@ -44,21 +44,21 @@ const Footer = () =>  (
           </div>
           <div className="d-flx j-c-sb al-i-c fw-w copy-padding">
             <div className="d-flx al-i-c mb-2">
-              <a href="https://linkedin.com/in/psybug" className="d-blk prefix is-even-wider p-h social-link hover-outline ff-aquire link" title="LinkedIn">
+              <a href="https://linkedin.com/in/psybug" className="d-blk prefix is-wider p-h social-link hover-outline ff-aquire link" title="LinkedIn">
                 LI
                 <svg width={16} height={16} viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M4.66669 11.3333L11.3334 4.66666" stroke="#A5A5A5" strokeWidth="0.666667" strokeLinecap="round" strokeLinejoin="round" />
                   <path d="M4.66669 4.66666H11.3334V11.3333" stroke="#A5A5A5" strokeWidth="0.666667" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
               </a>
-              <a href="https://dribbble.com/psybuglite" className="d-blk prefix suffix is-even-wider p-h social-link hover-outline ff-aquire link" title="Dribbble">
+              <a href="https://dribbble.com/psybuglite" className="d-blk prefix suffix is-wider p-h social-link hover-outline ff-aquire link" title="Dribbble">
                 DR
                 <svg width={16} height={16} viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M4.66669 11.3333L11.3334 4.66666" stroke="#A5A5A5" strokeWidth="0.666667" strokeLinecap="round" strokeLinejoin="round" />
                   <path d="M4.66669 4.66666H11.3334V11.3333" stroke="#A5A5A5" strokeWidth="0.666667" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
               </a>
-              <a href="https://twitter.com/psybuglite" className="d-blk suffix is-even-wider p-h social-link hover-outline ff-aquire link" title="Twitter">
+              <a href="https://twitter.com/psybuglite" className="d-blk suffix is-wider p-h social-link hover-outline ff-aquire link" title="Twitter">
                 TW
                 <svg width={16} height={16} viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M4.66669 11.3333L11.3334 4.66666" stroke="#A5A5A5" strokeWidth="0.666667" strokeLinecap="round" strokeLinejoin="round" />

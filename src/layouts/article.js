@@ -16,7 +16,7 @@ export default function Template({ pageContext, data }) {
           
           </div>
           <article className="maxwidth-sl mx-auto">
-            <h2 className="mt-0 largertext fw-normal">
+            <h2 className="mt-0 largertext co-white fw-normal">
                 {post.frontmatter.title}
             </h2>
             <span className="fw-bold picotext">{post.frontmatter.date}</span>
