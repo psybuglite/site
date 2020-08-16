@@ -1,11 +1,3 @@
-/**
- * Implement Gatsby's Node APIs in this file.
- *
- * See: https://www.gatsbyjs.org/docs/node-apis/
- */
-
-// You can delete this file if you're not using it
-
 const path = require("path")
 const _ = require("lodash")
 
@@ -22,9 +14,6 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
     })
   }
 }
-
-
-
 
 exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions
@@ -77,10 +66,6 @@ exports.createPages = ({ actions, graphql }) => {
       })
     })
 
-
-
-    
-
     // Tag pages:
     let tags = []
     // Iterate through each post, putting all found tags into `tags`
@@ -103,7 +88,6 @@ exports.createPages = ({ actions, graphql }) => {
       })
     })
 
-
     // Create blog-list pages
     const postsPerPage = 6
     const numPages = Math.ceil(posts.length / postsPerPage)
@@ -122,4 +106,24 @@ exports.createPages = ({ actions, graphql }) => {
 
     //
   })
+}
+
+exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
+    
+  actions.setWebpackConfig({
+      node: {
+          fs: 'empty'
+      }
+  })
+
+  if(stage === 'build-html'){
+      actions.setWebpackConfig({
+          module: {
+              rules: [{
+                  test: /canvas/,
+                  use: loaders.null()
+              }]
+          }
+      })
+  }
 }

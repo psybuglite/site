@@ -2,7 +2,7 @@ import React, {useEffect} from "react"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 import SimplexNoise from 'simplex-noise'
-import paper from 'paper'
+import paper from 'paper-jsdom-canvas'
 
 import Header from "./header"
 import Footer from "./footer"
