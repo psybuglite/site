@@ -46,7 +46,7 @@ const IndexPage = () => (
         <div className="d-flx al-i-c">
           <a
             href="https://linkedin.com/in/psybug"
-            className="d-blk prefix is-even-wider p-h social-link hover-outline ff-aquire link"
+            className="d-blk prefix is-wider p-h social-link hover-outline ff-aquire link"
             title="LinkedIn"
           >
             LI
@@ -75,7 +75,7 @@ const IndexPage = () => (
           </a>
           <a
             href="https://dribbble.com/psybuglite"
-            className="d-blk prefix suffix is-even-wider p-h social-link hover-outline ff-aquire link"
+            className="d-blk prefix suffix is-wider p-h social-link hover-outline ff-aquire link"
             title="Dribbble"
           >
             DR
@@ -104,7 +104,7 @@ const IndexPage = () => (
           </a>
           <a
             href="https://twitter.com/psybuglite"
-            className="d-blk suffix is-even-wider p-h social-link hover-outline ff-aquire link"
+            className="d-blk suffix is-wider p-h social-link hover-outline ff-aquire link"
             title="Twitter"
           >
             TW

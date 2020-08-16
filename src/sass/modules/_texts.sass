@@ -1,7 +1,7 @@
 // 
   // Text Decorations
 
-  // @package astute
+  // @package site
   // @author  Dennis Dickson <itztonye@gmail.com>
 
 // Texts
@@ -24,12 +24,6 @@
   font-family: $bodyfont
 .ff-aquire
   font-family: $aquire
-.ff-bold
-  font-weight: $headingfont
-.ff-bold-italic
-  font-family: $boldItalic
-.ff-aquire-light
-  font-family: $aquireLight
 
 .tx-shadow-light
   text-shadow: 0 1px 2px rgba( 0, 0, 0, 0.3 )
@@ -111,15 +105,14 @@ h3, .h3
 .very-large-text
   font-size: 3rem
   line-height: 100%
+  @media #{ $xsmallup }
+    font-size: 4rem
   @media #{ $smallup }
     font-size: 5.5rem
-    line-height: 100%
   @media #{ $largeup }
     font-size: 8.5rem
-    line-height: 100%
   @media #{ $xlargeup }
     font-size: 10.5rem
-    line-height: 100%
 
 .almost-largetext
   font-size: 2.5rem
