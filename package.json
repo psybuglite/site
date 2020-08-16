@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "Dennis-Dickson",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "UI Engineer",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Dennis Dickson <itztonye@gmail.com>",
   "dependencies": {
     "disable-scroll": "^0.5.1",
     "gatsby": "^2.19.18",
