@@ -1,11 +1,18 @@
+import React, { useState, useEffect } from "react"
 import { Link } from "gatsby"
-import React, { useState } from "react"
 import disableScroll from 'disable-scroll'
-
 import icon from "../images/tonye-icon.png"
+import Tween from 'gsap'
 
 const Header = () => {
 
+  useEffect(() => {
+    Tween.from(".logo-area", {opacity: 0, y: 50, duration: 0.5})
+    Tween.from(".main-nav li", {opacity: 0, stagger: 0.1, x: -50, duration: 0.3, delay: 0.2})
+    Tween.from(".bar1", {opacity: 0, x: -50, duration: 0.5, delay: 0.3})
+    Tween.from(".bar3", {opacity: 0, x: -50, duration: 0.5, delay: 0.35})
+  }, [])
+  
   const [navOpen, navToggle] = useState(false);
   const toggleNav = () => {
     navToggle(!navOpen);

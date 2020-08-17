@@ -186,11 +186,6 @@ const Layout = ({ children }) => (
     }
 
     initCanvas()
-
-    if (document.readyState === 'complete') {
-      console.log('I have now loaded everything on the page.')
-    }
-
   }, []), // eslint-disable-line
   (
     <StaticQuery
