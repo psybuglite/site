@@ -21,6 +21,12 @@ module.exports = {
       },
     },
     {
+      resolve: 'gatsby-v2-plugin-page-transitions',
+      options: {
+        transitionTime: 1000
+      }
+    },
+    {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         // replace "UA-XXXXXXXXX-X" with your own Tracking ID

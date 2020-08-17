@@ -206,12 +206,9 @@ const Layout = ({ children }) => (
       render={data => (
         <>
           <Header siteTitle={data.site.siteMetadata.title} />
-
           <div className="cursor cursor--small"></div>
           <canvas className="cursor cursor--canvas"></canvas>
-
-          <main className="is-loading">{children}</main>
-
+          <main className="">{children}</main>
           <Footer />
         </>
       )}
