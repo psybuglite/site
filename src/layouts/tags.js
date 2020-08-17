@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import { Link, graphql } from "gatsby"
 import SEO from "../components/seo"
 import Layout from "../components/layout"
-import PageTransition from 'gatsby-v2-plugin-page-transitions'
+import PageTransition from "gatsby-v2-plugin-page-transitions"
 
 const Tags = ({ pageContext, data }) => {
   const { tag } = pageContext
@@ -14,14 +14,12 @@ const Tags = ({ pageContext, data }) => {
 
   return (
     <PageTransition>
-
       <Layout>
         <SEO title="Tags" />
         <section className="width-100-pc page-padding">
           <div className=" maxwidth-sl wrapper-x clearfix writing-m-top mx-auto">
             <div className="left-70">
               <h2 className="py-2 largetext">{tagHeader}</h2>
-
               <ul className="none">
                 {edges.map(({ node }) => {
                   const { slug } = node.fields
