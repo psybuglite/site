@@ -9,10 +9,10 @@ export default function Template({ pageContext, data }) {
   const { next, prev } = pageContext
 
   return (
-    <PageTransition>
-      <Layout>
+    <Layout>
+      <Helmet title={`${post.frontmatter.title}`} />
+      <PageTransition>
         <section className="width-100-pc page-padding">
-          <Helmet title={`${post.frontmatter.title}`} />
           <div className="main-wrap mx-auto wrapper work-top">
             <div className="article-banner maxwidth-sl mx-auto">
             
@@ -61,8 +61,8 @@ export default function Template({ pageContext, data }) {
             </article>
           </div>
         </section>
-      </Layout>
-    </PageTransition>
+      </PageTransition>
+    </Layout>
   )
 }
 

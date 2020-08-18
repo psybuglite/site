@@ -1,4 +1,4 @@
-import React, { useEffect } from "react"
+import React, { useEffect, useRef } from "react"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 import SimplexNoise from "simplex-noise"
@@ -7,8 +7,72 @@ import paper from "paper-jsdom-canvas"
 import Header from "./header"
 import Footer from "./footer"
 import "../sass/style.sass"
+import useWindowSize from "../utils/useWindowSize"
 
-const Layout = ({ children }) => (
+const Layout = ({ children }) => {
+  
+  //Hook to grab window size
+  const size = useWindowSize();
+  
+  // Ref for parent div and scrolling div
+  const app = useRef();
+  const scrollContainer = useRef();
+  
+  // Configs
+  const data = {
+    ease: 0.1,
+    current: 0,
+    previous: 0,
+    rounded: 0
+  };
+  
+  //Set the height of the body to the height of the scrolling div
+  const setBodyHeight = () => {
+    // console.log(document.body.style.height)
+    document.body.style.height = `${
+      scrollContainer.current.getBoundingClientRect().height
+    }px`;
+    // console.log(scrollContainer.current.getBoundingClientRect().height)
+    // console.log(document.body.style.height)
+
+  };
+  
+  // Scrolling
+  const skewScrolling = () => {
+    //Set Current to the scroll position amount
+    data.current = window.scrollY;
+    // Set Previous to the scroll previous position
+    data.previous += (data.current - data.previous) * data.ease;
+    // Set rounded to
+    data.rounded = Math.round(data.previous * 100) / 100;
+
+    // Difference between
+    const difference = data.current - data.rounded;
+    const acceleration = difference / size.width;
+    const velocity = +acceleration;
+    const skew = velocity * 7.5;
+
+    //Assign skew and smooth scrolling to the scroll container
+    // check if the ScrollContainer.current has a value
+    if (scrollContainer.current !== null) {
+      scrollContainer.current.style.transform = `translate3d(0, -${data.rounded}px, 0) skewY(${skew}deg)`;
+    }
+    
+    //loop vai raf
+    requestAnimationFrame(() => skewScrolling());
+
+  }; // eslint-disable-line
+    
+  // Run scrollrender once page is loaded.
+  useEffect(() => {
+    requestAnimationFrame(() => skewScrolling());
+  }, []); // eslint-disable-line
+
+  //set the height of the body.
+  useEffect(() => {
+    setBodyHeight();
+  }, [size.height]); // eslint-disable-line
+  
   useEffect(() => {
     // set the starting position of the cursor outside of the screen
     let clientX = -100
@@ -186,8 +250,8 @@ const Layout = ({ children }) => (
     }
 
     initCanvas()
-  }, []), // eslint-disable-line
-  (
+  }, []); // eslint-disable-line
+  return (
     <StaticQuery
       query={graphql`
         query SiteTitleQuery {
@@ -200,16 +264,20 @@ const Layout = ({ children }) => (
       `}
       render={data => (
         <>
-          <Header siteTitle={data.site.siteMetadata.title} />
-          <div className="cursor cursor--small"></div>
-          <canvas className="cursor cursor--canvas"></canvas>
-          <main className="">{children}</main>
-          <Footer />
+          <div ref={app} className="core-app">
+            <div className="cursor cursor--small"></div>
+            <canvas className="cursor cursor--canvas"></canvas>
+            <div ref={scrollContainer} className="scroll">
+              <Header siteTitle={data.site.siteMetadata.title} />
+              <main className="">{children}</main>
+              <Footer />
+            </div>
+          </div>
         </>
       )}
     />
   )
-)
+}
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,

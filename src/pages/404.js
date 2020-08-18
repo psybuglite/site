@@ -4,9 +4,9 @@ import SEO from "../components/seo"
 import PageTransition from 'gatsby-v2-plugin-page-transitions'
 
 const NotFoundPage = () => (
-  <PageTransition>
-    <Layout>
-      <SEO title="404: Not found" />
+  <Layout>
+    <SEO title="404: Not found" />
+    <PageTransition>
       <section className="width-100-pc page-padding">
         <div className="clearfix maxwidth-sl wrapper-x desired-height-3qtr d-flx flex-dir-col j-c-c tx-c writing-m-top mx-auto">
           <h1>Whoa!!! That was weird.</h1>
@@ -15,8 +15,8 @@ const NotFoundPage = () => (
           <p>Use the navigation menu to get back to a more useful page.</p>
         </div>
       </section>
-    </Layout>
-  </PageTransition>
+    </PageTransition>
+  </Layout>
 )
 
 export default NotFoundPage

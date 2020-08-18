@@ -11,9 +11,9 @@ const TagsPage = ({
     allMarkdownRemark: { group },
   },
 }) => (
-  <PageTransition>
-    <Layout>
-      <SEO title="Tags | Tonye Dickson | Frontend Designer and Developer." />
+  <Layout>
+    <SEO title="Tags | Tonye Dickson | Frontend Designer and Developer." />
+    <PageTransition>
       <section className="width-100-pc page-padding">
         <div className=" maxwidth-sl desired-height-1qtr wrapper-x writing-m-top mx-auto">
           <h2 className="py-2">All tags</h2>
@@ -31,8 +31,8 @@ const TagsPage = ({
           </ul>
         </div>
       </section>
-    </Layout>
-  </PageTransition>
+    </PageTransition>
+  </Layout>
 )
 
 TagsPage.propTypes = {

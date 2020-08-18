@@ -1,8 +1,9 @@
-import React from "react"
+import React, { useEffect } from "react"
 import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import PageTransition from 'gatsby-v2-plugin-page-transitions'
+import gsap from 'gsap/all'
 
 import cns from "../images/cns.png"
 import arq from "../images/arq.png"
@@ -13,8 +14,19 @@ import secura from "../images/secura.png"
 import future from "../images/future.png"
 
 const IndexPage = () => (
-  <PageTransition>
-    <Layout>
+
+  useEffect(() => {
+    gsap.from(".logo-area", {opacity: 0, y: -50, duration: 0.5})
+    gsap.from(".main-nav li", {opacity: 0, stagger: 0.1, x: -50, duration: 0.3, delay: 0.2})
+    gsap.from(".bar1", {opacity: 0, x: -50, duration: 0.5, delay: 0.3})
+    gsap.from(".social-links a", {opacity: 0, y: 50, stagger: 0.2, duration: 0.3, delay: 1})
+    gsap.from(".very-large-text", {opacity: 0, x: 100, duration: 0.5, delay: 0.5})
+    gsap.from(".greeting", {opacity: 0, x: 100, duration: 0.5, delay: 0.9})
+    gsap.from(".hero-text", {opacity: 0, x: 100, duration: 0.5, delay: 1})
+    
+  }, []), // eslint-disable-line
+
+  <Layout>
       <SEO
         title="Home"
         keywords={[
@@ -29,14 +41,15 @@ const IndexPage = () => (
           `Product Designer`,
           `UI/UX Designer`,
         ]}
-      />
+        />
+      <PageTransition>
       {/* Beginning of Hero */}
       <section className="main-wrap mx-auto pos-r">
         <div className="min-height-100-vh d-flx flex-dir-col j-c-c wrapper-x">
           <div className="d-flx flex-dir-col j-c-c offset-hero">
-            <p className="largetext mb-0">Hello. I’m Dennis Dickson.</p>
+            <p className="largetext mb-0 greeting">Hello. I’m Dennis Dickson.</p>
             <h1 className="very-large-text co-white ff-aquire">UI Engineer</h1>
-            <p className="maxwidth-tb mediumtext">
+            <p className="maxwidth-tb hero-text mediumtext">
               Egestas semper lorem sit quis vestibulum nulla sit quis. At aliquam,
               arcu scelerisque cursus. Amet cursus risus libero, id volutpat in.
               Sem orci.
@@ -45,7 +58,7 @@ const IndexPage = () => (
         </div>
         <div className="w-100 d-flx py-1 al-i-c j-c-sb wrapper-x absolute-hero">
           <div className="blue-block"></div>
-          <div className="d-flx al-i-c">
+          <div className="d-flx al-i-c social-links">
             <a
               href="https://linkedin.com/in/psybug"
               className="d-blk prefix is-wider p-h social-link hover-outline ff-aquire link"
@@ -483,8 +496,8 @@ const IndexPage = () => (
         </div>
       </section>
       {/* End of FAQs */}
-    </Layout>
-  </PageTransition>
+    </PageTransition>
+  </Layout>
 )
 
 export default IndexPage

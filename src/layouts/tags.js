@@ -13,9 +13,9 @@ const Tags = ({ pageContext, data }) => {
   }`
 
   return (
-    <PageTransition>
-      <Layout>
-        <SEO title="Tags" />
+    <Layout>
+      <SEO title="Tags" />
+      <PageTransition>
         <section className="width-100-pc page-padding">
           <div className=" maxwidth-sl wrapper-x clearfix writing-m-top mx-auto">
             <div className="left-70">
@@ -44,8 +44,8 @@ const Tags = ({ pageContext, data }) => {
             </div>
           </div>
         </section>
-      </Layout>
-    </PageTransition>
+      </PageTransition>
+    </Layout>
   )
 }
 

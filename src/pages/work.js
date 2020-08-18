@@ -5,16 +5,16 @@ import SEO from "../components/seo"
 import PageTransition from 'gatsby-v2-plugin-page-transitions'
 
 const Work = () => (
-  <PageTransition>
-    <Layout>
-      <SEO title="Work" />
+  <Layout>
+    <SEO title="Work" />
+    <PageTransition>
       <section className="width-100-pc page-padding">
         <div className="main-wrap mx-auto wrapper">
           <div className="wrapper-y will-grow"></div>
         </div>
       </section>
-    </Layout>
-  </PageTransition>
+    </PageTransition>
+  </Layout>
 )
 
 export default Work

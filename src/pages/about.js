@@ -4,9 +4,9 @@ import SEO from "../components/seo"
 import PageTransition from 'gatsby-v2-plugin-page-transitions'
 
 const About = () => (
-  <PageTransition>
-    <Layout>
-      <SEO title="About" />
+  <Layout>
+    <SEO title="About" />
+    <PageTransition>
       <section className="width-100-pc page-padding will-grow">
         <div className="main-wrap mx-auto wrapper about-grid">
           <div className="about-image">
@@ -20,8 +20,8 @@ const About = () => (
           </div>
         </div>
       </section>
-    </Layout>
-  </PageTransition>
+    </PageTransition>
+  </Layout>
 )
 
 export default About

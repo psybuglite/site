@@ -38,9 +38,9 @@ const Writing = ({ data, pageContext }) => {
   const uniqueTags = getUnique(allTags)
 
   return (
-    <PageTransition>
-      <Layout>
+    <Layout>
         <SEO title="Writing" />
+        <PageTransition>
         <section className="width-100-pc page-padding will-grow">
           <div className="main-wrap mx-auto">
             <h2 className="sectionhead-text tx-c mb-3">UI Stories</h2>
@@ -159,8 +159,8 @@ const Writing = ({ data, pageContext }) => {
             </div>
           </div>
         </section>
-      </Layout>
-    </PageTransition>
+      </PageTransition>
+    </Layout>
   )
 }
 
