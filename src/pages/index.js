@@ -1,5 +1,5 @@
 import React, { useEffect } from "react"
-import { Link } from "gatsby"
+// import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import PageTransition from 'gatsby-v2-plugin-page-transitions'
@@ -12,6 +12,7 @@ import fluidcoins from "../images/fluidcoins.png"
 import prodevs from "../images/prodevs.png"
 import secura from "../images/secura.png"
 import future from "../images/future.png"
+import WritingHome from "../layouts/writingHome"
 
 const IndexPage = () => (
 
@@ -340,74 +341,7 @@ const IndexPage = () => (
       {/* End of Trusted Clients */}
 
       {/* Beginning of UI Stories */}
-      <section className="main-wrap mx-auto pos-r section-wrapper-y will-grow">
-        <div className="wrapper-x">
-          <div className="d-flx j-c-sb fw-w al-i-c">
-            <h2 className="sectionhead-text mb-3">UI Stories</h2>
-            <Link
-              to="/writing"
-              className="p-h ff-aquire co-white social-link hover-outline link"
-              title="More Articles"
-            >
-              All Stories
-            </Link>
-          </div>
-          <div className="wrapper-y">
-            <div className="article wrapper-y my-2">
-              <div className="article-image"></div>
-              <div>
-                <Link to="/articles" className="link article-link">
-                  <h3 className="mt-0 largetext co-white">
-                    SVG ANIMATIONS: Basic Steps to your first animations with CSS
-                    Keyframes.
-                  </h3>
-                </Link>
-                <p className="article-excerpt">
-                  In nullam volutpat cras volutpat vulputate in semper. Gravida
-                  elementum dignissim ultrices blandit nulla vitae pellentesque.
-                  Est sit volutpat ut fermentum platea mauris. Ultrices proin
-                  egestas cursus.
-                </p>
-                <span className="ff-aquire co-white">03 Jun, 2020</span>
-              </div>
-            </div>
-            <div className="article wrapper-y my-2">
-              <div className="article-image"></div>
-              <div>
-                <Link to="/articles" className="link article-link">
-                  <h3 className="mt-0 largetext co-white">
-                    Choosing the Design Tools to Work With.
-                  </h3>
-                </Link>
-                <p className="article-excerpt">
-                  Non eget et eu id sit fermentum, egestas. Suspendisse elementum
-                  interdum nec purus tristique dapibus ac donec. Lorem et quisque
-                  rhoncus pellentesque id. Magna sociis faucibus elit vitae
-                  viverra congue.
-                </p>
-                <span className="ff-aquire co-white">03 Jun, 2020</span>
-              </div>
-            </div>
-            <div className="article wrapper-y my-2">
-              <div className="article-image"></div>
-              <div>
-                <Link to="/articles" className="link article-link">
-                  <h3 className="mt-0 largetext co-white">
-                    JAMstack: What it is and How it Works.
-                  </h3>
-                </Link>
-                <p className="article-excerpt">
-                  Sit imperdiet ullamcorper ante commodo facilisi a magna et urna.
-                  Massa aenean elementum aliquam habitant velit habitant sed
-                  netus. Dui risus facilisis ornare donec. Sit amet sit et turpis
-                  augue purus.
-                </p>
-                <span className="ff-aquire co-white">03 Jun, 2020</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <WritingHome />
       {/* End of UI Stories */}
 
       {/* Beginning of FAQs */}
