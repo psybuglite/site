@@ -45,10 +45,17 @@ const Layout = ({ children }) => {
     data.previous += (data.current - data.previous) * data.ease;
     // Set rounded to
     data.rounded = Math.round(data.previous * 100) / 100;
-
+    
     // Difference between
     const difference = data.current - data.rounded;
-    const acceleration = difference / size.width;
+ 
+    let acceleration
+    if (size.width < 1000) {
+      acceleration = difference / size.width;
+    } else {
+      acceleration = difference / 250;
+    }
+
     const velocity = +acceleration;
     const skew = velocity * 5;
 
