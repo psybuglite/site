@@ -19,6 +19,7 @@ const IndexPage = () => (
     gsap.from(".logo-area", {opacity: 0, y: -50, duration: 0.5})
     gsap.from(".main-nav li", {opacity: 0, stagger: 0.1, x: -50, duration: 0.3, delay: 0.2})
     gsap.from(".bar1", {opacity: 0, x: -50, duration: 0.5, delay: 0.3})
+    gsap.from(".bar3", {opacity: 0, x: 50, duration: 0.5, delay: 0.3})
     gsap.from(".social-links a", {opacity: 0, y: 50, stagger: 0.2, duration: 0.3, delay: 1})
     gsap.from(".very-large-text", {opacity: 0, x: 100, duration: 0.5, delay: 0.5})
     gsap.from(".greeting", {opacity: 0, x: 100, duration: 0.5, delay: 0.9})
