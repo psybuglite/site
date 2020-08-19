@@ -20,7 +20,7 @@ const Layout = ({ children }) => {
   
   // Configs
   const data = {
-    ease: 0.3,
+    ease: 0.2,
     current: 0,
     previous: 0,
     rounded: 0
@@ -48,9 +48,9 @@ const Layout = ({ children }) => {
 
     // Difference between
     const difference = data.current - data.rounded;
-    const acceleration = difference / 600;
+    const acceleration = difference / size.width;
     const velocity = +acceleration;
-    const skew = velocity * 7;
+    const skew = velocity * 10;
 
     //Assign skew and smooth scrolling to the scroll container
     // check if the ScrollContainer.current has a value
