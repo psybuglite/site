@@ -48,7 +48,7 @@ const Layout = ({ children }) => {
 
     // Difference between
     const difference = data.current - data.rounded;
-    const acceleration = difference / size.width;
+    const acceleration = difference / 800;
     const velocity = +acceleration;
     const skew = velocity * 5;
 
