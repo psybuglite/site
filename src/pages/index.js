@@ -27,23 +27,23 @@ const IndexPage = () => (
     
   }, []), // eslint-disable-line
 
-  <Layout>
-      <SEO
-        title="Home"
-        keywords={[
-          `Designer in Nigeria`,
-          `Frontend Developer in Nigeria`,
-          `Designer`,
-          `Developer`,
-          `Web developer in Nigeria`,
-          `Developer Nigeria`,
-          `Website designer`,
-          `Website developer`,
-          `Product Designer`,
-          `UI/UX Designer`,
-        ]}
-        />
-      <PageTransition>
+    <PageTransition>
+    <Layout>
+        <SEO
+          title="Home"
+          keywords={[
+            `Designer in Nigeria`,
+            `Frontend Developer in Nigeria`,
+            `Designer`,
+            `Developer`,
+            `Web developer in Nigeria`,
+            `Developer Nigeria`,
+            `Website designer`,
+            `Website developer`,
+            `Product Designer`,
+            `UI/UX Designer`,
+          ]}
+          />
       {/* Beginning of Hero */}
       <section className="main-wrap mx-auto pos-r">
         <div className="min-height-100-vh d-flx flex-dir-col j-c-c wrapper-x">
@@ -497,8 +497,8 @@ const IndexPage = () => (
         </div>
       </section>
       {/* End of FAQs */}
-    </PageTransition>
-  </Layout>
+    </Layout>
+  </PageTransition>
 )
 
 export default IndexPage
