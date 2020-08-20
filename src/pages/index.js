@@ -1,5 +1,5 @@
 import React, { useEffect } from "react"
-// import { Link } from "gatsby"
+import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import PageTransition from 'gatsby-v2-plugin-page-transitions'
@@ -12,9 +12,12 @@ import fluidcoins from "../images/fluidcoins.png"
 import prodevs from "../images/prodevs.png"
 import secura from "../images/secura.png"
 import future from "../images/future.png"
+import swinvoice from "../images/swinvoice.png"
 import WritingHome from "../layouts/writingHome"
 
-const IndexPage = () => (
+
+
+const IndexPage = () => {
 
   useEffect(() => {
     gsap.from(".logo-area", {opacity: 0, y: -50, duration: 0.5})
@@ -26,25 +29,26 @@ const IndexPage = () => (
     gsap.from(".greeting", {opacity: 0, x: 100, duration: 0.5, delay: 0.9})
     gsap.from(".hero-text", {opacity: 0, x: 100, duration: 0.5, delay: 1})
     
-  }, []), // eslint-disable-line
+  }, []);
 
-    <PageTransition>
+  return (
     <Layout>
-        <SEO
-          title="Home"
-          keywords={[
-            `Designer in Nigeria`,
-            `Frontend Developer in Nigeria`,
-            `Designer`,
-            `Developer`,
-            `Web developer in Nigeria`,
-            `Developer Nigeria`,
-            `Website designer`,
-            `Website developer`,
-            `Product Designer`,
-            `UI/UX Designer`,
-          ]}
-          />
+      <SEO
+        title="Home"
+        keywords={[
+          `Designer in Nigeria`,
+          `Frontend Developer in Nigeria`,
+          `Designer`,
+          `Developer`,
+          `Web developer in Nigeria`,
+          `Developer Nigeria`,
+          `Website designer`,
+          `Website developer`,
+          `Product Designer`,
+          `UI/UX Designer`,
+        ]}
+        />
+      <PageTransition>
       {/* Beginning of Hero */}
       <section className="main-wrap mx-auto pos-r">
         <div className="min-height-100-vh d-flx flex-dir-col j-c-c wrapper-x">
@@ -273,9 +277,52 @@ const IndexPage = () => (
           <h2 className="sectionhead-text tx-c mb-3">
             Latest <br /> Work
           </h2>
-          <div className="wrapper-y">
-            <div className="featured-project"></div>
-            <div className="slide-project"></div>
+          <div className="wrapper-y will-grow">
+            <div className="featured-project mb-2">
+              <p className="mediumtext m-0"><span className="co-primary">SAAS</span>  --  <span className="">Frontend Development</span></p>
+              <p className="largetext co-white ff-aquire">AVAXMap</p>
+              <Link to="/work/payflow" className="d-blk project-feature-image desired-height bg-brandblue">
+                <img
+                  src={swinvoice} 
+                  alt="Swinvoice" />
+              </Link>
+            </div>
+            <Link to="/work/payflow" className="d-blk">
+              <div className="slide-project project-item mb-2">
+                <div className="project-feature-image bg-brandblue desired-height-1qtr"></div>
+                <div>
+                  <p className="mediumtext">
+                    <span className="co-primary">SAAS</span>  <br/>
+                    <span className="">Mobile App Design</span>
+                  </p>
+                  <p className="largetext co-white ff-aquire">FLUIDCOINS</p>
+                </div>
+              </div>
+            </Link>
+            <Link to="/work/payflow" className="d-blk">
+              <div className="slide-project project-item mb-2">
+                <div className="project-feature-image bg-brandblue desired-height-1qtr"></div>
+                <div>
+                  <p className="mediumtext">
+                    <span className="co-primary">SAAS</span>  <br/>
+                    <span className="">Mobile App Design</span>
+                  </p>
+                  <p className="largetext co-white ff-aquire">PayFlow</p>
+                </div>
+              </div>
+            </Link>
+            <Link to="/work/payflow" className="d-blk">
+              <div className="slide-project project-item">
+                <div className="project-feature-image bg-brandblue desired-height-1qtr"></div>
+                <div>
+                  <p className="mediumtext">
+                    <span className="co-primary">SAAS</span>  <br/>
+                    <span className="">Mobile App Design</span>
+                  </p>
+                  <p className="largetext co-white ff-aquire">FLUIDCOINS</p>
+                </div>
+              </div>
+            </Link>
           </div>
         </div>
       </section>
@@ -431,8 +478,10 @@ const IndexPage = () => (
         </div>
       </section>
       {/* End of FAQs */}
+        
+      </PageTransition>
     </Layout>
-  </PageTransition>
-)
+  )
+}
 
 export default IndexPage

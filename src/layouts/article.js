@@ -13,7 +13,7 @@ export default function Template({ pageContext, data }) {
       <Helmet title={`${post.frontmatter.title}`} />
       <PageTransition>
         <section className="width-100-pc page-padding">
-          <div className="main-wrap mx-auto wrapper work-top">
+          <div className="main-wrap mx-auto wrapper">
             <div className="article-banner maxwidth-sl mx-auto">
             
             </div>

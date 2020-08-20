@@ -6,6 +6,7 @@
   "author": "Dennis Dickson <itztonye@gmail.com>",
   "dependencies": {
     "disable-scroll": "^0.5.1",
+    "framer-motion": "^2.5.5",
     "gatsby": "^2.24.47",
     "gatsby-cli": "^2.12.87",
     "gatsby-image": "^2.2.30",

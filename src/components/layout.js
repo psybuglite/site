@@ -3,6 +3,7 @@ import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 import SimplexNoise from "simplex-noise"
 import paper from "paper-jsdom-canvas"
+import { AnimatePresence } from "framer-motion"
 
 import Header from "./header"
 import Footer from "./footer"
@@ -10,6 +11,11 @@ import "../sass/style.sass"
 import useWindowSize from "../utils/useWindowSize"
 
 const Layout = ({ children }) => {
+
+  // const imageDetails = {
+  //   width: 524,
+  //   height: 650,
+  // };
   
   //Hook to grab window size
   const size = useWindowSize();
@@ -53,7 +59,7 @@ const Layout = ({ children }) => {
     if (size.width < 1000) {
       acceleration = difference / size.width;
     } else {
-      acceleration = difference / 250;
+      acceleration = difference / 200;
     }
 
     const velocity = +acceleration;
@@ -276,7 +282,13 @@ const Layout = ({ children }) => {
             <canvas className="cursor cursor--canvas"></canvas>
             <div ref={scrollContainer} className="scroll">
               <Header siteTitle={data.site.siteMetadata.title} />
-              <main className="">{children}</main>
+                <main className="">
+              <AnimatePresence
+                // initial={false} 
+                exitBeforeEnter>
+                  {children}
+              </AnimatePresence>
+                </main>
               <Footer />
             </div>
           </div>

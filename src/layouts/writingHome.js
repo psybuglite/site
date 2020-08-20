@@ -1,5 +1,4 @@
 import React from "react"
-import PropTypes from "prop-types"
 import { Link } from "gatsby"
 import { StaticQuery, graphql } from "gatsby"
 import kebabCase from "lodash/kebabCase"
@@ -86,10 +85,6 @@ const WritingHome = () => {
       )}
     />
   )
-}
-
-WritingHome.propTypes = {
-  children: PropTypes.node.isRequired,
 }
 
 export default WritingHome
