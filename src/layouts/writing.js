@@ -5,6 +5,7 @@ import kebabCase from "lodash/kebabCase"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import PageTransition from 'gatsby-v2-plugin-page-transitions'
+import Img from "gatsby-image"
 
 const Writing = ({ data, pageContext }) => {
   const posts = data.allMarkdownRemark.edges
@@ -49,9 +50,16 @@ const Writing = ({ data, pageContext }) => {
                 {posts
                   .filter(post => post.node.frontmatter.title.length > 0)
                   .map(({ node: post }) => {
+                    let featuredimage = post.frontmatter.featimage
                     return (
                       <li className="article wrapper-y mb-2" key={post.id}>
-                        <div className="article-image"></div>
+                        <div className="article-image">
+                          {
+                            featuredimage && (
+                             <Img fluid={featuredimage.childImageSharp.fluid} />
+                            )
+                          }
+                        </div>
                         <div>
                           <Link to={post.frontmatter.path} className="link article-link">
                             <h3 className="mt-0 largetext co-white">
@@ -187,6 +195,13 @@ export const pageQuery = graphql`
             date(formatString: "MMMM DD, YYYY")
             path
             tags
+            featimage {
+              childImageSharp {
+                fluid(maxWidth: 1000) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
           }
         }
       }

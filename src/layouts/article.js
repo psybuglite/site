@@ -3,6 +3,7 @@ import { Helmet } from "react-helmet"
 import { graphql, Link } from "gatsby"
 import Layout from "../components/layout"
 import PageTransition from 'gatsby-v2-plugin-page-transitions'
+import Img from "gatsby-image"
 
 export default function Template({ pageContext, data }) {
   const { markdownRemark: post } = data // data.markdownRemark holds post data
@@ -15,7 +16,15 @@ export default function Template({ pageContext, data }) {
         <section className="width-100-pc page-padding">
           <div className="main-wrap mx-auto wrapper">
             <div className="article-banner maxwidth-sl mx-auto">
-            
+            {
+              post.frontmatter.featimage && (
+                <Img 
+                  style={{ height: "100%" }}
+                  imgStyle={{ objectFit: "cover" }}
+                  fluid={post.frontmatter.featimage.childImageSharp.fluid} 
+                />
+              )
+            }
             </div>
             <article className="maxwidth-sl mx-auto">
               <h2 className="mt-0 largertext co-white fw-normal">
@@ -79,6 +88,13 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         path
         title
+        featimage {
+          childImageSharp {
+            fluid(maxHeight: 300) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
       }
     }
   }

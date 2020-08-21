@@ -2,6 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import { StaticQuery, graphql } from "gatsby"
 import kebabCase from "lodash/kebabCase"
+import Img from "gatsby-image"
 
 const WritingHome = () => {
   return (
@@ -18,6 +19,13 @@ const WritingHome = () => {
                 path
                 title
                 tags
+                featimage {
+                  childImageSharp {
+                    fluid(maxWidth: 1000) {
+                      ...GatsbyImageSharpFluid
+                    }
+                  }
+                }
               }
             }
           }
@@ -43,9 +51,16 @@ const WritingHome = () => {
             {data.allMarkdownRemark.edges
               .filter(post => post.node.frontmatter.title.length > 0)
               .map(({ node: post }) => {
+                let featuredimage = post.frontmatter.featimage
                 return (
                   <li className="article wrapper-y my-1" key={post.id}>
-                    <div className="article-image"></div>
+                    <div className="article-image">
+                    {
+                      featuredimage && (
+                        <Img fluid={featuredimage.childImageSharp.fluid} />
+                      )
+                    }
+                    </div>
                     <div>
                       <Link
                         to={post.frontmatter.path}
