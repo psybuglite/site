@@ -26,5 +26,12 @@
 
 .project-item
   display: grid
-  grid-template-columns: 5fr 3fr
-  grid-gap: 2rem
+  grid-template-columns: 1fr
+  grid-gap: 1rem
+  p
+    margin-bottom: 0.5rem
+  @media #{ $smallup }
+    grid-template-columns: 5fr 3fr
+    grid-gap: 2rem
+    p
+      margin-bottom: 1rem

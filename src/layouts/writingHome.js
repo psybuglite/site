@@ -57,7 +57,11 @@ const WritingHome = () => {
                     <div className="article-image">
                     {
                       featuredimage && (
-                        <Img fluid={featuredimage.childImageSharp.fluid} />
+                        <Img 
+                          style={{ height: "100%" }}
+                          imgStyle={{ objectFit: "cover" }}
+                          fluid={featuredimage.childImageSharp.fluid} 
+                          />
                       )
                     }
                     </div>

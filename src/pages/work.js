@@ -9,14 +9,14 @@ const Work = () => (
   <Layout>
     <SEO title="Work" />
     <PageTransition>
-      <section className="main-wrap mx-auto pos-r section-wrapper-y will-grow mb-3">
-        <div className="wrapper-x">
+      <section className="width-100-pc page-padding will-grow">
+        <div className="main-wrap mx-auto wrapper-x">
           <h2 className="sectionhead-text tx-c mb-3">
-            Latest <br /> Work
+            Latest Work
           </h2>
           <div className="wrapper-y will-grow">
-            <div className="featured-project mb-2">
-              <p className="mediumtext m-0"><span className="co-primary">SAAS</span>  --  <span className="">Frontend Development</span></p>
+            <div className="featured-project mb-3">
+              <p className="mediumtext m-0"><span className="co-primary">SAAS</span> -- <span>Frontend Development</span></p>
               <p className="largetext co-white ff-aquire">AVAXMap</p>
               <Link to="/work/payflow" className="d-blk project-feature-image desired-height bg-brandblue">
                 <img
@@ -25,7 +25,7 @@ const Work = () => (
               </Link>
             </div>
             <Link to="/work/payflow" className="d-blk">
-              <div className="slide-project project-item mb-2">
+              <div className="slide-project project-item mb-3">
                 <div className="project-feature-image bg-brandblue desired-height-1qtr"></div>
                 <div>
                   <p className="mediumtext">
@@ -37,7 +37,7 @@ const Work = () => (
               </div>
             </Link>
             <Link to="/work/payflow" className="d-blk">
-              <div className="slide-project project-item mb-2">
+              <div className="slide-project project-item mb-3">
                 <div className="project-feature-image bg-brandblue desired-height-1qtr"></div>
                 <div>
                   <p className="mediumtext">

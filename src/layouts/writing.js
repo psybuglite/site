@@ -56,7 +56,11 @@ const Writing = ({ data, pageContext }) => {
                         <div className="article-image">
                           {
                             featuredimage && (
-                             <Img fluid={featuredimage.childImageSharp.fluid} />
+                              <Img
+                                style={{ height: "100%" }}
+                                imgStyle={{ objectFit: "cover" }}
+                                fluid={featuredimage.childImageSharp.fluid} 
+                              />
                             )
                           }
                         </div>
@@ -66,7 +70,9 @@ const Writing = ({ data, pageContext }) => {
                               {post.frontmatter.title}
                             </h3>
                           </Link>
-                          <p className="article-excerpt">{post.excerpt}</p>
+                          <div className="article-excerpt"
+                            dangerouslySetInnerHTML={{ __html: post.excerpt }}>
+                          </div>
                           <span className="ff-aquire co-white">{post.frontmatter.date}</span>
                           <div className="fw-bold picotext mt-1 d-flx">
                             {post.frontmatter.tags.map(function(tag) {
@@ -188,7 +194,7 @@ export const pageQuery = graphql`
               text
             }
           }
-          excerpt(pruneLength: 250)
+          excerpt(truncate: true, pruneLength: 200, format: HTML)
           id
           frontmatter {
             title

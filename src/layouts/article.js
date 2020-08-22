@@ -4,6 +4,8 @@ import { graphql, Link } from "gatsby"
 import Layout from "../components/layout"
 import PageTransition from 'gatsby-v2-plugin-page-transitions'
 import Img from "gatsby-image"
+import { defineCustomElements as deckDeckGoHighlightElement } from '@deckdeckgo/highlight-code/dist/loader';
+deckDeckGoHighlightElement();
 
 export default function Template({ pageContext, data }) {
   const { markdownRemark: post } = data // data.markdownRemark holds post data
