@@ -29,7 +29,7 @@ const Header = () => {
           </div>
         </Link>
         <div className={mobileClasses()}>
-          <button type="button" className="nav-menu" onClick={toggleNav}>
+          <button type="button" aria-label="menu" className="nav-menu" onClick={toggleNav}>
             <span className="bar1"></span>
             <span className="bar2"></span>
             <span className="bar3"></span>

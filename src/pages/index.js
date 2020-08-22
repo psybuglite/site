@@ -292,7 +292,7 @@ const IndexPage = () => {
                 <div className="project-feature-image bg-brandblue desired-height-1qtr"></div>
                 <div>
                   <p className="mediumtext">
-                    <span className="co-primary">SAAS</span>  <br/>
+                    <span className="co-sweetblue">SAAS</span>  <br/>
                     <span className="">Mobile App Design</span>
                   </p>
                   <p className="largetext co-white ff-aquire">FLUIDCOINS</p>
@@ -304,7 +304,7 @@ const IndexPage = () => {
                 <div className="project-feature-image bg-brandblue desired-height-1qtr"></div>
                 <div>
                   <p className="mediumtext">
-                    <span className="co-primary">SAAS</span>  <br/>
+                    <span className="co-sweetblue">SAAS</span>  <br/>
                     <span className="">Mobile App Design</span>
                   </p>
                   <p className="largetext co-white ff-aquire">PayFlow</p>

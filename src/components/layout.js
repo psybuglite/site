@@ -252,6 +252,16 @@ const Layout = ({ children }) => {
             segment.point.set(newX, newY)
           })
         }
+
+        if (isNoisy) {
+          innerCursor.style.width = `20px`
+          innerCursor.style.height = `20px`
+          innerCursor.style.top = `-10px`
+          innerCursor.style.left = `-10px`
+        } else {
+          innerCursor.style.width = `5px`
+          innerCursor.style.height = `5px`
+        }
         polygon.smooth()
       }
     }

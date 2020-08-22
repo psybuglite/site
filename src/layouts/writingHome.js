@@ -85,7 +85,7 @@ const WritingHome = () => {
                           return (
                             <Link
                               to={`/tags/${kebabCase(tag)}/`}
-                              className="link co-primary prefix is-even-wider my-0"
+                              className="link co-sweetblue prefix is-even-wider my-0"
                               key={tag}
                             >
                               #{tag}

@@ -1,10 +1,13 @@
 module.exports = {
   siteMetadata: {
-    title: `Tonye Dickson | Frontend Designer and Developer.`,
-    description: `Tonye Dickson | Frontend Designer and Developer.`,
+    title: `Dennis Dickson | UI Engineer.`,
+    description: `Dennis Dickson | UI Engineer.`,
     author: `@psybuglite`,
+    siteUrl: `https://awesome-borg-10a309.netlify.app`,
   },
   plugins: [
+    `gatsby-plugin-sitemap`,
+    `gatsby-plugin-robots-txt`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -12,6 +15,14 @@ module.exports = {
         name: `images`,
         path: `${__dirname}/src/images`,
       },
+    },
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://awesome-borg-10a309.netlify.app',
+        sitemap: 'https://awesome-borg-10a309.netlify.app/sitemap.xml',
+        policy: [{ userAgent: '*', allow: '/' }]
+      }
     },
     {
       resolve: `gatsby-source-filesystem`,
