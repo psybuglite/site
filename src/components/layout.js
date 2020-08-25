@@ -261,6 +261,8 @@ const Layout = ({ children }) => {
         } else {
           innerCursor.style.width = `5px`
           innerCursor.style.height = `5px`
+          innerCursor.style.top = `-2.5px`
+          innerCursor.style.left = `-2.5px`
         }
         polygon.smooth()
       }

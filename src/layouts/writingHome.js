@@ -37,7 +37,10 @@ const WritingHome = () => {
     <section className="main-wrap mx-auto pos-r section-wrapper-y will-grow">
       <div className="wrapper-x">
         <div className="d-flx j-c-sb fw-w al-i-c">
-          <h2 className="sectionhead-text mb-3">UI Stories</h2>
+          <h2 className="sectionhead-text latest tx-c mb-3">
+            <span className="stories-left-span d-ibl">UI</span> <br />
+            <span className="stories-right-span d-ibl">Stories</span>
+          </h2> 
           <Link
             to="/writing"
             className="p-h ff-aquire co-white social-link hover-outline link"
