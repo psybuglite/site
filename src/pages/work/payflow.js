@@ -2,7 +2,7 @@ import React from "react"
 // import { Link } from "gatsby"
 import Layout from "../../components/layout"
 import PageTransition from 'gatsby-v2-plugin-page-transitions'
-import swinvoice from "../../images/swinvoice.png"
+import payflow from "../../images/payflow-feature-image.png"
 
 const Payflow = () => {
   return (
@@ -11,7 +11,7 @@ const Payflow = () => {
         <section className="width-100-pc page-padding">
           <div className="maxwidth-sl mx-auto wrapper">
             <div className="project-feature-image mb-2 bg-brandblue desired-height-3rd">
-              <img src={swinvoice} alt="Swinvoice" />
+              <img src={payflow} alt="Swinvoice" />
             </div>
             <div className="wrapper-y project-description grid is-multi-col mostly-2">
               <div className="">

@@ -13,7 +13,7 @@ const WritingHome = () => {
           edges {
             node {
               id
-              excerpt(truncate: true, pruneLength: 200, format: HTML)
+              excerpt(pruneLength: 170, format: HTML)
               frontmatter {
                 date(formatString: "MMMM DD, YYYY")
                 path

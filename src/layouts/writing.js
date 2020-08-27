@@ -194,7 +194,7 @@ export const pageQuery = graphql`
               text
             }
           }
-          excerpt(truncate: true, pruneLength: 200, format: HTML)
+          excerpt(pruneLength: 170, format: HTML)
           id
           frontmatter {
             title

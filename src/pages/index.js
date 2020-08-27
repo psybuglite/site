@@ -12,8 +12,8 @@ import fluidcoins from "../images/fluidcoins.png"
 import prodevs from "../images/prodevs.png"
 import secura from "../images/secura.png"
 import future from "../images/future.png"
-import swinvoice from "../images/swinvoice.png"
 import WritingHome from "../layouts/writingHome"
+import payflowFeature from "../images/payflow-feature-image.png"
 
 if (typeof window !== `undefined`) {
   gsap.registerPlugin(ScrollTrigger)
@@ -337,14 +337,14 @@ const IndexPage = () => {
               <div className="featured-project mb-2">
                 <p className="mediumtext m-0">
                   <span className="co-sweetblue">SAAS</span> --{" "}
-                  <span className="">Frontend Development</span>
+                  <span className="">Product Design</span>
                 </p>
-                <p className="largetext co-white ff-aquire">AVAXMap</p>
+                <p className="largetext co-white ff-aquire">Payflow</p>
                 <Link
                   to="/work/payflow"
                   className="d-blk project-feature-image desired-height bg-brandblue"
                 >
-                  <img src={swinvoice} alt="Swinvoice" />
+                  <img src={payflowFeature} alt="Swinvoice" />
                 </Link>
               </div>
               <Link to="/work/payflow" className="d-blk">
@@ -368,18 +368,6 @@ const IndexPage = () => {
                       <span className="co-readablegray">Mobile App Design</span>
                     </p>
                     <p className="largetext co-white ff-aquire">PayFlow</p>
-                  </div>
-                </div>
-              </Link>
-              <Link to="/work/payflow" className="d-blk">
-                <div className="slide-project project-item">
-                  <div className="project-feature-image bg-brandblue desired-height-1qtr"></div>
-                  <div>
-                    <p className="mediumtext">
-                      <span className="co-sweetblue">SAAS</span> <br />
-                      <span className="co-readablegray">Mobile App Design</span>
-                    </p>
-                    <p className="largetext co-white ff-aquire">FLUIDCOINS</p>
                   </div>
                 </div>
               </Link>
