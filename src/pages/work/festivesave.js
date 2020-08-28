@@ -2,23 +2,21 @@ import React from "react"
 // import { Link } from "gatsby"
 import Layout from "../../components/layout"
 import PageTransition from 'gatsby-v2-plugin-page-transitions'
-import payflow from "../../images/payflow-feature-image.png"
-import payflowOnboarding from "../../images/payflow-onboarding.png"
-import payflowHome from "../../images/payflow-home.png"
+import festivesave from "../../images/festivesave-feature-image.png"
 
-const Payflow = () => {
+const Festivesave = () => {
   return (
     <Layout>
       <PageTransition>
         <section className="width-100-pc page-padding">
           <div className="maxwidth-xl mx-auto wrapper">
             <div className="project-feature-image mb-2 bg-brandblue desired-height-3rd">
-              <img src={payflow} alt="Swinvoice" />
+              <img src={festivesave} alt="Swinvoice" />
             </div>
             <div className="wrapper-y project-description grid is-multi-col mostly-2">
               <div className="">
                 <h2 className="largertext mt-0 co-white ff-aquire">
-                  Payflow
+                  festivesave
                 </h2>
                 <p className="mediumtext co-primary">SAAS</p>
                 <p className="mediumtext">Mobile App Design</p>
@@ -31,25 +29,12 @@ const Payflow = () => {
                 </p>
               </div>
             </div>
-
             <div className="wrapper-y will-grow project-description grid is-multi-col mostly-2">
-              <div className="project-feature-image bg-brandblue">
-                <img src={payflowOnboarding} alt=""/>
+              <div className="project-feature-image bg-brandblue desired-height-3rd">
               </div>
-              <div className="project-feature-image bg-brandblue">
-                <img src={payflowHome} alt=""/>
+              <div className="project-feature-image bg-brandblue desired-height-3rd">
               </div>
             </div>
-            
-            <div className="wrapper-y will-grow project-description grid is-multi-col mostly-2">
-              <div className="">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, perferendis sit recusandae commodi impedit eaque ipsum optio autem magni, incidunt eius iusto sint nam. Magni, laborum labore. Libero, dolore fugiat.
-              </div>
-              <div className="project-feature-image bg-brandblue">
-                <img src={payflowHome} alt=""/>
-              </div>
-            </div>
-
             <div className="wrapper-y will-grow project-description">
               <div className="project-feature-image bg-brandblue desired-height-3rd">
               </div>
@@ -61,4 +46,4 @@ const Payflow = () => {
   )
 }
 
-export default Payflow
+export default Festivesave
