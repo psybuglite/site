@@ -6,6 +6,9 @@ import fccpc from "../../images/fccpc-feature-image.png"
 import fccpcHome from "../../images/fccpc-home.png"
 import fccpcAbout from "../../images/fccpc-about.png"
 import fccpcReleases from "../../images/fccpc-releases.png"
+import fccpcGallery from "../../images/fccpc-gallery.png"
+import fccpcPeople from "../../images/fccpc-people.png"
+import fccpcHowTo from "../../images/fccpc-how-to.png"
 
 const Fccpc = () => {
   return (
@@ -22,7 +25,7 @@ const Fccpc = () => {
                   fccpc
                 </h2>
                 <p className="mediumtext co-primary">SAAS</p>
-                <p className="mediumtext">Mobile App Design</p>
+                <p className="smalltext">Website Design</p>
               </div>
               <div>
                 <p>
@@ -32,6 +35,7 @@ const Fccpc = () => {
                 </p>
               </div>
             </div>
+
             <div className="wrapper-y will-grow project-description grid is-multi-col mostly-2">
               <div className="project-feature-image bg-brandblue">
                 <img src={fccpcHome} alt=""/>
@@ -40,24 +44,28 @@ const Fccpc = () => {
                 <img src={fccpcAbout} alt=""/>
               </div>
             </div>
+
             <div className="wrapper-y will-grow project-description">
               <div className="project-feature-image bg-brandblue">
-                <img src={fccpcReleases} alt=""/>
+                <img src={fccpcHowTo} alt=""/>
               </div>
             </div>
+
             <div className="wrapper-y will-grow project-description grid is-multi-col mostly-2">
               <div className="project-feature-image bg-brandblue">
-                <img src={fccpcHome} alt=""/>
+                <img src={fccpcPeople} alt=""/>
               </div>
               <div className="project-feature-image bg-brandblue">
-                <img src={fccpcAbout} alt=""/>
+                <img src={fccpcGallery} alt=""/>
               </div>
             </div>
+
             <div className="wrapper-y will-grow project-description">
               <div className="project-feature-image bg-brandblue">
                 <img src={fccpcReleases} alt=""/>
               </div>
             </div>
+            
           </div>
         </section>
       </PageTransition>

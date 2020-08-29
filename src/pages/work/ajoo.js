@@ -3,6 +3,12 @@ import React from "react"
 import Layout from "../../components/layout"
 import PageTransition from 'gatsby-v2-plugin-page-transitions'
 import ajoo from "../../images/ajoo-feature-image.png"
+import ajooHome from "../../images/ajoo-home.png"
+import ajooVolunteers from "../../images/ajoo-volunteers.png"
+import ajooOrganisation from "../../images/ajoo-organisation.png"
+import ajooLogin from "../../images/ajoo-login.png"
+import ajooExplore from "../../images/ajoo-explore.png"
+import ajooChoose from "../../images/ajoo-choose.png"
 
 const Ajoo = () => {
   return (
@@ -18,8 +24,8 @@ const Ajoo = () => {
                 <h2 className="largertext mt-0 co-white ff-aquire">
                   Ajoo
                 </h2>
-                <p className="mediumtext co-primary">SAAS</p>
-                <p className="mediumtext">Mobile App Design</p>
+                <p className="mediumtext co-primary">Crowdfunding</p>
+                <p className="mediumtext">Website and Web App Design</p>
               </div>
               <div>
                 <p>
@@ -29,16 +35,37 @@ const Ajoo = () => {
                 </p>
               </div>
             </div>
+
             <div className="wrapper-y will-grow project-description grid is-multi-col mostly-2">
-              <div className="project-feature-image bg-brandblue desired-height-3rd">
+              <div className="project-feature-image bg-brandblue">
+                <img src={ajooHome} alt=""/>
               </div>
-              <div className="project-feature-image bg-brandblue desired-height-3rd">
+              <div className="project-feature-image bg-brandblue">
+                <img src={ajooOrganisation} alt=""/>
               </div>
             </div>
+
             <div className="wrapper-y will-grow project-description">
-              <div className="project-feature-image bg-brandblue desired-height-3rd">
+              <div className="project-feature-image bg-brandblue">
+                <img src={ajooLogin} alt=""/>
               </div>
             </div>
+
+            <div className="wrapper-y will-grow project-description grid is-multi-col mostly-2">
+              <div className="project-feature-image bg-brandblue">
+                <img src={ajooExplore} alt=""/>
+              </div>
+              <div className="project-feature-image bg-brandblue">
+                <img src={ajooChoose} alt=""/>
+              </div>
+            </div>
+
+            <div className="wrapper-y will-grow project-description">
+              <div className="project-feature-image bg-brandblue">
+                <img src={ajooVolunteers} alt=""/>
+              </div>
+            </div>
+
           </div>
         </section>
       </PageTransition>

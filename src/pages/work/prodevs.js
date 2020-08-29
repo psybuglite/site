@@ -3,6 +3,12 @@ import React from "react"
 import Layout from "../../components/layout"
 import PageTransition from 'gatsby-v2-plugin-page-transitions'
 import prodevs from "../../images/prodevs-feature-image.png"
+import prodevsHome from "../../images/prodevs-home.png"
+import prodevsRole from "../../images/prodevs-role.png"
+import prodevsTalent from "../../images/prodevs-talent.png"
+import prodevsManagers from "../../images/prodevs-managers.png"
+import prodevsBoard from "../../images/prodevs-board.png"
+import prodevsSignup from "../../images/prodevs-signup.png"
 
 const Prodevs = () => {
   return (
@@ -29,16 +35,37 @@ const Prodevs = () => {
                 </p>
               </div>
             </div>
+
             <div className="wrapper-y will-grow project-description grid is-multi-col mostly-2">
-              <div className="project-feature-image bg-brandblue desired-height-3rd">
+              <div className="project-feature-image bg-brandblue">
+                <img src={prodevsHome} alt=""/>
               </div>
-              <div className="project-feature-image bg-brandblue desired-height-3rd">
+              <div className="project-feature-image bg-brandblue">
+                <img src={prodevsTalent} alt=""/>
               </div>
             </div>
+
             <div className="wrapper-y will-grow project-description">
-              <div className="project-feature-image bg-brandblue desired-height-3rd">
+              <div className="project-feature-image bg-brandblue">
+                <img src={prodevsManagers} alt=""/>
               </div>
             </div>
+
+            <div className="wrapper-y will-grow project-description grid is-multi-col mostly-2">
+              <div className="project-feature-image bg-brandblue">
+                <img src={prodevsRole} alt=""/>
+              </div>
+              <div className="project-feature-image bg-brandblue">
+                <img src={prodevsSignup} alt=""/>
+              </div>
+            </div>
+
+            <div className="wrapper-y will-grow project-description">
+              <div className="project-feature-image bg-brandblue">
+                <img src={prodevsBoard} alt=""/>
+              </div>
+            </div>
+
           </div>
         </section>
       </PageTransition>
