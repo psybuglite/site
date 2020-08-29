@@ -3,6 +3,9 @@ import React from "react"
 import Layout from "../../components/layout"
 import PageTransition from 'gatsby-v2-plugin-page-transitions'
 import fccpc from "../../images/fccpc-feature-image.png"
+import fccpcHome from "../../images/fccpc-home.png"
+import fccpcAbout from "../../images/fccpc-about.png"
+import fccpcReleases from "../../images/fccpc-releases.png"
 
 const Fccpc = () => {
   return (
@@ -30,13 +33,29 @@ const Fccpc = () => {
               </div>
             </div>
             <div className="wrapper-y will-grow project-description grid is-multi-col mostly-2">
-              <div className="project-feature-image bg-brandblue desired-height-3rd">
+              <div className="project-feature-image bg-brandblue">
+                <img src={fccpcHome} alt=""/>
               </div>
-              <div className="project-feature-image bg-brandblue desired-height-3rd">
+              <div className="project-feature-image bg-brandblue">
+                <img src={fccpcAbout} alt=""/>
               </div>
             </div>
             <div className="wrapper-y will-grow project-description">
-              <div className="project-feature-image bg-brandblue desired-height-3rd">
+              <div className="project-feature-image bg-brandblue">
+                <img src={fccpcReleases} alt=""/>
+              </div>
+            </div>
+            <div className="wrapper-y will-grow project-description grid is-multi-col mostly-2">
+              <div className="project-feature-image bg-brandblue">
+                <img src={fccpcHome} alt=""/>
+              </div>
+              <div className="project-feature-image bg-brandblue">
+                <img src={fccpcAbout} alt=""/>
+              </div>
+            </div>
+            <div className="wrapper-y will-grow project-description">
+              <div className="project-feature-image bg-brandblue">
+                <img src={fccpcReleases} alt=""/>
               </div>
             </div>
           </div>
