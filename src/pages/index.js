@@ -29,69 +29,31 @@ const IndexPage = () => {
     indexTl.from(".hero-text", { opacity: 0, x: 100, duration: 0.3 })
     indexTl.from(".social-links a", { opacity: 0, y: 50, stagger: 0.2, duration: 0.3,})
 
-
-    gsap.from(".about-left-span", {
+    // gsap.from(".work-left-span", {
+    //   scrollTrigger: {
+    //     trigger: ".work-left-span",
+    //     scrub: 1,
+    //   },
+    //   x: -100,
+    //   ease: "none",
+    // })
+    // gsap.from(".work-right-span", {
+    //   scrollTrigger: {
+    //     trigger: ".work-right-span",
+    //     scrub: 1,
+    //   },
+    //   x: 100,
+    //   ease: "none",
+    // })
+    gsap.from(".trust", {
       scrollTrigger: {
-        trigger: ".about-left-span",
+        trigger: ".trust",
         scrub: 1,
+        pin: true,
+        start: "top 280px",
+        end: "top -460px",
+        markers: true,
       },
-      x: -300,
-      ease: "none",
-    })
-    gsap.from(".about-right-span", {
-      scrollTrigger: {
-        trigger: ".about-right-span",
-        scrub: 1,
-      },
-      x: 300,
-      ease: "none",
-    })
-    gsap.from(".work-left-span", {
-      scrollTrigger: {
-        trigger: ".work-left-span",
-        scrub: 1,
-      },
-      x: -300,
-      ease: "none",
-    })
-    gsap.from(".work-right-span", {
-      scrollTrigger: {
-        trigger: ".work-right-span",
-        scrub: 1,
-      },
-      x: 300,
-      ease: "none",
-    })
-    gsap.from(".trust-left-span", {
-      scrollTrigger: {
-        trigger: ".trust-left-span",
-        scrub: 1,
-      },
-      x: -300,
-      ease: "none",
-    })
-    gsap.from(".trust-right-span", {
-      scrollTrigger: {
-        trigger: ".trust-right-span",
-        scrub: 1,
-      },
-      x: 300,
-      ease: "none",
-    })
-    gsap.from(".stories-left-span", {
-      scrollTrigger: {
-        trigger: ".stories-left-span",
-        scrub: 1,
-      },
-      x: -300,
-      ease: "none",
-    })
-    gsap.from(".stories-right-span", {
-      scrollTrigger: {
-        trigger: ".stories-right-span",
-        scrub: 1,
-      },
-      x: 300,
       ease: "none",
     })
   }, [])
@@ -275,10 +237,7 @@ const IndexPage = () => {
         {/* Beginning of What I Do */}
         <section className="main-wrap mx-auto pos-r section-wrapper-y will-grow">
           <div className="wrapper-x">
-            <h2 className="sectionhead-text tx-c mb-3">
-              <span className="about-left-span d-ibl">What</span> <br />
-              <span className="about-right-span d-ibl">I Do</span>
-            </h2>
+            <h2 className="sectionhead-text tx-c mb-3">What I Do</h2>
             <div className="grid is-multi-col mostly-3 wrapper-y will-grow">
               <div className="d-flx flex-dir-col al-i-c">
                 <svg width={50} height={50} viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -330,7 +289,7 @@ const IndexPage = () => {
         <section className="main-wrap mx-auto pos-r section-wrapper-y will-grow mb-3">
           <div className="wrapper-x">
             <h2 className="sectionhead-text tx-c mb-3">
-              <span className="work-left-span d-ibl">Latest</span> <br />
+              <span className="work-left-span d-ibl">Featured</span> <br />
               <span className="work-right-span d-ibl">Work</span>
             </h2>
             <div className="wrapper-y will-grow">
@@ -377,13 +336,10 @@ const IndexPage = () => {
         {/* End of Latest Work */}
 
         {/* Beginning of Trusted Clients */}
-        <section className="main-wrap mx-auto pos-r section-wrapper-y will-grow mb-3">
-          <div className="wrapper-x">
-            <h2 className="sectionhead-text latest tx-c mb-3">
-              <span className="trust-left-span d-ibl">Trusted</span> <br />
-              <span className="trust-right-span d-ibl">By</span>
-            </h2>
-            <div className="brand-grid wrapper-y">
+        <section className="main-wrap mx-auto pos-r section-wrapper-y wrapper-x will-grow mb-3">
+          <div className="">
+            <h2 className="sectionhead-text trust tx-c m-0">Trusted By</h2>
+            <div className="brand-grid pos-a w-100 a-top">
               <div className="brand-area d-flx flex-dir-col al-i-c j-c-c">
                 <div className="brand-icon">
                   <img src={future} alt="future" />
