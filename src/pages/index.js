@@ -29,22 +29,6 @@ const IndexPage = () => {
     indexTl.from(".hero-text", { opacity: 0, x: 100, duration: 0.3 })
     indexTl.from(".social-links a", { opacity: 0, y: 50, stagger: 0.2, duration: 0.3,})
 
-    // gsap.from(".work-left-span", {
-    //   scrollTrigger: {
-    //     trigger: ".work-left-span",
-    //     scrub: 1,
-    //   },
-    //   x: -100,
-    //   ease: "none",
-    // })
-    // gsap.from(".work-right-span", {
-    //   scrollTrigger: {
-    //     trigger: ".work-right-span",
-    //     scrub: 1,
-    //   },
-    //   x: 100,
-    //   ease: "none",
-    // })
     gsap.from(".trust", {
       scrollTrigger: {
         trigger: ".trust",
@@ -52,7 +36,6 @@ const IndexPage = () => {
         pin: true,
         start: "top 280px",
         end: "top -460px",
-        markers: true,
       },
       ease: "none",
     })
@@ -336,7 +319,7 @@ const IndexPage = () => {
         {/* End of Latest Work */}
 
         {/* Beginning of Trusted Clients */}
-        <section className="main-wrap mx-auto pos-r section-wrapper-y wrapper-x will-grow mb-3">
+        <section className="main-wrap mx-auto pos-r trust-height section-wrapper-y wrapper-x will-grow mb-3">
           <div className="">
             <h2 className="sectionhead-text trust tx-c m-0">Trusted By</h2>
             <div className="brand-grid pos-a w-100 a-top">

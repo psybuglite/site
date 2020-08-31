@@ -1,17 +1,22 @@
 import React from "react"
-// import { Link } from "gatsby"
+import { graphql } from "gatsby"
+import Img from "gatsby-image"
 import Layout from "../../components/layout"
 import PageTransition from 'gatsby-v2-plugin-page-transitions'
-import fluidcoins from "../../images/fluidcoins-feature-image.png"
 
-const Fluidcoins = () => {
+const Fluidcoins = (props) => {
   return (
     <Layout>
       <PageTransition>
         <section className="width-100-pc page-padding">
           <div className="maxwidth-xl mx-auto wrapper">
             <div className="project-feature-image mb-2 bg-brandblue desired-height-3rd">
-              <img src={fluidcoins} alt="Swinvoice" />
+              <Img 
+                imgStyle={{objectFit: 'cover'}}
+                style={{height: "100%"}}
+                fluid={props.data.fluidcoinsFeatureImage.childImageSharp.fluid} 
+                alt=""
+              />
             </div>
             <div className="wrapper-y project-description grid is-multi-col mostly-2">
               <div className="">
@@ -29,16 +34,70 @@ const Fluidcoins = () => {
                 </p>
               </div>
             </div>
+
             <div className="wrapper-y will-grow project-description grid is-multi-col mostly-2">
-              <div className="project-feature-image bg-brandblue desired-height-3rd">
+              <div className="project-feature-image bg-brandblue">
+                <Img fluid={props.data.fluidcoinsOnboarding1.childImageSharp.fluid} alt=""/>
               </div>
-              <div className="project-feature-image bg-brandblue desired-height-3rd">
-              </div>
-            </div>
-            <div className="wrapper-y will-grow project-description">
-              <div className="project-feature-image bg-brandblue desired-height-3rd">
+              <div className="project-feature-image bg-brandblue">
+                <Img fluid={props.data.fluidcoinsOnboarding2.childImageSharp.fluid} alt="" />
               </div>
             </div>
+            
+            <div className="wrapper-y will-grow project-description grid is-multi-col mostly-2">
+              <div className="">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, perferendis sit recusandae commodi impedit eaque ipsum optio autem magni, incidunt eius iusto sint nam. Magni, laborum labore. Libero, dolore fugiat.
+              </div>
+              <div className="project-feature-image bg-brandblue">
+                <Img fluid={props.data.fluidcoinsWallet.childImageSharp.fluid} alt=""/>
+              </div>
+            </div>
+
+            <div className="wrapper-y will-grow project-description grid is-multi-col mostly-2">
+              <div className="">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, perferendis sit recusandae commodi impedit eaque ipsum optio autem magni, incidunt eius iusto sint nam. Magni, laborum labore. Libero, dolore fugiat.
+              </div>
+              <div className="project-feature-image bg-brandblue">
+                <Img fluid={props.data.fluidcoinsEmptywallet.childImageSharp.fluid} alt=""/>
+              </div>
+            </div>
+
+            <div className="wrapper-y will-grow project-description grid is-multi-col mostly-2">
+              <div className="project-feature-image bg-brandblue">
+                <Img fluid={props.data.fluidcoinsHome.childImageSharp.fluid} alt=""/>
+              </div>
+              <div className="project-feature-image bg-brandblue">
+                <Img fluid={props.data.fluidcoinsAccount.childImageSharp.fluid} alt=""/>
+              </div>
+            </div>
+
+            <div className="wrapper-y will-grow project-description grid is-multi-col mostly-2">
+              <div className="">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, perferendis sit recusandae commodi impedit eaque ipsum optio autem magni, incidunt eius iusto sint nam. Magni, laborum labore. Libero, dolore fugiat.
+              </div>
+              <div className="project-feature-image bg-brandblue">
+                <Img fluid={props.data.fluidcoinsFingerprint.childImageSharp.fluid} alt=""/>
+              </div>
+            </div>
+            
+            <div className="wrapper-y will-grow project-description grid is-multi-col mostly-2">
+              <div className="project-feature-image bg-brandblue">
+                <Img fluid={props.data.fluidcoinsAuth1.childImageSharp.fluid} alt=""/>
+              </div>
+              <div className="project-feature-image bg-brandblue">
+                <Img fluid={props.data.fluidcoinsAuth2.childImageSharp.fluid} alt=""/>
+              </div>
+            </div>
+
+            <div className="wrapper-y will-grow project-description grid is-multi-col mostly-2">
+              <div className="project-feature-image bg-brandblue">
+                <Img fluid={props.data.fluidcoinsAddress.childImageSharp.fluid} alt=""/>
+              </div>
+              <div className="project-feature-image bg-brandblue">
+                <Img fluid={props.data.fluidcoinsLogin.childImageSharp.fluid} alt=""/>
+              </div>
+            </div>
+
           </div>
         </section>
       </PageTransition>
@@ -47,3 +106,92 @@ const Fluidcoins = () => {
 }
 
 export default Fluidcoins
+
+export const pageQuery = graphql`
+  query {
+    fluidcoinsFeatureImage: file(relativePath: { eq: "fluidcoins-feature-image.png" }) {
+      childImageSharp {
+        fluid(maxHeight: 400) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    fluidcoinsHome: file(relativePath: { eq: "fluidcoins-home.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    fluidcoinsOnboarding1: file(relativePath: { eq: "fluidcoins-onboarding-1.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    fluidcoinsOnboarding2: file(relativePath: { eq: "fluidcoins-onboarding-2.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    fluidcoinsLogin: file(relativePath: { eq: "fluidcoins-login.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    fluidcoinsFingerprint: file(relativePath: { eq: "fluidcoins-fingerprint.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    fluidcoinsEmptywallet: file(relativePath: { eq: "fluidcoins-empty-wallet.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    fluidcoinsAuth1: file(relativePath: { eq: "fluidcoins-auth-1.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    fluidcoinsAuth2: file(relativePath: { eq: "fluidcoins-auth-2.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    fluidcoinsWallet: file(relativePath: { eq: "fluidcoins-wallet.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    fluidcoinsAddress: file(relativePath: { eq: "fluidcoins-address.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    fluidcoinsAccount: file(relativePath: { eq: "fluidcoins-account.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`

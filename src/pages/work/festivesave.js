@@ -1,17 +1,22 @@
 import React from "react"
-// import { Link } from "gatsby"
+import { graphql } from "gatsby"
+import Img from "gatsby-image"
 import Layout from "../../components/layout"
 import PageTransition from 'gatsby-v2-plugin-page-transitions'
-import festivesave from "../../images/festivesave-feature-image.png"
 
-const Festivesave = () => {
+const Festivesave = (props) => {
   return (
     <Layout>
       <PageTransition>
         <section className="width-100-pc page-padding">
           <div className="maxwidth-xl mx-auto wrapper">
             <div className="project-feature-image mb-2 bg-brandblue desired-height-3rd">
-              <img src={festivesave} alt="Swinvoice" />
+              <Img 
+                imgStyle={{objectFit: 'cover'}}
+                style={{height: "100%"}}
+                fluid={props.data.festivesaveFeatureImage.childImageSharp.fluid} 
+                alt=""
+              />
             </div>
             <div className="wrapper-y project-description grid is-multi-col mostly-2">
               <div className="">
@@ -29,16 +34,61 @@ const Festivesave = () => {
                 </p>
               </div>
             </div>
+
             <div className="wrapper-y will-grow project-description grid is-multi-col mostly-2">
-              <div className="project-feature-image bg-brandblue desired-height-3rd">
+              <div className="project-feature-image bg-brandblue">
+                <Img fluid={props.data.festivesaveOnboarding.childImageSharp.fluid} alt=""/>
               </div>
-              <div className="project-feature-image bg-brandblue desired-height-3rd">
-              </div>
-            </div>
-            <div className="wrapper-y will-grow project-description">
-              <div className="project-feature-image bg-brandblue desired-height-3rd">
+              <div className="project-feature-image bg-brandblue">
+                <Img fluid={props.data.festivesaveHome.childImageSharp.fluid} alt="" />
               </div>
             </div>
+            
+            <div className="wrapper-y will-grow project-description grid is-multi-col mostly-2">
+              <div className="">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, perferendis sit recusandae commodi impedit eaque ipsum optio autem magni, incidunt eius iusto sint nam. Magni, laborum labore. Libero, dolore fugiat.
+              </div>
+              <div className="project-feature-image bg-brandblue">
+                <Img fluid={props.data.festivesaveProfile.childImageSharp.fluid} alt=""/>
+              </div>
+            </div>
+
+            <div className="wrapper-y will-grow project-description grid is-multi-col mostly-2">
+              <div className="">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, perferendis sit recusandae commodi impedit eaque ipsum optio autem magni, incidunt eius iusto sint nam. Magni, laborum labore. Libero, dolore fugiat.
+              </div>
+              <div className="project-feature-image bg-brandblue">
+                <Img fluid={props.data.festivesaveHistory.childImageSharp.fluid} alt=""/>
+              </div>
+            </div>
+
+            <div className="wrapper-y will-grow project-description grid is-multi-col mostly-2">
+              <div className="project-feature-image bg-brandblue">
+                <Img fluid={props.data.festivesaveHome.childImageSharp.fluid} alt=""/>
+              </div>
+              <div className="project-feature-image bg-brandblue">
+                <Img fluid={props.data.festivesaveAccount.childImageSharp.fluid} alt=""/>
+              </div>
+            </div>
+
+            <div className="wrapper-y will-grow project-description grid is-multi-col mostly-2">
+              <div className="">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, perferendis sit recusandae commodi impedit eaque ipsum optio autem magni, incidunt eius iusto sint nam. Magni, laborum labore. Libero, dolore fugiat.
+              </div>
+              <div className="project-feature-image bg-brandblue">
+                <Img fluid={props.data.festivesaveChosen.childImageSharp.fluid} alt=""/>
+              </div>
+            </div>
+            
+            <div className="wrapper-y will-grow project-description grid is-multi-col mostly-2">
+              <div className="project-feature-image bg-brandblue">
+                <Img fluid={props.data.festivesaveOptions.childImageSharp.fluid} alt=""/>
+              </div>
+              <div className="project-feature-image bg-brandblue">
+                <Img fluid={props.data.festivesaveManual.childImageSharp.fluid} alt=""/>
+              </div>
+            </div>
+
           </div>
         </section>
       </PageTransition>
@@ -47,3 +97,85 @@ const Festivesave = () => {
 }
 
 export default Festivesave
+
+export const pageQuery = graphql`
+  query {
+    festivesaveFeatureImage: file(relativePath: { eq: "festivesave-feature-image.png" }) {
+      childImageSharp {
+        fluid(maxHeight: 400) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    festivesaveHome: file(relativePath: { eq: "festivesave-home.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    festivesaveOnboarding: file(relativePath: { eq: "festivesave-onboarding.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    festivesaveAuto: file(relativePath: { eq: "festivesave-auto.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    festivesaveChosen: file(relativePath: { eq: "festivesave-chosen.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    festivesaveHistory: file(relativePath: { eq: "festivesave-history.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    festivesaveOptions: file(relativePath: { eq: "festivesave-options.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    festivesaveManual: file(relativePath: { eq: "festivesave-manual.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    festivesaveWallet: file(relativePath: { eq: "festivesave-wallet.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    festivesaveProfile: file(relativePath: { eq: "festivesave-profile.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    festivesaveAccount: file(relativePath: { eq: "festivesave-account.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`
