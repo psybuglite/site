@@ -1,5 +1,6 @@
 import React, { useEffect } from "react"
-import { Link } from "gatsby"
+import { Link, graphql } from "gatsby"
+import Img from "gatsby-image"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import PageTransition from "gatsby-v2-plugin-page-transitions"
@@ -13,14 +14,13 @@ import prodevs from "../images/prodevs.png"
 import secura from "../images/secura.png"
 import future from "../images/future.png"
 import WritingHome from "../layouts/writingHome"
-import payflowFeature from "../images/payflow-feature-image.png"
 
 if (typeof window !== `undefined`) {
   gsap.registerPlugin(ScrollTrigger)
   gsap.core.globals("ScrollTrigger", ScrollTrigger)
 }
 
-const IndexPage = () => {
+const IndexPage = (props) => {
   useEffect(() => {
     const indexTl = gsap.timeline()
 
@@ -268,7 +268,7 @@ const IndexPage = () => {
         </section>
         {/* End of What I Do */}
 
-        {/* Beginning of Latest Work */}
+        {/* Beginning of Featured Work */}
         <section className="main-wrap mx-auto pos-r section-wrapper-y will-grow mb-3">
           <div className="wrapper-x">
             <h2 className="sectionhead-text tx-c mb-3">
@@ -276,47 +276,73 @@ const IndexPage = () => {
               <span className="work-right-span d-ibl">Work</span>
             </h2>
             <div className="wrapper-y will-grow">
-              <div className="featured-project mb-2">
-                <p className="mediumtext m-0">
-                  <span className="co-sweetblue">SAAS</span> --{" "}
-                  <span className="">Product Design</span>
-                </p>
-                <p className="largetext co-white ff-aquire">Payflow</p>
-                <Link
-                  to="/work/payflow"
-                  className="d-blk project-feature-image desired-height bg-brandblue"
-                >
-                  <img src={payflowFeature} alt="Swinvoice" />
-                </Link>
+              <div className="slide-project wrapper-y will-grow project-item">
+                <div className="project-feature-image bg-brandblue desired-height-1qtr">
+                  <Img 
+                    imgStyle={{objectFit: 'cover'}}
+                    style={{height: "100%"}}
+                    fluid={props.data.payflowFeature.childImageSharp.fluid} 
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <p className="largetext co-white ff-aquire">Payflow</p>
+                  <p className="mediumtext">
+                    <span className="">FinTech</span>  <br/>
+                    <span className="">Product Design</span>
+                  </p>
+                  <Link className="co-sweetblue d-ibl py-1 link" to="/work/payflow">
+                    View Project
+                  </Link>
+                </div>
               </div>
-              <Link to="/work/payflow" className="d-blk">
-                <div className="slide-project project-item mb-2">
-                  <div className="project-feature-image bg-brandblue desired-height-1qtr"></div>
-                  <div>
-                    <p className="mediumtext">
-                      <span className="co-sweetblue">SAAS</span> <br />
-                      <span className="co-readablegray">Mobile App Design</span>
-                    </p>
-                    <p className="largetext co-white ff-aquire">FLUIDCOINS</p>
-                  </div>
+
+              <div className="slide-project wrapper-y will-grow project-item">
+                <div className="project-feature-image bg-brandblue desired-height-1qtr">
+                  <Img 
+                imgStyle={{objectFit: 'cover'}}
+                style={{height: "100%"}}
+                fluid={props.data.ajooFeature.childImageSharp.fluid} 
+                alt=""
+              />
                 </div>
-              </Link>
-              <Link to="/work/payflow" className="d-blk">
-                <div className="slide-project project-item mb-2">
-                  <div className="proj-feature-image bg-brandblue desired-height-1qtr"></div>
-                  <div className="proj-details">
-                    <p className="mediumtext">
-                      <span className="co-sweetblue">SAAS</span> <br />
-                      <span className="co-readablegray">Mobile App Design</span>
-                    </p>
-                    <p className="largetext co-white ff-aquire">PayFlow</p>
-                  </div>
+                <div>
+                  <p className="largetext co-white ff-aquire">Ajoo</p>
+                  <p className="mediumtext">
+                    <span className="">Crowdfunding</span>  <br/>
+                    <span className="">Website Design</span>
+                  </p>
+                  <Link className="co-sweetblue d-ibl py-1 link" to="/work/fccpc">
+                    View Project
+                  </Link>
                 </div>
-              </Link>
+              </div>
+
+              <div className="slide-project wrapper-y will-grow project-item">
+                <div className="project-feature-image bg-brandblue desired-height-1qtr">
+                  <Img 
+                imgStyle={{objectFit: 'cover'}}
+                style={{height: "100%"}}
+                fluid={props.data.festivesaveFeature.childImageSharp.fluid} 
+                alt=""
+              />
+                </div>
+                <div>
+                  <p className="largetext co-white ff-aquire">Festivesave</p>
+                  <p className="mediumtext">
+                    <span className="">FinTech</span><br/>
+                    <span className="">Product Design</span>
+                  </p>
+                  <Link className="co-sweetblue d-ibl py-1 link" to="/work/festivesave">
+                    View Project
+                  </Link>
+                </div>
+              </div>
+
             </div>
           </div>
         </section>
-        {/* End of Latest Work */}
+        {/* End of Featured Work */}
 
         {/* Beginning of Trusted Clients */}
         <section className="main-wrap mx-auto pos-r trust-height section-wrapper-y wrapper-x will-grow mb-3">
@@ -486,3 +512,29 @@ const IndexPage = () => {
 }
 
 export default IndexPage
+
+export const pageQuery = graphql`
+  query {
+    payflowFeature: file(relativePath: { eq: "payflow-feature-image.png" }) {
+      childImageSharp {
+        fluid(maxHeight: 400) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    ajooFeature: file(relativePath: { eq: "ajoo-feature-image.png" }) {
+      childImageSharp {
+        fluid(maxHeight: 400) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    festivesaveFeature: file(relativePath: { eq: "festivesave-feature-image.png" }) {
+      childImageSharp {
+        fluid(maxHeight: 400) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`

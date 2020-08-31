@@ -1,16 +1,11 @@
 import React from "react"
-import { Link } from "gatsby"
+import { Link, graphql } from "gatsby"
+import Img from "gatsby-image"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import PageTransition from 'gatsby-v2-plugin-page-transitions'
-import payflowFeature from "../images/payflow-feature-image.png"
-import fluidcoinsFeature from "../images/fluidcoins-feature-image.png"
-import festivesaveFeature from "../images/festivesave-feature-image.png"
-import fccpcFeature from "../images/fccpc-feature-image.png"
-import ajooFeature from "../images/ajoo-feature-image.png"
-import prodevsFeature from "../images/prodevs-feature-image.png"
 
-const Work = () => {
+const Work = (props) => {
   return (
     <Layout>
       <SEO title="Work" />
@@ -23,7 +18,12 @@ const Work = () => {
             <div className="wrapper-y will-grow">
               <div className="slide-project wrapper-y will-grow project-item">
                 <div className="project-feature-image bg-brandblue desired-height-1qtr">
-                  <img src={payflowFeature} alt=""/>
+                  <Img 
+                    imgStyle={{objectFit: 'cover'}}
+                    style={{height: "100%"}}
+                    fluid={props.data.payflowFeature.childImageSharp.fluid} 
+                    alt=""
+                  />
                 </div>
                 <div>
                   <p className="largetext co-white ff-aquire">Payflow</p>
@@ -39,7 +39,12 @@ const Work = () => {
 
               <div className="slide-project wrapper-y will-grow project-item">
                 <div className="project-feature-image bg-brandblue desired-height-1qtr">
-                  <img src={fccpcFeature} alt=""/>
+                  <Img 
+                imgStyle={{objectFit: 'cover'}}
+                style={{height: "100%"}}
+                fluid={props.data.fccpcFeature.childImageSharp.fluid} 
+                alt=""
+              />
                 </div>
                 <div>
                   <p className="largetext co-white ff-aquire">Consumer Protection Agency Website</p>
@@ -55,7 +60,12 @@ const Work = () => {
 
               <div className="slide-project wrapper-y will-grow project-item">
                 <div className="project-feature-image bg-brandblue desired-height-1qtr">
-                  <img src={festivesaveFeature} alt=""/>
+                  <Img 
+                imgStyle={{objectFit: 'cover'}}
+                style={{height: "100%"}}
+                fluid={props.data.festivesaveFeature.childImageSharp.fluid} 
+                alt=""
+              />
                 </div>
                 <div>
                   <p className="largetext co-white ff-aquire">Festivesave</p>
@@ -71,7 +81,12 @@ const Work = () => {
 
               <div className="slide-project wrapper-y will-grow project-item">
                 <div className="project-feature-image bg-brandblue desired-height-1qtr">
-                  <img src={ajooFeature} alt=""/>
+                  <Img 
+                imgStyle={{objectFit: 'cover'}}
+                style={{height: "100%"}}
+                fluid={props.data.ajooFeature.childImageSharp.fluid} 
+                alt=""
+              />
                 </div>
                 <div>
                   <p className="largetext co-white ff-aquire">Ajoo</p>
@@ -87,7 +102,12 @@ const Work = () => {
 
               <div className="slide-project wrapper-y will-grow project-item">
                 <div className="project-feature-image bg-brandblue desired-height-1qtr">
-                  <img src={fluidcoinsFeature} alt=""/>
+                  <Img 
+                imgStyle={{objectFit: 'cover'}}
+                style={{height: "100%"}}
+                fluid={props.data.fluidcoinsFeature.childImageSharp.fluid} 
+                alt=""
+              />
                 </div>
                 <div>
                   <p className="largetext co-white ff-aquire">FLUIDCOINS</p>
@@ -103,7 +123,12 @@ const Work = () => {
 
               <div className="slide-project wrapper-y will-grow project-item">
                 <div className="project-feature-image bg-brandblue desired-height-1qtr">
-                  <img src={prodevsFeature} alt=""/>
+                  <Img 
+                imgStyle={{objectFit: 'cover'}}
+                style={{height: "100%"}}
+                fluid={props.data.prodevsFeature.childImageSharp.fluid} 
+                alt=""
+              />
                 </div>
                 <div>
                   <p className="largetext co-white ff-aquire">Prodevs</p>
@@ -125,3 +150,50 @@ const Work = () => {
   )
 }
 export default Work
+
+export const pageQuery = graphql`
+  query {
+    fccpcFeature: file(relativePath: { eq: "fccpc-feature-image.png" }) {
+      childImageSharp {
+        fluid(maxHeight: 400) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    payflowFeature: file(relativePath: { eq: "payflow-feature-image.png" }) {
+      childImageSharp {
+        fluid(maxHeight: 400) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    prodevsFeature: file(relativePath: { eq: "prodevs-feature-image.png" }) {
+      childImageSharp {
+        fluid(maxHeight: 400) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    ajooFeature: file(relativePath: { eq: "ajoo-feature-image.png" }) {
+      childImageSharp {
+        fluid(maxHeight: 400) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    festivesaveFeature: file(relativePath: { eq: "festivesave-feature-image.png" }) {
+      childImageSharp {
+        fluid(maxHeight: 400) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    fluidcoinsFeature: file(relativePath: { eq: "fluidcoins-feature-image.png" }) {
+      childImageSharp {
+        fluid(maxHeight: 400) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`

@@ -156,13 +156,6 @@ export const pageQuery = graphql`
         }
       }
     }
-    festivesaveWallet: file(relativePath: { eq: "festivesave-wallet.png" }) {
-      childImageSharp {
-        fluid(maxWidth: 1000) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
     festivesaveProfile: file(relativePath: { eq: "festivesave-profile.png" }) {
       childImageSharp {
         fluid(maxWidth: 1000) {

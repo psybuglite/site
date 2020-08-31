@@ -1,23 +1,22 @@
 import React from "react"
-// import { Link } from "gatsby"
+import { graphql } from "gatsby"
+import Img from "gatsby-image"
 import Layout from "../../components/layout"
 import PageTransition from 'gatsby-v2-plugin-page-transitions'
-import prodevs from "../../images/prodevs-feature-image.png"
-import prodevsHome from "../../images/prodevs-home.png"
-import prodevsRole from "../../images/prodevs-role.png"
-import prodevsTalent from "../../images/prodevs-talent.png"
-import prodevsManagers from "../../images/prodevs-managers.png"
-import prodevsBoard from "../../images/prodevs-board.png"
-import prodevsSignup from "../../images/prodevs-signup.png"
 
-const Prodevs = () => {
+const Prodevs = (props) => {
   return (
     <Layout>
       <PageTransition>
         <section className="width-100-pc page-padding">
           <div className="maxwidth-xl mx-auto wrapper">
             <div className="project-feature-image mb-2 bg-brandblue desired-height-3rd">
-              <img src={prodevs} alt="Swinvoice" />
+            <Img 
+                imgStyle={{objectFit: 'cover'}}
+                style={{height: "100%"}}
+                fluid={props.data.prodevsFeatureImage.childImageSharp.fluid} 
+                alt=""
+              />
             </div>
             <div className="wrapper-y project-description grid is-multi-col mostly-2">
               <div className="">
@@ -38,31 +37,31 @@ const Prodevs = () => {
 
             <div className="wrapper-y will-grow project-description grid is-multi-col mostly-2">
               <div className="project-feature-image bg-brandblue">
-                <img src={prodevsHome} alt=""/>
+                <Img fluid={props.data.prodevsHome.childImageSharp.fluid} alt=""/>
               </div>
               <div className="project-feature-image bg-brandblue">
-                <img src={prodevsTalent} alt=""/>
+                <Img fluid={props.data.prodevsTalent.childImageSharp.fluid} alt=""/>
               </div>
             </div>
 
             <div className="wrapper-y will-grow project-description">
               <div className="project-feature-image bg-brandblue">
-                <img src={prodevsManagers} alt=""/>
+                <Img fluid={props.data.prodevsManagers.childImageSharp.fluid} alt=""/>
               </div>
             </div>
 
             <div className="wrapper-y will-grow project-description grid is-multi-col mostly-2">
               <div className="project-feature-image bg-brandblue">
-                <img src={prodevsRole} alt=""/>
+                <Img fluid={props.data.prodevsRole.childImageSharp.fluid} alt=""/>
               </div>
               <div className="project-feature-image bg-brandblue">
-                <img src={prodevsSignup} alt=""/>
+                <Img fluid={props.data.prodevsSignup.childImageSharp.fluid} alt=""/>
               </div>
             </div>
 
             <div className="wrapper-y will-grow project-description">
               <div className="project-feature-image bg-brandblue">
-                <img src={prodevsBoard} alt=""/>
+                <Img fluid={props.data.prodevsBoard.childImageSharp.fluid} alt=""/>
               </div>
             </div>
 
@@ -74,3 +73,57 @@ const Prodevs = () => {
 }
 
 export default Prodevs
+
+export const pageQuery = graphql`
+  query {
+    prodevsFeatureImage: file(relativePath: { eq: "prodevs-feature-image.png" }) {
+      childImageSharp {
+        fluid(maxHeight: 400) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    prodevsHome: file(relativePath: { eq: "prodevs-home.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    prodevsBoard: file(relativePath: { eq: "prodevs-board.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    prodevsManagers: file(relativePath: { eq: "prodevs-managers.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    prodevsTalent: file(relativePath: { eq: "prodevs-talent.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    prodevsRole: file(relativePath: { eq: "prodevs-role.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    prodevsSignup: file(relativePath: { eq: "prodevs-signup.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`
