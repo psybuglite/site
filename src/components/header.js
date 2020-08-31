@@ -13,7 +13,7 @@ const Header = () => {
     headTl.from(".logo-area", {opacity: 0, y: -50, duration: 0.5})
     headTl.from(".main-nav li", {opacity: 0, stagger: 0.1, x: -50, duration: 0.3})
     headTl.from(".bar1", {opacity: 0, x: -50, duration: 0.5})
-    headTl.from(".bar3", {opacity: 0, x: 50, duration: 0.5})
+    headTl.from(".bar3", {opacity: 0, x: -50, duration: 0.5})
   }, []);
 
   const [navOpen, navToggle] = useState(false);
