@@ -8,8 +8,63 @@ featimage: "../../images/gatsby-build.png"
 
 So, you've finished building up the UI for your React project and you want to host it up on a remote machine. In this article, we'll be using Google Cloud Platform to host our sample React website.
 
-The explanation in this article should work just as well if you have a virtual machine other than Google Cloud, i.e. You have login credentials to the remote machine you want to host the React site on.
+## Step 1: SSH into your virtual private server
 
-## Step 1: Login to Google Cloud or Remote Machine
+Build your React website using `npm build` and upload the code to your preferred git repository.
 
-Volutpat est velit egestas dui id ornare. Cursus turpis massa tincidunt dui. Maecenas ultricies mi eget mauris pharetra et. Ac auctor augue mauris augue neque. Purus gravida quis blandit turpis. Neque sodales ut etiam sit amet nisl purus in. Molestie at elementum eu facilisis sed odio morbi quis. Aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque. Luctus accumsan tortor posuere ac ut consequat semper viverra. Et ligula ullamcorper malesuada proin libero nunc. Nec feugiat in fermentum posuere. Enim lobortis scelerisque fermentum dui faucibus in. Quam id leo in vitae. Tristique et egestas quis ipsum suspendisse ultrices gravida dictum. Porta nibh venenatis cras sed felis eget velit.
+## Step 2: SSH into your virtual private server
+
+Log in to your virtual private server
+
+For Unix-like devices (Mac OS or Linux)
+`ssh <username>@<computer name or IP address>`
+
+For example
+
+```bash
+ssh dennis@computer
+```
+
+or
+
+```bash
+ssh dennis@127.0.0.1
+```
+
+## Step 3: Install Apache
+
+```bash
+sudo apt-get update && sudo apt-get install apache
+```
+
+At this point, if you go to your IP address, you should be able to see Apache2 Debian Default Page.
+
+## Step 4: Install git and clone your React Project
+
+Before cloning the React project, you'll need to have git installed
+
+```bash
+sudo apt-get install git
+```
+
+You can then clone your repo into your virtual machine.
+
+```bash
+sudo git clone <git repository>
+```
+
+## Step 5: Copy the React build into the web server directory
+
+Copy all the content of the build folder into the web server directory.
+
+```bash
+sudo git cp -r ./<react repository folder>/build/* /var/www/html/
+```
+
+For sanity check, you can confirm the content of your web server directory to be sure you copied all the contents of your build folder
+
+```bash
+ls /var/www/html/
+```
+
+With that done, you can check your IP to see your React project live.

@@ -34,7 +34,7 @@ export default function Template({ pageContext, data }) {
               </h2>
               <span className="fw-bold picotext">{post.frontmatter.date}</span>
             </div>
-            <article className="wrapper-y will-grow mediumtext article-content" 
+            <article className="wrapper-y will-grow articletext article-content" 
                 dangerouslySetInnerHTML={{ __html: post.html }}>        
             </article>
             <div className="main-wrap mx-auto wrapper-y d-flx fw-w j-c-sb mt-1">
