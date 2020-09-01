@@ -1,5 +1,5 @@
 ---
-path: "/writing/react-website-on-remote-machine"
+path: "/writing/react-website-on-virtual-private-server"
 date: 2019-08-13T17:12:33.962Z
 title: "How to Host a React Site on a Virtual Private Server"
 tags: ["React", "Cloud"]
