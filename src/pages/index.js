@@ -300,11 +300,11 @@ const IndexPage = (props) => {
               <div className="slide-project wrapper-y will-grow project-item">
                 <div className="project-feature-image bg-brandblue desired-height-1qtr">
                   <Img 
-                imgStyle={{objectFit: 'cover'}}
-                style={{height: "100%"}}
-                fluid={props.data.ajooFeature.childImageSharp.fluid} 
-                alt=""
-              />
+                    imgStyle={{objectFit: 'cover'}}
+                    style={{height: "100%"}}
+                    fluid={props.data.ajooFeature.childImageSharp.fluid} 
+                    alt=""
+                  />
                 </div>
                 <div>
                   <p className="largetext co-white ff-aquire">Ajoo</p>
@@ -321,11 +321,11 @@ const IndexPage = (props) => {
               <div className="slide-project wrapper-y will-grow project-item">
                 <div className="project-feature-image bg-brandblue desired-height-1qtr">
                   <Img 
-                imgStyle={{objectFit: 'cover'}}
-                style={{height: "100%"}}
-                fluid={props.data.festivesaveFeature.childImageSharp.fluid} 
-                alt=""
-              />
+                    imgStyle={{objectFit: 'cover'}}
+                    style={{height: "100%"}}
+                    fluid={props.data.festivesaveFeature.childImageSharp.fluid} 
+                    alt=""
+                  />
                 </div>
                 <div>
                   <p className="largetext co-white ff-aquire">Festivesave</p>

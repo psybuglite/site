@@ -79,7 +79,7 @@ const Writing = ({ data, pageContext }) => {
                               return (
                                 <Link
                                   to={`/tags/${kebabCase(tag)}/`}
-                                  className="link co-primary prefix is-even-wider my-0"
+                                  className="link co-sweetblue prefix is-even-wider my-0"
                                   key={tag}
                                 >
                                   #{tag}
@@ -94,13 +94,13 @@ const Writing = ({ data, pageContext }) => {
               </ul>
             </div>
             <div className="wrapper">
-              <h3 className="pb-1">Popular tags</h3>
+              <h3 className="pb-1">Tags on this page</h3>
               <ul className="none fw-bold">
                 {uniqueTags.map((tag, i) => (
                   <li className="tag-item prefix is-even-wider" key={i}>
                     <Link
                       to={`/tags/${kebabCase(tag)}/`}
-                      className="link d-flx al-i-c co-primary"
+                      className="link d-flx al-i-c co-sweetblue"
                     >
                       {tag}
                     </Link>

@@ -28,16 +28,16 @@ export default function Template({ pageContext, data }) {
               )
             }
             </div>
-            <article className="maxwidth-sl mx-auto">
+            <div className="maxwidth-sl mx-auto">
               <h2 className="mt-0 largertext co-white fw-normal">
                   {post.frontmatter.title}
               </h2>
               <span className="fw-bold picotext">{post.frontmatter.date}</span>
-            </article>
-            <article className="wrapper-y will-grow article-content" 
+            </div>
+            <article className="wrapper-y will-grow mediumtext article-content" 
                 dangerouslySetInnerHTML={{ __html: post.html }}>        
             </article>
-            <article className="main-wrap mx-auto wrapper-y d-flx fw-w j-c-sb mt-1">
+            <div className="main-wrap mx-auto wrapper-y d-flx fw-w j-c-sb mt-1">
               <div className="my-1">
                 {next && (
                   <Link to={next.frontmatter.path} className="link article-left-nav d-flx al-i-c next-prev">
@@ -69,7 +69,7 @@ export default function Template({ pageContext, data }) {
                 )}
 
               </div>
-            </article>
+            </div>
           </div>
         </section>
       </PageTransition>
