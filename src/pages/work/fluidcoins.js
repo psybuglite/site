@@ -1,13 +1,10 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
-import Layout from "../../components/layout"
-import PageTransition from 'gatsby-v2-plugin-page-transitions'
 
 const Fluidcoins = (props) => {
   return (
-    <Layout>
-      <PageTransition>
+    <>
         <section className="width-100-pc page-padding">
           <div className="maxwidth-xl mx-auto wrapper">
             <div className="project-feature-image mb-2 bg-brandblue desired-height-3rd">
@@ -100,8 +97,7 @@ const Fluidcoins = (props) => {
 
           </div>
         </section>
-      </PageTransition>
-    </Layout>
+    </>
   )
 }
 

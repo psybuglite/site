@@ -1,9 +1,8 @@
 import React, { useEffect } from "react"
 import { Link, graphql } from "gatsby"
 import Img from "gatsby-image"
-import Layout from "../components/layout"
 import SEO from "../components/seo"
-import PageTransition from "gatsby-v2-plugin-page-transitions"
+import { motion, AnimatePresence } from "framer-motion"
 import gsap from "gsap/all"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 import cns from "../images/cns.png"
@@ -20,14 +19,19 @@ if (typeof window !== `undefined`) {
   gsap.core.globals("ScrollTrigger", ScrollTrigger)
 }
 
-const IndexPage = (props) => {
+const IndexPage = props => {
   useEffect(() => {
     const indexTl = gsap.timeline()
 
     indexTl.from(".greeting", { opacity: 0, x: 100, duration: 0.3, delay: 1 })
     indexTl.from(".very-large-text", { opacity: 0, x: 100, duration: 0.3 })
     indexTl.from(".hero-text", { opacity: 0, x: 100, duration: 0.3 })
-    indexTl.from(".social-links a", { opacity: 0, y: 50, stagger: 0.2, duration: 0.3,})
+    indexTl.from(".social-links a", {
+      opacity: 0,
+      y: 50,
+      stagger: 0.2,
+      duration: 0.3,
+    })
 
     gsap.from(".trust", {
       scrollTrigger: {
@@ -42,7 +46,7 @@ const IndexPage = (props) => {
   }, [])
 
   return (
-    <Layout>
+    <>
       <SEO
         title="Home"
         keywords={[
@@ -58,33 +62,148 @@ const IndexPage = (props) => {
           `UI/UX Designer`,
         ]}
       />
-      <PageTransition>
-        {/* Beginning of Hero */}
-        <section className="main-wrap mx-auto pos-r">
-          <div className="min-height-100-vh d-flx flex-dir-col j-c-c wrapper-x">
-            <div className="d-flx flex-dir-col j-c-c offset-hero">
-              <p className="largetext mb-0 greeting">
-                Hello. I’m Dennis Dickson.
-              </p>
-              <h1 className="very-large-text co-white ff-aquire">
-                UI Engineer
-              </h1>
-              <p className="maxwidth-tb hero-text mediumtext">
-                Egestas semper lorem sit quis vestibulum nulla sit quis. At
-                aliquam, arcu scelerisque cursus. Amet cursus risus libero, id
-                volutpat in. Sem orci.
-              </p>
-            </div>
+      {/* Beginning of Hero */}
+      <section className="main-wrap mx-auto pos-r">
+        <div className="min-height-100-vh d-flx flex-dir-col j-c-c wrapper-x">
+          <div className="d-flx flex-dir-col j-c-c offset-hero block-parent">
+            <AnimatePresence>
+              <motion.div
+                layoutId="block"
+                layout
+                style={{
+                  position: `absolute`,
+                  display: `inline-block`,
+                  backgroundColor: `#0F52BA`,
+                  height: `50px`,
+                  width: `50px`,
+                  top: `0px`,
+                  right: `50px`,
+                }}
+              ></motion.div>
+            </AnimatePresence>
+            <p className="largetext mb-0 greeting">
+              Hello. I’m Dennis Dickson.
+            </p>
+            <h1 className="very-large-text co-white ff-aquire">UI Engineer</h1>
+            <p className="maxwidth-tb hero-text mediumtext">
+              Egestas semper lorem sit quis vestibulum nulla sit quis. At
+              aliquam, arcu scelerisque cursus. Amet cursus risus libero, id
+              volutpat in. Sem orci.
+            </p>
           </div>
-          <div className="w-100 d-flx py-1 al-i-c j-c-sb wrapper-x absolute-hero">
-            <div className="blue-block"></div>
-            <div className="d-flx al-i-c social-links">
-              <a
-                href="https://linkedin.com/in/psybug"
-                className="d-blk prefix is-wider p-h social-link hover-outline ff-aquire link"
-                title="LinkedIn"
+        </div>
+        <div className="w-100 d-flx py-1 al-i-c j-c-sb wrapper-x absolute-hero">
+          <div className="blue-block"></div>
+          <div className="d-flx al-i-c social-links">
+            <a
+              href="https://linkedin.com/in/psybug"
+              className="d-blk prefix is-wider p-h social-link hover-outline ff-aquire link"
+              title="LinkedIn"
+            >
+              LI
+              <svg
+                width={16}
+                height={16}
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                LI
+                <path
+                  d="M4.66669 11.3333L11.3334 4.66666"
+                  stroke="#A5A5A5"
+                  strokeWidth="0.666667"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+                <path
+                  d="M4.66669 4.66666H11.3334V11.3333"
+                  stroke="#A5A5A5"
+                  strokeWidth="0.666667"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            </a>
+            <a
+              href="https://dribbble.com/psybuglite"
+              className="d-blk prefix suffix is-wider p-h social-link hover-outline ff-aquire link"
+              title="Dribbble"
+            >
+              DR
+              <svg
+                width={16}
+                height={16}
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M4.66669 11.3333L11.3334 4.66666"
+                  stroke="#A5A5A5"
+                  strokeWidth="0.666667"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+                <path
+                  d="M4.66669 4.66666H11.3334V11.3333"
+                  stroke="#A5A5A5"
+                  strokeWidth="0.666667"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            </a>
+            <a
+              href="https://twitter.com/psybuglite"
+              className="d-blk suffix is-wider p-h social-link hover-outline ff-aquire link"
+              title="Twitter"
+            >
+              TW
+              <svg
+                width={16}
+                height={16}
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M4.66669 11.3333L11.3334 4.66666"
+                  stroke="#A5A5A5"
+                  strokeWidth="0.666667"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+                <path
+                  d="M4.66669 4.66666H11.3334V11.3333"
+                  stroke="#A5A5A5"
+                  strokeWidth="0.666667"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+      {/* End of Hero */}
+
+      {/* Beginning of About Me */}
+      <section className="main-wrap mx-auto pos-r">
+        <div className="section-wrapper-y will-grow d-flx flex-dir-col j-c-c wrapper-x">
+          <div className="grid-2 wrapper-y will-grow">
+            <p className="largetext stripes">
+              At the core, I combine business logic and design to create a
+              user-facing product. In order to successfully achieve this, I
+              focus on generating quality user experience with modern and
+              accessible user interfaces that help to meet business
+              requirements.
+            </p>
+            <div className="email-grid">
+              <a
+                href="mailto:hi@dennisdickson.com"
+                className="smalltext link email-link"
+              >
+                hi@dennisdickson.com
                 <svg
                   width={16}
                   height={16}
@@ -108,406 +227,324 @@ const IndexPage = (props) => {
                   />
                 </svg>
               </a>
-              <a
-                href="https://dribbble.com/psybuglite"
-                className="d-blk prefix suffix is-wider p-h social-link hover-outline ff-aquire link"
-                title="Dribbble"
-              >
-                DR
-                <svg
-                  width={16}
-                  height={16}
-                  viewBox="0 0 16 16"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M4.66669 11.3333L11.3334 4.66666"
-                    stroke="#A5A5A5"
-                    strokeWidth="0.666667"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                  <path
-                    d="M4.66669 4.66666H11.3334V11.3333"
-                    stroke="#A5A5A5"
-                    strokeWidth="0.666667"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
-              </a>
-              <a
-                href="https://twitter.com/psybuglite"
-                className="d-blk suffix is-wider p-h social-link hover-outline ff-aquire link"
-                title="Twitter"
-              >
-                TW
-                <svg
-                  width={16}
-                  height={16}
-                  viewBox="0 0 16 16"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M4.66669 11.3333L11.3334 4.66666"
-                    stroke="#A5A5A5"
-                    strokeWidth="0.666667"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                  <path
-                    d="M4.66669 4.66666H11.3334V11.3333"
-                    stroke="#A5A5A5"
-                    strokeWidth="0.666667"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
-              </a>
             </div>
           </div>
-        </section>
-        {/* End of Hero */}
+        </div>
+      </section>
+      {/* End of About Me */}
 
-        {/* Beginning of About Me */}
-        <section className="main-wrap mx-auto pos-r">
-          <div className="section-wrapper-y will-grow d-flx flex-dir-col j-c-c wrapper-x">
-            <div className="grid-2 wrapper-y will-grow">
-              <p className="largetext stripes">
-                At the core, I combine business logic and design to create a
-                user-facing product. In order to successfully achieve this, I
-                focus on generating quality user experience with modern and
-                accessible user interfaces that help to meet business
-                requirements.
+      {/* Beginning of What I Do */}
+      <section className="main-wrap mx-auto pos-r section-wrapper-y will-grow">
+        <div className="wrapper-x">
+          <h2 className="sectionhead-text tx-c mb-3">What I Do</h2>
+          <div className="grid is-multi-col mostly-3 wrapper-y will-grow">
+            <div className="d-flx flex-dir-col al-i-c">
+              <svg
+                width={50}
+                height={50}
+                viewBox="0 0 50 50"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect width={50} height={50} fill="#0F52BA" />
+              </svg>
+              <h3 className="largetext ff-aquire co-white tx-c mt-3">
+                UI/UX &amp; <br /> Product Design
+              </h3>
+              <p className="mt-1 tx-c">
+                For the past couple of years, I have been teaming up with
+                creative teams, from web startups to industries to help build
+                their brand &amp; website.
               </p>
-              <div className="email-grid">
-                <a
-                  href="mailto:hi@dennisdickson.com"
-                  className="smalltext link email-link"
+            </div>
+            <div className="d-flx flex-dir-col al-i-c">
+              <svg
+                width={50}
+                height={50}
+                viewBox="0 0 50 50"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect width={50} height={50} fill="#0F52BA" />
+              </svg>
+              <h3 className="largetext ff-aquire co-white tx-c mt-3">
+                Mobile App <br />
+                Development
+              </h3>
+              <p className="mt-1 tx-c">
+                For the past couple of years, I have been teaming up with
+                creative teams, from web startups to industries to help build
+                their brand &amp; website.
+              </p>
+            </div>
+            <div className="d-flx flex-dir-col al-i-c">
+              <svg
+                width={50}
+                height={50}
+                viewBox="0 0 50 50"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect width={50} height={50} fill="#0F52BA" />
+              </svg>
+              <h3 className="largetext ff-aquire co-white tx-c mt-3">
+                Frontend <br />
+                Development
+              </h3>
+              <p className="mt-1 tx-c">
+                For the past couple of years, I have been teaming up with
+                creative teams, from web startups to industries to help build
+                their brand &amp; website.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* End of What I Do */}
+
+      {/* Beginning of Featured Work */}
+      <section className="main-wrap mx-auto pos-r section-wrapper-y will-grow mb-3">
+        <div className="wrapper-x">
+          <h2 className="sectionhead-text tx-c mb-3">
+            <span className="work-left-span d-ibl">Featured</span> <br />
+            <span className="work-right-span d-ibl">Work</span>
+          </h2>
+          <div className="wrapper-y will-grow">
+            <div className="slide-project wrapper-y will-grow project-item">
+              <div className="project-feature-image bg-brandblue desired-height-1qtr">
+                <Img
+                  imgStyle={{ objectFit: "cover" }}
+                  style={{ height: "100%" }}
+                  fluid={props.data.payflowFeature.childImageSharp.fluid}
+                  alt=""
+                />
+              </div>
+              <div>
+                <p className="largetext co-white ff-aquire">Payflow</p>
+                <p className="mediumtext">
+                  <span className="">FinTech</span> <br />
+                  <span className="">Product Design</span>
+                </p>
+                <Link
+                  className="co-sweetblue d-ibl py-1 link"
+                  to="/work/payflow"
                 >
-                  hi@dennisdickson.com
-                  <svg
-                    width={16}
-                    height={16}
-                    viewBox="0 0 16 16"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M4.66669 11.3333L11.3334 4.66666"
-                      stroke="#A5A5A5"
-                      strokeWidth="0.666667"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                    <path
-                      d="M4.66669 4.66666H11.3334V11.3333"
-                      stroke="#A5A5A5"
-                      strokeWidth="0.666667"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                  </svg>
-                </a>
+                  View Project
+                </Link>
+              </div>
+            </div>
+
+            <div className="slide-project wrapper-y will-grow project-item">
+              <div className="project-feature-image bg-brandblue desired-height-1qtr">
+                <Img
+                  imgStyle={{ objectFit: "cover" }}
+                  style={{ height: "100%" }}
+                  fluid={props.data.ajooFeature.childImageSharp.fluid}
+                  alt=""
+                />
+              </div>
+              <div>
+                <p className="largetext co-white ff-aquire">Ajoo</p>
+                <p className="mediumtext">
+                  <span className="">Crowdfunding</span> <br />
+                  <span className="">Website Design</span>
+                </p>
+                <Link className="co-sweetblue d-ibl py-1 link" to="/work/fccpc">
+                  View Project
+                </Link>
+              </div>
+            </div>
+
+            <div className="slide-project wrapper-y will-grow project-item">
+              <div className="project-feature-image bg-brandblue desired-height-1qtr">
+                <Img
+                  imgStyle={{ objectFit: "cover" }}
+                  style={{ height: "100%" }}
+                  fluid={props.data.festivesaveFeature.childImageSharp.fluid}
+                  alt=""
+                />
+              </div>
+              <div>
+                <p className="largetext co-white ff-aquire">Festivesave</p>
+                <p className="mediumtext">
+                  <span className="">FinTech</span>
+                  <br />
+                  <span className="">Product Design</span>
+                </p>
+                <Link
+                  className="co-sweetblue d-ibl py-1 link"
+                  to="/work/festivesave"
+                >
+                  View Project
+                </Link>
               </div>
             </div>
           </div>
-        </section>
-        {/* End of About Me */}
+        </div>
+      </section>
+      {/* End of Featured Work */}
 
-        {/* Beginning of What I Do */}
-        <section className="main-wrap mx-auto pos-r section-wrapper-y will-grow">
-          <div className="wrapper-x">
-            <h2 className="sectionhead-text tx-c mb-3">What I Do</h2>
-            <div className="grid is-multi-col mostly-3 wrapper-y will-grow">
-              <div className="d-flx flex-dir-col al-i-c">
-                <svg width={50} height={50} viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect width={50} height={50} fill="#0F52BA" />
-                </svg>
-                <h3 className="largetext ff-aquire co-white tx-c mt-3">
-                  UI/UX &amp; <br /> Product Design
-                </h3>
-                <p className="mt-1 tx-c">
-                  For the past couple of years, I have been teaming up with
-                  creative teams, from web startups to industries to help build
-                  their brand &amp; website.
-                </p>
+      {/* Beginning of Trusted Clients */}
+      <section className="main-wrap mx-auto pos-r trust-height section-wrapper-y wrapper-x will-grow mb-3">
+        <div className="">
+          <h2 className="sectionhead-text trust tx-c m-0">Trusted By</h2>
+          <div className="brand-grid pos-a w-100 a-top">
+            <div className="brand-area d-flx flex-dir-col al-i-c j-c-c">
+              <div className="brand-icon">
+                <img src={future} alt="future" />
               </div>
-              <div className="d-flx flex-dir-col al-i-c">
-                <svg width={50} height={50} viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect width={50} height={50} fill="#0F52BA" />
-                </svg>
-                <h3 className="largetext ff-aquire co-white tx-c mt-3">
-                  Mobile App <br />
-                  Development
-                </h3>
-                <p className="mt-1 tx-c">
-                  For the past couple of years, I have been teaming up with
-                  creative teams, from web startups to industries to help build
-                  their brand &amp; website.
-                </p>
-              </div>
-              <div className="d-flx flex-dir-col al-i-c">
-                <svg width={50} height={50} viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect width={50} height={50} fill="#0F52BA" />
-                </svg>
-                <h3 className="largetext ff-aquire co-white tx-c mt-3">
-                  Frontend <br />
-                  Development
-                </h3>
-                <p className="mt-1 tx-c">
-                  For the past couple of years, I have been teaming up with
-                  creative teams, from web startups to industries to help build
-                  their brand &amp; website.
-                </p>
-              </div>
+              <p className="smalltext tx-c ff-aquire co-white mt-1">
+                Future Technology
+              </p>
             </div>
-          </div>
-        </section>
-        {/* End of What I Do */}
-
-        {/* Beginning of Featured Work */}
-        <section className="main-wrap mx-auto pos-r section-wrapper-y will-grow mb-3">
-          <div className="wrapper-x">
-            <h2 className="sectionhead-text tx-c mb-3">
-              <span className="work-left-span d-ibl">Featured</span> <br />
-              <span className="work-right-span d-ibl">Work</span>
-            </h2>
-            <div className="wrapper-y will-grow">
-              <div className="slide-project wrapper-y will-grow project-item">
-                <div className="project-feature-image bg-brandblue desired-height-1qtr">
-                  <Img 
-                    imgStyle={{objectFit: 'cover'}}
-                    style={{height: "100%"}}
-                    fluid={props.data.payflowFeature.childImageSharp.fluid} 
-                    alt=""
-                  />
-                </div>
-                <div>
-                  <p className="largetext co-white ff-aquire">Payflow</p>
-                  <p className="mediumtext">
-                    <span className="">FinTech</span>  <br/>
-                    <span className="">Product Design</span>
-                  </p>
-                  <Link className="co-sweetblue d-ibl py-1 link" to="/work/payflow">
-                    View Project
-                  </Link>
-                </div>
+            <div className="brand-area d-flx flex-dir-col al-i-c j-c-c">
+              <div className="brand-icon">
+                <img src={zoafia} alt="zoafia" />
               </div>
-
-              <div className="slide-project wrapper-y will-grow project-item">
-                <div className="project-feature-image bg-brandblue desired-height-1qtr">
-                  <Img 
-                    imgStyle={{objectFit: 'cover'}}
-                    style={{height: "100%"}}
-                    fluid={props.data.ajooFeature.childImageSharp.fluid} 
-                    alt=""
-                  />
-                </div>
-                <div>
-                  <p className="largetext co-white ff-aquire">Ajoo</p>
-                  <p className="mediumtext">
-                    <span className="">Crowdfunding</span>  <br/>
-                    <span className="">Website Design</span>
-                  </p>
-                  <Link className="co-sweetblue d-ibl py-1 link" to="/work/fccpc">
-                    View Project
-                  </Link>
-                </div>
-              </div>
-
-              <div className="slide-project wrapper-y will-grow project-item">
-                <div className="project-feature-image bg-brandblue desired-height-1qtr">
-                  <Img 
-                    imgStyle={{objectFit: 'cover'}}
-                    style={{height: "100%"}}
-                    fluid={props.data.festivesaveFeature.childImageSharp.fluid} 
-                    alt=""
-                  />
-                </div>
-                <div>
-                  <p className="largetext co-white ff-aquire">Festivesave</p>
-                  <p className="mediumtext">
-                    <span className="">FinTech</span><br/>
-                    <span className="">Product Design</span>
-                  </p>
-                  <Link className="co-sweetblue d-ibl py-1 link" to="/work/festivesave">
-                    View Project
-                  </Link>
-                </div>
-              </div>
-
+              <p className="smalltext tx-c ff-aquire co-white mt-1">Zoafia</p>
             </div>
+            <div className="brand-area d-flx flex-dir-col al-i-c j-c-c">
+              <div className="brand-icon">
+                <img src={cns} alt="cns" />
+              </div>
+              <p className="smalltext tx-c ff-aquire co-white mt-1">
+                CNS-Marine Nigeria
+              </p>
+            </div>
+            <div className="brand-area d-flx flex-dir-col al-i-c j-c-c">
+              <div className="brand-icon">
+                <img src={fluidcoins} alt="fluidcoins" />
+              </div>
+              <p className="smalltext tx-c ff-aquire co-white mt-1">
+                Fluidcoins
+              </p>
+            </div>
+            <div className="brand-area d-flx flex-dir-col al-i-c j-c-c">
+              <div className="brand-icon">
+                <img src={arq} alt="arq" />
+              </div>
+              <p className="smalltext tx-c ff-aquire co-white mt-1">
+                ARQ Dev. Corp.
+              </p>
+            </div>
+            <div className="brand-area d-flx flex-dir-col al-i-c j-c-c">
+              <div className="brand-icon">
+                <img src={prodevs} alt="prodevs" />
+              </div>
+              <p className="smalltext tx-c ff-aquire co-white mt-1">ProDevs</p>
+            </div>
+            <div className="brand-area d-flx flex-dir-col al-i-c j-c-c">
+              <div className="brand-icon">
+                <img src={secura} alt="secura" />
+              </div>
+              <p className="smalltext tx-c ff-aquire co-white mt-1">Secura</p>
+            </div>
+            <div className="brand-area bg-primary"></div>
           </div>
-        </section>
-        {/* End of Featured Work */}
+        </div>
+      </section>
+      {/* End of Trusted Clients */}
 
-        {/* Beginning of Trusted Clients */}
-        <section className="main-wrap mx-auto pos-r trust-height section-wrapper-y wrapper-x will-grow mb-3">
+      {/* Beginning of UI Stories */}
+      <WritingHome />
+      {/* End of UI Stories */}
+
+      {/* Beginning of FAQs */}
+      <section className="main-wrap mx-auto pos-r section-wrapper-y will-grow mb-3">
+        <div className="wrapper-x">
           <div className="">
-            <h2 className="sectionhead-text trust tx-c m-0">Trusted By</h2>
-            <div className="brand-grid pos-a w-100 a-top">
-              <div className="brand-area d-flx flex-dir-col al-i-c j-c-c">
-                <div className="brand-icon">
-                  <img src={future} alt="future" />
-                </div>
-                <p className="smalltext tx-c ff-aquire co-white mt-1">
-                  Future Technology
-                </p>
-              </div>
-              <div className="brand-area d-flx flex-dir-col al-i-c j-c-c">
-                <div className="brand-icon">
-                  <img src={zoafia} alt="zoafia" />
-                </div>
-                <p className="smalltext tx-c ff-aquire co-white mt-1">Zoafia</p>
-              </div>
-              <div className="brand-area d-flx flex-dir-col al-i-c j-c-c">
-                <div className="brand-icon">
-                  <img src={cns} alt="cns" />
-                </div>
-                <p className="smalltext tx-c ff-aquire co-white mt-1">
-                  CNS-Marine Nigeria
-                </p>
-              </div>
-              <div className="brand-area d-flx flex-dir-col al-i-c j-c-c">
-                <div className="brand-icon">
-                  <img src={fluidcoins} alt="fluidcoins" />
-                </div>
-                <p className="smalltext tx-c ff-aquire co-white mt-1">
-                  Fluidcoins
-                </p>
-              </div>
-              <div className="brand-area d-flx flex-dir-col al-i-c j-c-c">
-                <div className="brand-icon">
-                  <img src={arq} alt="arq" />
-                </div>
-                <p className="smalltext tx-c ff-aquire co-white mt-1">
-                  ARQ Dev. Corp.
-                </p>
-              </div>
-              <div className="brand-area d-flx flex-dir-col al-i-c j-c-c">
-                <div className="brand-icon">
-                  <img src={prodevs} alt="prodevs" />
-                </div>
-                <p className="smalltext tx-c ff-aquire co-white mt-1">
-                  ProDevs
-                </p>
-              </div>
-              <div className="brand-area d-flx flex-dir-col al-i-c j-c-c">
-                <div className="brand-icon">
-                  <img src={secura} alt="secura" />
-                </div>
-                <p className="smalltext tx-c ff-aquire co-white mt-1">Secura</p>
-              </div>
-              <div className="brand-area bg-primary"></div>
+            <h2 className="sectionhead-text tx-c mb-3">FAQs</h2>
+          </div>
+          <div className="faqs-bg faqs-grid">
+            <div>
+              <h3 className="co-white mb-2">
+                What are you doing in September?
+              </h3>
+              <p>
+                I’m working alongside other designers and engineers creating a
+                design system for Protocoh. Having multiple projects under the
+                same umbrella really needed it. I recommend that you check out{" "}
+                <strong>
+                  <em>
+                    <a
+                      href="https://www.smashingmagazine.com/design-systems-book/"
+                      className="link inline-link"
+                    >
+                      Alla Khomaltova’s book
+                    </a>
+                  </em>
+                </strong>{" "}
+                on Design Systems if you’re new to the topic.{" "}
+              </p>
+            </div>
+            <div>
+              <h3 className="co-white mb-2">
+                What are you doing in September?
+              </h3>
+              <p>
+                I’m working alongside other designers and engineers creating a
+                design system for Protocoh. Having multiple projects under the
+                same umbrella really needed it. I recommend that you check out{" "}
+                <strong>
+                  <em>
+                    <a
+                      href="https://www.smashingmagazine.com/design-systems-book/"
+                      className="link inline-link"
+                    >
+                      Alla Khomaltova’s book
+                    </a>
+                  </em>
+                </strong>{" "}
+                on Design Systems if you’re new to the topic.{" "}
+              </p>
+            </div>
+            <div>
+              <h3 className="co-white mb-2">
+                What are you doing in September?
+              </h3>
+              <p>
+                I’m working alongside other designers and engineers creating a
+                design system for Protocoh. Having multiple projects under the
+                same umbrella really needed it. I recommend that you check out{" "}
+                <strong>
+                  <em>
+                    <a
+                      href="https://www.smashingmagazine.com/design-systems-book/"
+                      className="link inline-link"
+                    >
+                      Alla Khomaltova’s book
+                    </a>
+                  </em>
+                </strong>{" "}
+                on Design Systems if you’re new to the topic.{" "}
+              </p>
+            </div>
+            <div>
+              <h3 className="co-white mb-2">
+                What are you doing in September?
+              </h3>
+              <p>
+                I’m working alongside other designers and engineers creating a
+                design system for Protocoh. Having multiple projects under the
+                same umbrella really needed it. I recommend that you check out{" "}
+                <strong>
+                  <em>
+                    <a
+                      href="https://www.smashingmagazine.com/design-systems-book/"
+                      className="link inline-link"
+                    >
+                      Alla Khomaltova’s book
+                    </a>
+                  </em>
+                </strong>{" "}
+                on Design Systems if you’re new to the topic.{" "}
+              </p>
             </div>
           </div>
-        </section>
-        {/* End of Trusted Clients */}
-
-        {/* Beginning of UI Stories */}
-        <WritingHome />
-        {/* End of UI Stories */}
-
-        {/* Beginning of FAQs */}
-        <section className="main-wrap mx-auto pos-r section-wrapper-y will-grow mb-3">
-          <div className="wrapper-x">
-            <div className="">
-              <h2 className="sectionhead-text tx-c mb-3">FAQs</h2>
-            </div>
-            <div className="faqs-bg faqs-grid">
-              <div>
-                <h3 className="co-white mb-2">
-                  What are you doing in September?
-                </h3>
-                <p>
-                  I’m working alongside other designers and engineers creating a
-                  design system for Protocoh. Having multiple projects under the
-                  same umbrella really needed it. I recommend that you check out{" "}
-                  <strong>
-                    <em>
-                      <a
-                        href="https://www.smashingmagazine.com/design-systems-book/"
-                        className="link inline-link"
-                      >
-                        Alla Khomaltova’s book
-                      </a>
-                    </em>
-                  </strong>{" "}
-                  on Design Systems if you’re new to the topic.{" "}
-                </p>
-              </div>
-              <div>
-                <h3 className="co-white mb-2">
-                  What are you doing in September?
-                </h3>
-                <p>
-                  I’m working alongside other designers and engineers creating a
-                  design system for Protocoh. Having multiple projects under the
-                  same umbrella really needed it. I recommend that you check out{" "}
-                  <strong>
-                    <em>
-                      <a
-                        href="https://www.smashingmagazine.com/design-systems-book/"
-                        className="link inline-link"
-                      >
-                        Alla Khomaltova’s book
-                      </a>
-                    </em>
-                  </strong>{" "}
-                  on Design Systems if you’re new to the topic.{" "}
-                </p>
-              </div>
-              <div>
-                <h3 className="co-white mb-2">
-                  What are you doing in September?
-                </h3>
-                <p>
-                  I’m working alongside other designers and engineers creating a
-                  design system for Protocoh. Having multiple projects under the
-                  same umbrella really needed it. I recommend that you check out{" "}
-                  <strong>
-                    <em>
-                      <a
-                        href="https://www.smashingmagazine.com/design-systems-book/"
-                        className="link inline-link"
-                      >
-                        Alla Khomaltova’s book
-                      </a>
-                    </em>
-                  </strong>{" "}
-                  on Design Systems if you’re new to the topic.{" "}
-                </p>
-              </div>
-              <div>
-                <h3 className="co-white mb-2">
-                  What are you doing in September?
-                </h3>
-                <p>
-                  I’m working alongside other designers and engineers creating a
-                  design system for Protocoh. Having multiple projects under the
-                  same umbrella really needed it. I recommend that you check out{" "}
-                  <strong>
-                    <em>
-                      <a
-                        href="https://www.smashingmagazine.com/design-systems-book/"
-                        className="link inline-link"
-                      >
-                        Alla Khomaltova’s book
-                      </a>
-                    </em>
-                  </strong>{" "}
-                  on Design Systems if you’re new to the topic.{" "}
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-        {/* End of FAQs */}
-      </PageTransition>
-    </Layout>
+        </div>
+      </section>
+      {/* End of FAQs */}
+    </>
   )
 }
 
@@ -529,7 +566,9 @@ export const pageQuery = graphql`
         }
       }
     }
-    festivesaveFeature: file(relativePath: { eq: "festivesave-feature-image.png" }) {
+    festivesaveFeature: file(
+      relativePath: { eq: "festivesave-feature-image.png" }
+    ) {
       childImageSharp {
         fluid(maxHeight: 400) {
           ...GatsbyImageSharpFluid

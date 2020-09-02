@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 import SimplexNoise from "simplex-noise"
 import paper from "paper-jsdom-canvas"
-
+import {AnimateSharedLayout} from "framer-motion"
 import Header from "./header"
 import Footer from "./footer"
 import "../sass/style.sass"
@@ -218,9 +218,11 @@ const Layout = ({ children }) => {
             <canvas className="cursor cursor--canvas"></canvas>
             <div className="scroll">
               <Header siteTitle={data.site.siteMetadata.title} />
-                <main className="">
-                  {children}
-                </main>
+                <AnimateSharedLayout type="crossfade">
+                  <main className="">
+                    {children}
+                  </main>
+                </AnimateSharedLayout>
               <Footer />
             </div>
           </div>
