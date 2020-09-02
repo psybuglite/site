@@ -1,17 +1,24 @@
-import React from "react"
+import React, {useEffect} from "react"
 import { Link, graphql } from "gatsby"
 import Img from "gatsby-image"
 import SEO from "../components/seo"
 import { motion, AnimatePresence } from "framer-motion"
+import gsap from "gsap/all"
 
 const Work = props => {
+  useEffect(() => {
+    const workTl = gsap.timeline()
+    workTl.to(".work-heading", { opacity: 1, y: 0, duration: 0.5, delay: 0.2 })
+    workTl.to(".project", { opacity: 1, y: 0, duration: 0.5, stagger: 0.3 })
+  }, [])
+
   return (
     <>
       <SEO title="Work" />
       <section className="width-100-pc page-padding will-grow">
         <div className="main-wrap mx-auto wrapper-x">
           <h2 className="sectionhead-text d-flx j-c-c tx-c mb-3 block-parent w-100">
-            <span className="">
+            <span className="work-heading ">
               Work
             </span>
             <AnimatePresence>
@@ -30,7 +37,7 @@ const Work = props => {
             </AnimatePresence>
           </h2>
           <div className="wrapper-y will-grow">
-            <div className="slide-project wrapper-y will-grow project-item">
+            <div className="slide-project wrapper-y will-grow project project-item">
               <div className="project-feature-image bg-brandblue desired-height-1qtr">
                 <Img
                   imgStyle={{ objectFit: "cover" }}
@@ -54,7 +61,7 @@ const Work = props => {
               </div>
             </div>
 
-            <div className="slide-project wrapper-y will-grow project-item">
+            <div className="slide-project wrapper-y will-grow project project-item">
               <div className="project-feature-image bg-brandblue desired-height-1qtr">
                 <Img
                   imgStyle={{ objectFit: "cover" }}
@@ -77,7 +84,7 @@ const Work = props => {
               </div>
             </div>
 
-            <div className="slide-project wrapper-y will-grow project-item">
+            <div className="slide-project wrapper-y will-grow project project-item">
               <div className="project-feature-image bg-brandblue desired-height-1qtr">
                 <Img
                   imgStyle={{ objectFit: "cover" }}
@@ -102,7 +109,7 @@ const Work = props => {
               </div>
             </div>
 
-            <div className="slide-project wrapper-y will-grow project-item">
+            <div className="slide-project wrapper-y will-grow project project-item">
               <div className="project-feature-image bg-brandblue desired-height-1qtr">
                 <Img
                   imgStyle={{ objectFit: "cover" }}
@@ -123,7 +130,7 @@ const Work = props => {
               </div>
             </div>
 
-            <div className="slide-project wrapper-y will-grow project-item">
+            <div className="slide-project wrapper-y will-grow project project-item">
               <div className="project-feature-image bg-brandblue desired-height-1qtr">
                 <Img
                   imgStyle={{ objectFit: "cover" }}
@@ -147,7 +154,7 @@ const Work = props => {
               </div>
             </div>
 
-            <div className="slide-project wrapper-y will-grow project-item">
+            <div className="slide-project wrapper-y will-grow project project-item">
               <div className="project-feature-image bg-brandblue desired-height-1qtr">
                 <Img
                   imgStyle={{ objectFit: "cover" }}

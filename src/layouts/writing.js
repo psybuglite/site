@@ -1,12 +1,19 @@
-import React from "react"
+import React, {useEffect} from "react"
 import { Link } from "gatsby"
 import { graphql } from "gatsby"
 import kebabCase from "lodash/kebabCase"
 import SEO from "../components/seo"
 import Img from "gatsby-image"
 import { motion, AnimatePresence } from "framer-motion"
+import gsap from "gsap/all"
 
 const Writing = ({ data, pageContext }) => {
+  useEffect(() => {
+    const writingTl = gsap.timeline()
+    writingTl.to(".writing-heading", { opacity: 1, y: 0, duration: 0.5, delay: 0.2 })
+    writingTl.to(".article-item", { opacity: 1, y: 0, duration: 0.5, stagger: 0.3 })
+  }, [])
+
   const posts = data.allMarkdownRemark.edges
   var allTags = []
   const { currentPage, numPages } = pageContext
@@ -57,7 +64,7 @@ const Writing = ({ data, pageContext }) => {
                 }}
               ></motion.span>
             </AnimatePresence>
-            <span className="">
+            <span className="writing-heading">
               UI Stories
             </span>
           </h2>
@@ -68,7 +75,7 @@ const Writing = ({ data, pageContext }) => {
                 .map(({ node: post }) => {
                   let featuredimage = post.frontmatter.featimage
                   return (
-                    <li className="article wrapper-y mb-2" key={post.id}>
+                    <li className="article article-item wrapper-y mb-2" key={post.id}>
                       <div className="article-image">
                         {featuredimage && (
                           <Img

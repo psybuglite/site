@@ -1,8 +1,16 @@
-import React from "react"
+import React, {useEffect} from "react"
 import SEO from "../components/seo"
 import { motion, AnimatePresence } from "framer-motion"
+import gsap from "gsap/all"
 
-const About = () => (
+const About = () => {
+  useEffect(() => {
+    const aboutTl = gsap.timeline()
+    aboutTl.to(".about-image", { opacity: 1, y: 0, duration: 0.5, delay: 0.2})
+    aboutTl.to(".about-text", { opacity: 1, y: 0, duration: 0.5 })
+  }, [])
+
+  return(
   <>
     <SEO title="About" />
     <section className="width-100-pc page-padding will-grow">
@@ -25,29 +33,32 @@ const About = () => (
               }}
             ></motion.span>
           </AnimatePresence>
-          <p>
-            I’m a design-minded front-end developer. Sometimes people who do
-            what I do are also called front-end designers, UI developers, UI
-            engineers, or design engineers.
-          </p>
-          <p>
-            As a [choose one of the above titles], I work on the front-end of
-            the front-end. That is, my work lies at the intersection of design
-            and back-end.
-          </p>
-          <p>
-            I collaborate with designers — preferrably in the design phase — to
-            translate designs into live UIs and functional prototypes. As a
-            design engineer, I provide feedback to designers to ensure that the
-            design translates well to the browser, ensuring usability of the
-            product by as many people as possible, regardless of their context
-            and how they use it (screen readers, mobile phones, various
-            browsers, etc.)
-          </p>
+          <div className="about-text">
+            <p>
+              I’m a design-minded front-end developer. Sometimes people who do
+              what I do are also called front-end designers, UI developers, UI
+              engineers, or design engineers.
+            </p>
+            <p>
+              As a [choose one of the above titles], I work on the front-end of
+              the front-end. That is, my work lies at the intersection of design
+              and back-end.
+            </p>
+            <p>
+              I collaborate with designers — preferrably in the design phase — to
+              translate designs into live UIs and functional prototypes. As a
+              design engineer, I provide feedback to designers to ensure that the
+              design translates well to the browser, ensuring usability of the
+              product by as many people as possible, regardless of their context
+              and how they use it (screen readers, mobile phones, various
+              browsers, etc.)
+            </p>
+          </div>
         </div>
       </div>
     </section>
   </>
 )
+}
 
 export default About

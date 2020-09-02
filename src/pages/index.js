@@ -22,9 +22,9 @@ if (typeof window !== `undefined`) {
 const IndexPage = props => {
   useEffect(() => {
     const indexTl = gsap.timeline()
-    indexTl.to(".greeting", { opacity: 1, x: 0, duration: 0.3, delay: 0.3})
-    indexTl.to(".very-large-text", { opacity: 1, x: 0, duration: 0.3 })
-    indexTl.to(".hero-text", { opacity: 1, x: 0, duration: 0.3 })
+    indexTl.to(".greeting", { opacity: 1, x: 0, duration: 0.3, delay: 0.2})
+    indexTl.to(".very-large-text", { opacity: 1, x: 0, duration: 0.2 })
+    indexTl.to(".hero-text", { opacity: 1, x: 0, duration: 0.2 })
     indexTl.to(".social-links a", {
       opacity: 1,
       y: 0,
@@ -453,52 +453,7 @@ const IndexPage = props => {
       {/* Beginning of FAQs */}
       <section className="main-wrap mx-auto pos-r section-wrapper-y will-grow mb-3">
         <div className="wrapper-x">
-          <div className="">
-            <h2 className="sectionhead-text tx-c mb-3">FAQs</h2>
-          </div>
           <div className="faqs-bg faqs-grid">
-            <div>
-              <h3 className="co-white mb-2">
-                What are you doing in September?
-              </h3>
-              <p>
-                I’m working alongside other designers and engineers creating a
-                design system for Protocoh. Having multiple projects under the
-                same umbrella really needed it. I recommend that you check out{" "}
-                <strong>
-                  <em>
-                    <a
-                      href="https://www.smashingmagazine.com/design-systems-book/"
-                      className="link inline-link"
-                    >
-                      Alla Khomaltova’s book
-                    </a>
-                  </em>
-                </strong>{" "}
-                on Design Systems if you’re new to the topic.{" "}
-              </p>
-            </div>
-            <div>
-              <h3 className="co-white mb-2">
-                What are you doing in September?
-              </h3>
-              <p>
-                I’m working alongside other designers and engineers creating a
-                design system for Protocoh. Having multiple projects under the
-                same umbrella really needed it. I recommend that you check out{" "}
-                <strong>
-                  <em>
-                    <a
-                      href="https://www.smashingmagazine.com/design-systems-book/"
-                      className="link inline-link"
-                    >
-                      Alla Khomaltova’s book
-                    </a>
-                  </em>
-                </strong>{" "}
-                on Design Systems if you’re new to the topic.{" "}
-              </p>
-            </div>
             <div>
               <h3 className="co-white mb-2">
                 What are you doing in September?
