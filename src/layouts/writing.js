@@ -4,6 +4,7 @@ import { graphql } from "gatsby"
 import kebabCase from "lodash/kebabCase"
 import SEO from "../components/seo"
 import Img from "gatsby-image"
+import { motion, AnimatePresence } from "framer-motion"
 
 const Writing = ({ data, pageContext }) => {
   const posts = data.allMarkdownRemark.edges
@@ -41,7 +42,25 @@ const Writing = ({ data, pageContext }) => {
       <SEO title="Writing" />
       <section className="width-100-pc page-padding will-grow">
         <div className="main-wrap mx-auto">
-          <h2 className="sectionhead-text tx-c mb-3">UI Stories</h2>
+        <h2 className="sectionhead-text d-flx j-c-c tx-c mb-3 block-parent w-100">
+            <AnimatePresence>
+              <motion.span
+                layoutId="block"
+                layout
+                className="blue-block"
+                style={{
+                  display: `inline-block`,
+                  backgroundColor: `#0F52BA`,
+                  height: `50px`,
+                  width: `50px`,
+                  marginRight: `16px`
+                }}
+              ></motion.span>
+            </AnimatePresence>
+            <span className="">
+              UI Stories
+            </span>
+          </h2>
           <div className="wrapper">
             <ul className="none">
               {posts

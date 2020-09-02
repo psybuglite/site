@@ -2,6 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import { Link, graphql } from "gatsby"
 import SEO from "../components/seo"
+import { motion, AnimatePresence } from "framer-motion"
 
 const Tags = ({ pageContext, data }) => {
   const { tag } = pageContext
@@ -16,6 +17,19 @@ const Tags = ({ pageContext, data }) => {
       <section className="width-100-pc page-padding">
         <div className=" maxwidth-sl wrapper-x clearfix writing-m-top mx-auto">
           <div className="left-70">
+            <AnimatePresence>
+              <motion.span
+                layoutId="block"
+                layout
+                className="blue-block"
+                style={{
+                  display: `inline-block`,
+                  backgroundColor: `#0F52BA`,
+                  height: `50px`,
+                  width: `50px`
+                }}
+              ></motion.span>
+            </AnimatePresence>
             <h2 className="py-2 largetext">{tagHeader}</h2>
             <ul className="none">
               {edges.map(({ node }) => {
@@ -34,7 +48,7 @@ const Tags = ({ pageContext, data }) => {
               })}
             </ul>
             <div className="py-2">
-              <Link to="/tags" className="co-white linl">
+              <Link to="/tags" className="co-sweetblue link">
                 All tags
               </Link>
             </div>

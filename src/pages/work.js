@@ -2,6 +2,7 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 import Img from "gatsby-image"
 import SEO from "../components/seo"
+import { motion, AnimatePresence } from "framer-motion"
 
 const Work = props => {
   return (
@@ -9,7 +10,25 @@ const Work = props => {
       <SEO title="Work" />
       <section className="width-100-pc page-padding will-grow">
         <div className="main-wrap mx-auto wrapper-x">
-          <h2 className="sectionhead-text tx-c mb-3">Work</h2>
+          <h2 className="sectionhead-text d-flx j-c-c tx-c mb-3 block-parent w-100">
+            <span className="">
+              Work
+            </span>
+            <AnimatePresence>
+              <motion.span
+                layoutId="block"
+                layout
+                className="blue-block"
+                style={{
+                  display: `inline-block`,
+                  backgroundColor: `#0F52BA`,
+                  height: `50px`,
+                  width: `50px`,
+                  marginLeft: `16px`
+                }}
+              ></motion.span>
+            </AnimatePresence>
+          </h2>
           <div className="wrapper-y will-grow">
             <div className="slide-project wrapper-y will-grow project-item">
               <div className="project-feature-image bg-brandblue desired-height-1qtr">

@@ -1,6 +1,7 @@
 import React from "react"
 import { Helmet } from "react-helmet"
 import { graphql, Link } from "gatsby"
+import { motion, AnimatePresence } from "framer-motion"
 import Img from "gatsby-image"
 import { defineCustomElements as deckDeckGoHighlightElement } from "@deckdeckgo/highlight-code/dist/loader"
 deckDeckGoHighlightElement()
@@ -23,11 +24,26 @@ export default function Template({ pageContext, data }) {
               />
             )}
           </div>
-          <div className="maxwidth-sl mx-auto">
-            <h2 className="mt-0 largertext co-white fw-normal">
-              {post.frontmatter.title}
-            </h2>
-            <span className="fw-bold picotext">{post.frontmatter.date}</span>
+          <div className="maxwidth-sl mx-auto d-flx j-c-sb">
+            <div>
+              <h2 className="mt-0 largertext co-white fw-normal">
+                {post.frontmatter.title}
+              </h2>
+              <span className="fw-bold picotext">{post.frontmatter.date}</span>
+            </div>
+            <AnimatePresence>
+              <motion.span
+                layoutId="block"
+                layout
+                className="blue-block"
+                style={{
+                  display: `inline-block`,
+                  backgroundColor: `#0F52BA`,
+                  height: `50px`,
+                  width: `50px`
+                }}
+              ></motion.span>
+            </AnimatePresence>
           </div>
           <article
             className="wrapper-y will-grow articletext article-content"

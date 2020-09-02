@@ -10,9 +10,10 @@ const About = () => (
         <div className="about-image"></div>
         <div className="about-content block-parent mediumtext">
           <AnimatePresence>
-            <motion.div
+            <motion.span
               layoutId="block"
               layout
+              className="blue-block"
               style={{
                 position: `absolute`,
                 display: `inline-block`,
@@ -22,7 +23,7 @@ const About = () => (
                 top: `0px`,
                 left: `0px`,
               }}
-            ></motion.div>
+            ></motion.span>
           </AnimatePresence>
           <p>
             I’m a design-minded front-end developer. Sometimes people who do

@@ -22,12 +22,12 @@ if (typeof window !== `undefined`) {
 const IndexPage = props => {
   useEffect(() => {
     const indexTl = gsap.timeline()
-    indexTl.from(".greeting", { opacity: 0, x: 100, duration: 0.3})
-    indexTl.from(".very-large-text", { opacity: 0, x: 100, duration: 0.3 })
-    indexTl.from(".hero-text", { opacity: 0, x: 100, duration: 0.3 })
-    indexTl.from(".social-links a", {
-      opacity: 0,
-      y: 50,
+    indexTl.to(".greeting", { opacity: 1, x: 0, duration: 0.3, delay: 0.3})
+    indexTl.to(".very-large-text", { opacity: 1, x: 0, duration: 0.3 })
+    indexTl.to(".hero-text", { opacity: 1, x: 0, duration: 0.3 })
+    indexTl.to(".social-links a", {
+      opacity: 1,
+      y: 0,
       stagger: 0.2,
       duration: 0.3,
     })
@@ -64,26 +64,28 @@ const IndexPage = props => {
       {/* Beginning of Hero */}
       <section className="main-wrap mx-auto pos-r">
         <div className="min-height-100-vh d-flx flex-dir-col j-c-c wrapper-x">
-          <div className="d-flx flex-dir-col j-c-c offset-hero block-parent">
-            <AnimatePresence>
-              <motion.div
-                layoutId="block"
-                layout
-                style={{
-                  position: `absolute`,
-                  display: `inline-block`,
-                  backgroundColor: `#0F52BA`,
-                  height: `50px`,
-                  width: `50px`,
-                  top: `0px`,
-                  right: `50px`,
-                }}
-              ></motion.div>
-            </AnimatePresence>
+          <div className="d-flx flex-dir-col j-c-c offset-hero">
             <p className="largetext mb-0 greeting">
               Hello. I’m Dennis Dickson.
             </p>
-            <h1 className="very-large-text co-white ff-aquire">UI Engineer</h1>
+            <div className="d-flx block-parent">
+              <h1 className="very-large-text block-parent co-white d-ibl ff-aquire">
+                UI Engineer
+              </h1>
+              <AnimatePresence>
+                <motion.span
+                  layoutId="block"
+                  layout
+                  className="blue-block"
+                  style={{
+                    display: `inline-block`,
+                    backgroundColor: `#0F52BA`,
+                    height: `50px`,
+                    width: `50px`
+                  }}
+                ></motion.span>
+              </AnimatePresence>
+            </div>
             <p className="maxwidth-tb hero-text mediumtext">
               Egestas semper lorem sit quis vestibulum nulla sit quis. At
               aliquam, arcu scelerisque cursus. Amet cursus risus libero, id

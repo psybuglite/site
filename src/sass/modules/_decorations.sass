@@ -137,22 +137,23 @@
   @media #{$smallup}
     top: 200px
 
+.greeting
+  opacity: 0
+  transform: translateX(200px)
+.very-large-text
+  opacity: 0
+  transform: translateX(200px)
+.hero-text
+  opacity: 0
+  transform: translateX(200px)
+.social-links a
+  opacity: 0
+  transform: translateY(50px)
+
 .block-parent
   position: relative
   display: inline-block
-  .home-block
-    position: absolute
-    display: inline-block
-    background-color: $primarycolor
-    height: 50px
-    width: 50px
-    top: 0px
-    right: -50px
-  .about-block
-    position: absolute
-    display: inline-block
-    background-color: $primarycolor
-    height: 50px
-    width: 50px
-    top: 0px
-    left: 0px
+
+.blue-block
+  @media #{$smalldown}
+    display: none !important

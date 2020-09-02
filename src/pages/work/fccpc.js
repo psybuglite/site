@@ -1,6 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
+import { motion, AnimatePresence } from "framer-motion"
 
 const Fccpc = props => {
   return (
@@ -20,6 +21,19 @@ const Fccpc = props => {
               <h2 className="largertext mt-0 co-white ff-aquire">fccpc</h2>
               <p className="mediumtext co-primary">SAAS</p>
               <p className="smalltext">Website Design</p>
+              <AnimatePresence>
+                <motion.span
+                  layoutId="block"
+                  layout
+                  className="blue-block"
+                  style={{
+                    display: `inline-block`,
+                    backgroundColor: `#0F52BA`,
+                    height: `50px`,
+                    width: `50px`
+                  }}
+                ></motion.span>
+              </AnimatePresence>
             </div>
             <div>
               <p>

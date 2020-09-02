@@ -3,6 +3,7 @@ import PropTypes from "prop-types"
 import kebabCase from "lodash/kebabCase"
 import { Link, graphql } from "gatsby"
 import SEO from "../components/seo"
+import { motion, AnimatePresence } from "framer-motion"
 
 const TagsPage = ({
   data: {
@@ -13,6 +14,19 @@ const TagsPage = ({
     <SEO title="Tags | Tonye Dickson | Frontend Designer and Developer." />
     <section className="width-100-pc page-padding">
       <div className=" maxwidth-sl desired-height-1qtr wrapper-x writing-m-top mx-auto">
+        <AnimatePresence>
+          <motion.span
+            layoutId="block"
+            layout
+            className="blue-block"
+            style={{
+              display: `inline-block`,
+              backgroundColor: `#0F52BA`,
+              height: `50px`,
+              width: `50px`
+            }}
+          ></motion.span>
+        </AnimatePresence>
         <h2 className="py-2">All tags</h2>
         <ul className="none fw-bold">
           {group.map(tag => (

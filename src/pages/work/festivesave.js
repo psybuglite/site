@@ -1,6 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
+import { motion, AnimatePresence } from "framer-motion"
 
 const Festivesave = props => {
   return (
@@ -22,6 +23,19 @@ const Festivesave = props => {
               </h2>
               <p className="mediumtext co-primary">SAAS</p>
               <p className="mediumtext">Mobile App Design</p>
+              <AnimatePresence>
+                <motion.span
+                  layoutId="block"
+                  layout
+                  className="blue-block"
+                  style={{
+                    display: `inline-block`,
+                    backgroundColor: `#0F52BA`,
+                    height: `50px`,
+                    width: `50px`
+                  }}
+                ></motion.span>
+              </AnimatePresence>
             </div>
             <div>
               <p>

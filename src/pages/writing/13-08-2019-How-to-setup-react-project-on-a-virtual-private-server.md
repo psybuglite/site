@@ -34,7 +34,7 @@ ssh dennis@127.0.0.1
 ## Step 3: Install Apache
 
 ```bash
-sudo apt-get update && sudo apt-get install apache
+sudo apt-get update && sudo apt-get install apache2 -y
 ```
 
 At this point, if you go to your IP address, you should be able to see Apache2 Debian Default Page.
@@ -58,7 +58,7 @@ sudo git clone <git repository>
 Copy all the content of the build folder into the web server directory.
 
 ```bash
-sudo git cp -r ./<react repository folder>/build/* /var/www/html/
+sudo cp -r ./<react repository folder>/build/* /var/www/html/
 ```
 
 For sanity check, you can confirm the content of your web server directory to be sure you copied all the contents of your build folder
