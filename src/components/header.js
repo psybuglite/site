@@ -7,7 +7,6 @@ import PageTransition from 'gatsby-v2-plugin-page-transitions'
 
 const Header = () => {
 
-  
   useEffect(() => {
     const headTl = gsap.timeline()
     headTl.from(".logo-area", {opacity: 0, y: -50, duration: 0.5})

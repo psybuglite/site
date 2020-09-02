@@ -22,8 +22,7 @@ if (typeof window !== `undefined`) {
 const IndexPage = props => {
   useEffect(() => {
     const indexTl = gsap.timeline()
-
-    indexTl.from(".greeting", { opacity: 0, x: 100, duration: 0.3, delay: 1 })
+    indexTl.from(".greeting", { opacity: 0, x: 100, duration: 0.3})
     indexTl.from(".very-large-text", { opacity: 0, x: 100, duration: 0.3 })
     indexTl.from(".hero-text", { opacity: 0, x: 100, duration: 0.3 })
     indexTl.from(".social-links a", {
