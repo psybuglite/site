@@ -440,7 +440,9 @@ const IndexPage = props => {
               </div>
               <p className="smalltext tx-c ff-aquire co-white mt-1">Secura</p>
             </div>
-            <div className="brand-area bg-primary"></div>
+            <div className="brand-area">
+              <div className="bg-primary brand-area h-100 w-100"></div>
+            </div>
           </div>
         </div>
       </section>
