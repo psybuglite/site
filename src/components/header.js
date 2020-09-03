@@ -8,10 +8,10 @@ const Header = () => {
 
   useEffect(() => {
     const headTl = gsap.timeline()
-    headTl.from(".logo-area", {opacity: 0, y: -50, duration: 0.5})
-    headTl.from(".main-nav li", {opacity: 0, stagger: 0.1, x: -50, duration: 0.3})
-    headTl.from(".bar1", {opacity: 0, x: -50, duration: 0.2})
-    headTl.from(".bar3", {opacity: 0, x: -50, duration: 0.2})
+    headTl.to(".logo-area", {opacity: 1, y: 0, duration: 0.5})
+    headTl.to(".main-nav li", {opacity: 1, stagger: 0.1, x: 0, duration: 0.3})
+    headTl.to(".bar1", {opacity: 1, x: 0, duration: 0.2})
+    headTl.to(".bar3", {opacity: 1, x: 0, duration: 0.2})
   }, []);
 
   const [navOpen, navToggle] = useState(false);
