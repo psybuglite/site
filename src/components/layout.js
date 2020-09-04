@@ -199,6 +199,10 @@ const Layout = ({ children }) => {
     }
 
     initCanvas()
+
+    const loadContainer = document.querySelector(".load-container")
+    document.body.style.position = "relative"
+    loadContainer.style.display = "none"
   }, []); // eslint-disable-line
   return (
     <StaticQuery
