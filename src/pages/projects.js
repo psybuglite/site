@@ -5,7 +5,7 @@ import SEO from "../components/seo"
 import { motion, AnimatePresence } from "framer-motion"
 import gsap from "gsap/all"
 
-const Work = props => {
+const Projects = props => {
   useEffect(() => {
     const workTl = gsap.timeline()
     workTl.to(".work-heading", { opacity: 1, y: 0, duration: 0.5, delay: 0.2 })
@@ -14,12 +14,12 @@ const Work = props => {
 
   return (
     <>
-      <SEO title="Work" />
+      <SEO title="Projects" />
       <section className="width-100-pc page-padding will-grow">
         <div className="main-wrap mx-auto wrapper-x">
           <h2 className="sectionhead-text d-flx j-c-c tx-c mb-3 block-parent w-100">
             <span className="work-heading ">
-              Work
+              Projects
             </span>
             <AnimatePresence>
               <motion.span
@@ -54,7 +54,7 @@ const Work = props => {
                 </p>
                 <Link
                   className="co-sweetblue d-ibl py-1 link"
-                  to="/work/payflow"
+                  to="/projects/payflow"
                 >
                   View Project
                 </Link>
@@ -78,7 +78,7 @@ const Work = props => {
                   <span className="">Agency</span> <br />
                   <span className="">Website Design</span>
                 </p>
-                <Link className="co-sweetblue d-ibl py-1 link" to="/work/fccpc">
+                <Link className="co-sweetblue d-ibl py-1 link" to="/projects/fccpc">
                   View Project
                 </Link>
               </div>
@@ -102,7 +102,7 @@ const Work = props => {
                 </p>
                 <Link
                   className="co-sweetblue d-ibl py-1 link"
-                  to="/work/festivesave"
+                  to="/projects/festivesave"
                 >
                   View Project
                 </Link>
@@ -124,7 +124,7 @@ const Work = props => {
                   <span className="">Crowdfunding</span> <br />
                   <span className="">Web Design</span>
                 </p>
-                <Link className="co-sweetblue d-ibl py-1 link" to="/work/ajoo">
+                <Link className="co-sweetblue d-ibl py-1 link" to="/projects/ajoo">
                   View Project
                 </Link>
               </div>
@@ -147,7 +147,7 @@ const Work = props => {
                 </p>
                 <Link
                   className="co-sweetblue d-ibl py-1 link"
-                  to="/work/fluidcoins"
+                  to="/projects/fluidcoins"
                 >
                   View Project
                 </Link>
@@ -172,7 +172,7 @@ const Work = props => {
                 </p>
                 <Link
                   className="co-sweetblue d-ibl py-1 link"
-                  to="/work/prodevs"
+                  to="/projects/prodevs"
                 >
                   View Project
                 </Link>
@@ -184,7 +184,7 @@ const Work = props => {
     </>
   )
 }
-export default Work
+export default Projects
 
 export const pageQuery = graphql`
   query {

@@ -64,12 +64,12 @@ const Header = () => {
               </li>
               <li className="my-h">
                 <Link
-                  to="/work"
+                  to="/projects"
                   className="tx-c d-blk py-h link"
                   activeClassName="is-active"
                   onClick={closeMenu}
                 >
-                  Work
+                  Projects
                 </Link>
               </li>
               <li className="my-h">

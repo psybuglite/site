@@ -22,7 +22,7 @@ if (typeof window !== `undefined`) {
 const IndexPage = props => {
   useEffect(() => {
     const indexTl = gsap.timeline()
-    indexTl.to(".greeting", { opacity: 1, x: 0, duration: 0.3, delay: 0.2})
+    indexTl.to(".greeting", { opacity: 1, x: 0, duration: 0.3, delay: 1})
     indexTl.to(".very-large-text", { opacity: 1, x: 0, duration: 0.2 })
     indexTl.to(".hero-text", { opacity: 1, x: 0, duration: 0.2 })
     indexTl.to(".social-links a", {
@@ -94,7 +94,7 @@ const IndexPage = props => {
           </div>
         </div>
         <div className="w-100 d-flx py-1 al-i-c j-c-sb wrapper-x absolute-hero">
-          <div className="blue-block"></div>
+          <div className="blue-block spin"></div>
           <div className="d-flx al-i-c social-links">
             <a
               href="https://linkedin.com/in/psybug"
@@ -308,7 +308,7 @@ const IndexPage = props => {
         <div className="wrapper-x">
           <h2 className="sectionhead-text tx-c mb-3">
             <span className="work-left-span d-ibl">Featured</span> <br />
-            <span className="work-right-span d-ibl">Work</span>
+            <span className="work-right-span d-ibl">Projects</span>
           </h2>
           <div className="wrapper-y will-grow">
             <div className="slide-project wrapper-y will-grow project-item">
@@ -328,7 +328,7 @@ const IndexPage = props => {
                 </p>
                 <Link
                   className="co-sweetblue d-ibl py-1 link"
-                  to="/work/payflow"
+                  to="/projects/payflow"
                 >
                   View Project
                 </Link>
@@ -350,7 +350,7 @@ const IndexPage = props => {
                   <span className="">Crowdfunding</span> <br />
                   <span className="">Website Design</span>
                 </p>
-                <Link className="co-sweetblue d-ibl py-1 link" to="/work/fccpc">
+                <Link className="co-sweetblue d-ibl py-1 link" to="/projects/fccpc">
                   View Project
                 </Link>
               </div>
@@ -374,7 +374,7 @@ const IndexPage = props => {
                 </p>
                 <Link
                   className="co-sweetblue d-ibl py-1 link"
-                  to="/work/festivesave"
+                  to="/projects/festivesave"
                 >
                   View Project
                 </Link>
