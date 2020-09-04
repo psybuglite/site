@@ -22,9 +22,9 @@ if (typeof window !== `undefined`) {
 const IndexPage = props => {
   useEffect(() => {
     const indexTl = gsap.timeline()
-    indexTl.to(".greeting", { opacity: 1, x: 0, duration: 0.3, delay: 1})
-    indexTl.to(".very-large-text", { opacity: 1, x: 0, duration: 0.2 })
-    indexTl.to(".hero-text", { opacity: 1, x: 0, duration: 0.2 })
+    indexTl.to(".greeting", { opacity: 1, y: 0, duration: 0.3, delay: 0.5})
+    indexTl.to(".very-large-text", { opacity: 1, y: 0, duration: 0.2 })
+    indexTl.to(".hero-text", { opacity: 1, y: 0, duration: 0.2 })
     indexTl.to(".social-links a", {
       opacity: 1,
       y: 0,
@@ -246,6 +246,7 @@ const IndexPage = props => {
                 viewBox="0 0 50 50"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
+                className="spin"
               >
                 <rect width={50} height={50} fill="#0F52BA" />
               </svg>
@@ -265,6 +266,7 @@ const IndexPage = props => {
                 viewBox="0 0 50 50"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
+                className="spin"
               >
                 <rect width={50} height={50} fill="#0F52BA" />
               </svg>
@@ -285,6 +287,7 @@ const IndexPage = props => {
                 viewBox="0 0 50 50"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
+                className="spin"
               >
                 <rect width={50} height={50} fill="#0F52BA" />
               </svg>

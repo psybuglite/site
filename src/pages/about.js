@@ -45,7 +45,7 @@ const About = () => {
               <p>
                 With more than 4 years of experience working in design and
                 developing websites and applications, my field of knowledge
-                covers both UX/UI Design and front-end development.
+                covers both UX/UI design and front-end development.
               </p>
               <div className="pt-2">
                 <h3 className="ff-aquire co-white">Work history</h3>
@@ -68,7 +68,7 @@ const About = () => {
                   </li>
                   <li className="my-2">
                     <p className="m-0">
-                      <a href="https://protocoh.com" className="link co-sweetblue">Softcom</a>  |  UI Designer and Developer
+                      <a href="https://softcom.ng" className="link co-sweetblue">Softcom</a>  |  UI Designer and Developer
                     </p>
                     <p className="m-0 smalltext">
                       February 2018 - November 2018 
