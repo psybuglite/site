@@ -9,7 +9,6 @@ import Footer from "./footer"
 import "../sass/style.sass"
 
 const Layout = ({ children }) => {
-  
   useEffect(() => {
     // set the starting position of the cursor outside of the screen
     let clientX = -100
@@ -199,10 +198,6 @@ const Layout = ({ children }) => {
     }
 
     initCanvas()
-
-    const loadContainer = document.querySelector(".load-container")
-    document.body.style.position = "relative"
-    loadContainer.style.display = "none"
   }, []); // eslint-disable-line
   return (
     <StaticQuery

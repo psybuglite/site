@@ -47,7 +47,7 @@ const IndexPage = props => {
   return (
     <>
       <SEO
-        title="Home"
+        title="Hello"
         keywords={[
           `Designer in Nigeria`,
           `Frontend Developer in Nigeria`,
