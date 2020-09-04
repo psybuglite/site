@@ -17,12 +17,12 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    {
-      resolve: `gatsby-plugin-offline`,
-      options: {
-        precachePages: [`/about/`, `/work/*`, `/writing/*`, `/contact/`],
-      },
-    },
+    // {
+    //   resolve: `gatsby-plugin-offline`,
+    //   options: {
+    //     precachePages: [`/about/`, `/work/*`, `/writing/*`, `/contact/`],
+    //   },
+    // },
     {
       resolve: `gatsby-plugin-canonical-urls`,
       options: {
