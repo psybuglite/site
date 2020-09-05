@@ -18,11 +18,11 @@ const Prodevs = props => {
               alt=""
             />
           </div>
-          <div className="wrapper-y project-description grid is-multi-col mostly-2">
+          <div className="wrapper-y grid is-multi-col mostly-2">
             <div className="">
               <h2 className="largertext mt-0 co-white ff-aquire">Prodevs</h2>
               <p className="mediumtext co-primary">Recruitment</p>
-              <p className="mediumtext">Website Design</p>
+              <p className="smalltext">Website Design</p>
               <AnimatePresence>
                 <motion.span
                   layoutId="block"
@@ -37,13 +37,13 @@ const Prodevs = props => {
                 ></motion.span>
               </AnimatePresence>
             </div>
-            <div>
+            <div className="smalltext">
               <p>Prodevs is a recruitment and outsourcing company that helps other companies and business owners get the help they need with modern technologies through highly skilled individuals available in their pool of talents.</p>
               <p>By giving managers and business owners the same platform to meet technical talent, Prodevs aims to restructure the hiring process for technical individuals.</p>
             </div>
           </div>
 
-          <div className="wrapper-y will-grow project-description grid is-multi-col mostly-2">
+          <div className="wrapper-y will-grow grid is-multi-col mostly-2">
             <div className="project-feature-image bg-brandblue">
               <Img
                 fluid={props.data.prodevsHome.childImageSharp.fluid}
@@ -58,7 +58,7 @@ const Prodevs = props => {
             </div>
           </div>
 
-          <div className="wrapper-y will-grow project-description">
+          <div className="wrapper-y will-grow">
             <div className="project-feature-image bg-brandblue">
               <Img
                 fluid={props.data.prodevsManagers.childImageSharp.fluid}
@@ -67,7 +67,7 @@ const Prodevs = props => {
             </div>
           </div>
 
-          <div className="wrapper-y will-grow project-description grid is-multi-col mostly-2">
+          <div className="wrapper-y will-grow grid is-multi-col mostly-2">
             <div className="project-feature-image bg-brandblue">
               <Img
                 fluid={props.data.prodevsRole.childImageSharp.fluid}
@@ -82,7 +82,7 @@ const Prodevs = props => {
             </div>
           </div>
 
-          <div className="wrapper-y will-grow project-description">
+          <div className="wrapper-y will-grow">
             <div className="project-feature-image bg-brandblue">
               <Img
                 fluid={props.data.prodevsBoard.childImageSharp.fluid}

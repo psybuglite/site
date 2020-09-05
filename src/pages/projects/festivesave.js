@@ -18,13 +18,13 @@ const Festivesave = props => {
               alt=""
             />
           </div>
-          <div className="wrapper-y project-description grid is-multi-col mostly-2">
+          <div className="wrapper-y grid is-multi-col mostly-2">
             <div className="">
               <h2 className="largertext mt-0 co-white ff-aquire">
                 festivesave
               </h2>
               <p className="mediumtext co-primary">SAAS</p>
-              <p className="mediumtext">Mobile App Design</p>
+              <p className="smalltext">Mobile App Design</p>
               <AnimatePresence>
                 <motion.span
                   layoutId="block"
@@ -39,26 +39,12 @@ const Festivesave = props => {
                 ></motion.span>
               </AnimatePresence>
             </div>
-            <div>
-              <p>
-                Vitae sed tellus ipsum at pulvinar risus. Turpis tellus,
-                adipiscing sit vitae risus, elementum facilisi urna. Amet ut at
-                nisi cursus enim at interdum. Tristique vitae quis faucibus
-                congue. Velit in nunc, imperdiet interdum id. Pellentesque
-                cursus malesuada tellus purus suspendisse at. Nec, at porttitor
-                quis netus vitae risus convallis sit. Nibh faucibus vitae in
-                phasellus sed integer. Quam eu libero neque, lobortis lectus
-                habitant adipiscing nulla. Vivamus scelerisque vitae massa nisi.
-                Habitant rhoncus praesent integer egestas. Nunc, feugiat tempor
-                nulla est hac et, egestas non. Pulvinar vulputate volutpat nam
-                donec dictum lacus molestie quis. Libero convallis amet,
-                molestie ac suscipit in eget. Cras curabitur nibh tellus eu
-                pretium dictum.
-              </p>
+            <div className="smalltext">
+              <p>Festivesave reduces the pressure associated with any festive celebration such as Christmas, Eid-Kabir, Easter or Eid-Fitri by giving you the tools to save, plan and shop for the celebration.</p>
             </div>
           </div>
 
-          <div className="wrapper-y will-grow project-description grid is-multi-col mostly-2">
+          <div className="wrapper-y will-grow grid is-multi-col mostly-2">
             <div className="project-feature-image bg-brandblue">
               <Img
                 fluid={props.data.festivesaveOnboarding.childImageSharp.fluid}
@@ -73,22 +59,22 @@ const Festivesave = props => {
             </div>
           </div>
 
-          <div className="wrapper-y will-grow project-description grid is-multi-col mostly-2">
+          <div className="wrapper-y will-grow grid is-multi-col mostly-2">
             <div className="">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel,
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel,
               perferendis sit recusandae commodi impedit eaque ipsum optio autem
               magni, incidunt eius iusto sint nam. Magni, laborum labore.
-              Libero, dolore fugiat.
+              Libero, dolore fugiat.</p>
             </div>
             <div className="project-feature-image bg-brandblue">
               <Img
-                fluid={props.data.festivesaveProfile.childImageSharp.fluid}
+                fluid={props.data.festivesaveOptions.childImageSharp.fluid}
                 alt=""
               />
             </div>
           </div>
 
-          <div className="wrapper-y will-grow project-description grid is-multi-col mostly-2">
+          <div className="wrapper-y will-grow grid is-multi-col mostly-2">
             <div className="">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel,
               perferendis sit recusandae commodi impedit eaque ipsum optio autem
@@ -103,10 +89,10 @@ const Festivesave = props => {
             </div>
           </div>
 
-          <div className="wrapper-y will-grow project-description grid is-multi-col mostly-2">
+          <div className="wrapper-y will-grow grid is-multi-col mostly-2">
             <div className="project-feature-image bg-brandblue">
               <Img
-                fluid={props.data.festivesaveHome.childImageSharp.fluid}
+                fluid={props.data.festivesaveProfile.childImageSharp.fluid}
                 alt=""
               />
             </div>
@@ -118,7 +104,7 @@ const Festivesave = props => {
             </div>
           </div>
 
-          <div className="wrapper-y will-grow project-description grid is-multi-col mostly-2">
+          <div className="wrapper-y will-grow grid is-multi-col mostly-2">
             <div className="">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel,
               perferendis sit recusandae commodi impedit eaque ipsum optio autem
@@ -133,10 +119,10 @@ const Festivesave = props => {
             </div>
           </div>
 
-          <div className="wrapper-y will-grow project-description grid is-multi-col mostly-2">
+          <div className="wrapper-y will-grow grid is-multi-col mostly-2">
             <div className="project-feature-image bg-brandblue">
               <Img
-                fluid={props.data.festivesaveOptions.childImageSharp.fluid}
+                fluid={props.data.festivesaveAuto.childImageSharp.fluid}
                 alt=""
               />
             </div>

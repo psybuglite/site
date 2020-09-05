@@ -18,13 +18,13 @@ const Ajoo = (props) => {
               alt=""
             />
           </div>
-          <div className="wrapper-y project-description grid is-multi-col mostly-2">
+          <div className="wrapper-y grid is-multi-col mostly-2">
             <div className="">
               <h2 className="largertext mt-0 co-white ff-aquire">
                 Ajoo
               </h2>
               <p className="mediumtext co-primary">Crowdfunding</p>
-              <p className="mediumtext">Website Design</p>
+              <p className="smalltext">Website Design</p>
               <AnimatePresence>
                 <motion.span
                   layoutId="block"
@@ -40,11 +40,11 @@ const Ajoo = (props) => {
               </AnimatePresence>
             </div>
             <div>
-              <p className="mediumtext">Ajoo is a crowdfunding platform that encourages people with critical financial needs to get donations and support from other well-meaning people.</p>
+              <p className="smalltext">Ajoo is a crowdfunding platform that encourages people with critical financial needs to get donations and support from other well-meaning people.</p>
             </div>
           </div>
 
-          <div className="wrapper-y will-grow project-description grid is-multi-col mostly-2">
+          <div className="wrapper-y will-grow grid is-multi-col mostly-2">
             <div className="project-feature-image bg-brandblue">
               <Img fluid={props.data.ajooHome.childImageSharp.fluid} alt=""/>
             </div>
@@ -53,14 +53,14 @@ const Ajoo = (props) => {
             </div>
           </div>
 
-          <div className="wrapper-y will-grow project-description">
-            <p className="mediumtext maxwidth-tb">Users on the crowdfunding platform could sign up as verifiable independent individuals or as verifiable organisations before setting up crowdfunding campaigns.</p>
+          <div className="wrapper-y will-grow">
+            <p className="smalltext maxwidth-tb">Users on the crowdfunding platform could sign up as verifiable independent individuals or as verifiable organisations before setting up crowdfunding campaigns.</p>
             <div className="project-feature-image bg-brandblue">
               <Img fluid={props.data.ajooLogin.childImageSharp.fluid} alt=""/>
             </div>
           </div>
 
-          <div className="wrapper-y will-grow project-description grid is-multi-col mostly-2">
+          <div className="wrapper-y will-grow grid is-multi-col mostly-2">
             <div className="project-feature-image bg-brandblue">
               <Img fluid={props.data.ajooExplore.childImageSharp.fluid} alt=""/>
             </div>
@@ -69,8 +69,7 @@ const Ajoo = (props) => {
             </div>
           </div>
 
-          <div className="wrapper-y will-grow project-description">
-            <p className="mediumtext maxwidth-tb">As a community-based crowdfunding platform, volunteers are the .</p>
+          <div className="wrapper-y will-grow">
             <div className="project-feature-image bg-brandblue">
               <Img fluid={props.data.ajooVolunteers.childImageSharp.fluid} alt=""/>
             </div>

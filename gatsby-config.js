@@ -3,7 +3,7 @@ module.exports = {
     title: `Dennis Dickson | UI Engineer.`,
     description: `Dennis Dickson | UI Engineer.`,
     author: `@psybuglite`,
-    siteUrl: `https://awesome-borg-10a309.netlify.app`,
+    siteUrl: `https://tonyedickson.com`,
   },
   plugins: [
     `gatsby-plugin-sitemap`,
@@ -26,14 +26,14 @@ module.exports = {
     {
       resolve: `gatsby-plugin-canonical-urls`,
       options: {
-        siteUrl: `https://awesome-borg-10a309.netlify.app/`,
+        siteUrl: `https://tonyedickson.com/`,
       },
     },
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
-        host: 'https://awesome-borg-10a309.netlify.app',
-        sitemap: 'https://awesome-borg-10a309.netlify.app/sitemap.xml',
+        host: 'https://tonyedickson.com',
+        sitemap: 'https://tonyedickson.com/sitemap.xml',
         policy: [{ userAgent: '*', allow: '/' }]
       }
     },

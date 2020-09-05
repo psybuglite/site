@@ -18,7 +18,7 @@ const Payflow = props => {
               alt=""
             />
           </div>
-          <div className="wrapper-y project-description grid is-multi-col mostly-2">
+          <div className="wrapper-y   grid is-multi-col mostly-2">
             <div className="">
               <h2 className="largertext mt-0 co-white ff-aquire">Payflow</h2>
               <p className="mediumtext co-primary">FinTech</p>
@@ -38,12 +38,12 @@ const Payflow = props => {
               </AnimatePresence>
             </div>
             <div>
-              <p className="mediumtext">Payflow is a financial wellness and inclusion platform that provides Employees with on-demand access to earned wages (EWA) anytime during the month before pay day. It also provides an easy way to save money for a rainy day and access to financial tools and education to manage your finances better to relieve financial stress.
+              <p className="mediumtext">Payflow is a financial wellness and inclusion platform that provides employees with on-demand access to earned wages (EWA) at anytime during the month before pay day. It also provides an easy way to save money for a rainy day and access to financial tools and education to manage your finances better to relieve financial stress.
               </p>
             </div>
           </div>
 
-          <div className="wrapper-y will-grow project-description grid is-multi-col mostly-2">
+          <div className="wrapper-y will-grow grid is-multi-col mostly-2">
             <div className="project-feature-image bg-brandblue">
               <Img
                 fluid={props.data.payflowOnboarding.childImageSharp.fluid}
@@ -58,12 +58,12 @@ const Payflow = props => {
             </div>
           </div>
 
-          <div className="wrapper-y will-grow project-description grid is-multi-col mostly-2">
-            <div className="">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel,
-              perferendis sit recusandae commodi impedit eaque ipsum optio autem
-              magni, incidunt eius iusto sint nam. Magni, laborum labore.
-              Libero, dolore fugiat.
+          <div className="wrapper-y will-grow grid is-multi-col mostly-2">
+            <div className="mediumtext">
+              <p>
+                For verification and authentication, only phone numbers and employee idendtification numbers are required. This helps to ensure that the employer can instantly verify their number.
+              </p>
+              <p>Employee ID is unique to employees, irrespective of who their employer is, as long as they are partnered with Payflow.</p>
             </div>
             <div className="project-feature-image bg-brandblue">
               <Img
@@ -73,12 +73,11 @@ const Payflow = props => {
             </div>
           </div>
 
-          <div className="wrapper-y will-grow project-description grid is-multi-col mostly-2">
-            <div className="">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel,
-              perferendis sit recusandae commodi impedit eaque ipsum optio autem
-              magni, incidunt eius iusto sint nam. Magni, laborum labore.
-              Libero, dolore fugiat.
+          <div className="wrapper-y will-grow grid is-multi-col mostly-2">
+            <div className="mediumtext">
+              <p>
+                Emloyees on Payflow will always have access to their earned wages and can with draw from Payflow at any time of the month.
+              </p>
             </div>
             <div className="project-feature-image bg-brandblue">
               <Img
@@ -88,7 +87,7 @@ const Payflow = props => {
             </div>
           </div>
 
-          <div className="wrapper-y will-grow project-description grid is-multi-col mostly-2">
+          <div className="wrapper-y will-grow grid is-multi-col mostly-2">
             <div className="project-feature-image bg-brandblue">
               <Img
                 fluid={props.data.payflowSave1.childImageSharp.fluid}
@@ -103,7 +102,7 @@ const Payflow = props => {
             </div>
           </div>
 
-          <div className="wrapper-y will-grow project-description grid is-multi-col mostly-2">
+          <div className="wrapper-y will-grow grid is-multi-col mostly-2">
             <div className="">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel,
               perferendis sit recusandae commodi impedit eaque ipsum optio autem
@@ -118,7 +117,7 @@ const Payflow = props => {
             </div>
           </div>
 
-          <div className="wrapper-y will-grow project-description grid is-multi-col mostly-2">
+          <div className="wrapper-y will-grow grid is-multi-col mostly-2">
             <div className="project-feature-image bg-brandblue">
               <Img
                 fluid={props.data.payflowProsper1.childImageSharp.fluid}
@@ -133,7 +132,7 @@ const Payflow = props => {
             </div>
           </div>
 
-          <div className="wrapper-y will-grow project-description grid is-multi-col mostly-2">
+          <div className="wrapper-y will-grow grid is-multi-col mostly-2">
             <div className="project-feature-image bg-brandblue">
               <Img
                 fluid={props.data.payflowProfile.childImageSharp.fluid}

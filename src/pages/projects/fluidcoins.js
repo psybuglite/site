@@ -18,7 +18,7 @@ const Fluidcoins = (props) => {
                 alt=""
               />
             </div>
-            <div className="wrapper-y project-description grid is-multi-col mostly-2">
+            <div className="wrapper-y   grid is-multi-col mostly-2">
               <div className="">
                 <h2 className="largertext mt-0 co-white ff-aquire">
                   fluidcoins
@@ -48,7 +48,7 @@ const Fluidcoins = (props) => {
               </div>
             </div>
 
-            <div className="wrapper-y will-grow project-description grid is-multi-col mostly-2">
+            <div className="wrapper-y will-grow grid is-multi-col mostly-2">
               <div className="project-feature-image bg-brandblue">
                 <Img fluid={props.data.fluidcoinsOnboarding1.childImageSharp.fluid} alt=""/>
               </div>
@@ -57,7 +57,7 @@ const Fluidcoins = (props) => {
               </div>
             </div>
             
-            <div className="wrapper-y will-grow project-description grid is-multi-col mostly-2">
+            <div className="wrapper-y will-grow grid is-multi-col mostly-2">
               <div className="">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, perferendis sit recusandae commodi impedit eaque ipsum optio autem magni, incidunt eius iusto sint nam. Magni, laborum labore. Libero, dolore fugiat.
               </div>
@@ -66,7 +66,7 @@ const Fluidcoins = (props) => {
               </div>
             </div>
 
-            <div className="wrapper-y will-grow project-description grid is-multi-col mostly-2">
+            <div className="wrapper-y will-grow grid is-multi-col mostly-2">
               <div className="">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, perferendis sit recusandae commodi impedit eaque ipsum optio autem magni, incidunt eius iusto sint nam. Magni, laborum labore. Libero, dolore fugiat.
               </div>
@@ -75,7 +75,7 @@ const Fluidcoins = (props) => {
               </div>
             </div>
 
-            <div className="wrapper-y will-grow project-description grid is-multi-col mostly-2">
+            <div className="wrapper-y will-grow grid is-multi-col mostly-2">
               <div className="project-feature-image bg-brandblue">
                 <Img fluid={props.data.fluidcoinsHome.childImageSharp.fluid} alt=""/>
               </div>
@@ -84,7 +84,7 @@ const Fluidcoins = (props) => {
               </div>
             </div>
 
-            <div className="wrapper-y will-grow project-description grid is-multi-col mostly-2">
+            <div className="wrapper-y will-grow grid is-multi-col mostly-2">
               <div className="">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, perferendis sit recusandae commodi impedit eaque ipsum optio autem magni, incidunt eius iusto sint nam. Magni, laborum labore. Libero, dolore fugiat.
               </div>
@@ -93,7 +93,7 @@ const Fluidcoins = (props) => {
               </div>
             </div>
             
-            <div className="wrapper-y will-grow project-description grid is-multi-col mostly-2">
+            <div className="wrapper-y will-grow grid is-multi-col mostly-2">
               <div className="project-feature-image bg-brandblue">
                 <Img fluid={props.data.fluidcoinsAuth1.childImageSharp.fluid} alt=""/>
               </div>
@@ -102,7 +102,7 @@ const Fluidcoins = (props) => {
               </div>
             </div>
 
-            <div className="wrapper-y will-grow project-description grid is-multi-col mostly-2">
+            <div className="wrapper-y will-grow grid is-multi-col mostly-2">
               <div className="project-feature-image bg-brandblue">
                 <Img fluid={props.data.fluidcoinsAddress.childImageSharp.fluid} alt=""/>
               </div>
