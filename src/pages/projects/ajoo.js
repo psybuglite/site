@@ -40,17 +40,7 @@ const Ajoo = (props) => {
               </AnimatePresence>
             </div>
             <div>
-              <p>
-              We are building a community where people with critical financial needs get the necessary assistance from well meaning Nigerians.  
-
-              Start fundraising in minutes. No goal requirements, no deadlines.
-
-              Partnership with reliable and trusted organizations and volunteers.
-
-              Our campaign coaches will answer your questions in 5 minutes, day or night.
-
-              The Ajoo Safety Guarantee protects your donations and supporters.
-              </p>
+              <p className="mediumtext">Ajoo is a crowdfunding platform that encourages people with critical financial needs to get donations and support from other well-meaning people.</p>
             </div>
           </div>
 
@@ -64,6 +54,7 @@ const Ajoo = (props) => {
           </div>
 
           <div className="wrapper-y will-grow project-description">
+            <p className="mediumtext maxwidth-tb">Users on the crowdfunding platform could sign up as verifiable independent individuals or as verifiable organisations before setting up crowdfunding campaigns.</p>
             <div className="project-feature-image bg-brandblue">
               <Img fluid={props.data.ajooLogin.childImageSharp.fluid} alt=""/>
             </div>
@@ -79,6 +70,7 @@ const Ajoo = (props) => {
           </div>
 
           <div className="wrapper-y will-grow project-description">
+            <p className="mediumtext maxwidth-tb">As a community-based crowdfunding platform, volunteers are the .</p>
             <div className="project-feature-image bg-brandblue">
               <Img fluid={props.data.ajooVolunteers.childImageSharp.fluid} alt=""/>
             </div>

@@ -11,28 +11,28 @@ const Footer = () =>  (
               <h3 className="ff-aquire co-white">UI Engineer</h3>
               <ul className="footer-links my-2">
                 <li className="my-h">
-                  <Link to="/about" className="footer-link link">
+                  <Link to="/about/" className="footer-link link">
                     About
                   </Link>
                 </li>
                 <li className="my-h">
-                  <Link to="/work" className="footer-link link">
-                    Work
+                  <Link to="/projects/" className="footer-link link">
+                    Projects
                   </Link>
                 </li>
                 <li className="my-h">
-                  <Link to="/writing" className="footer-link link">
+                  <Link to="/writing/" className="footer-link link">
                     Writing
                   </Link>
                 </li>
                 <li className="my-h">
-                  <Link to="/contact" className="footer-link link">
+                  <Link to="/contact/" className="footer-link link">
                     Contact
                   </Link>
                 </li>
               </ul>
-              <a href="mailto:hi@dennisdickson.com" className="smalltext link email-link">
-                hi@dennisdickson.com
+              <a href="mailto:itztonye@gmail.com" className="smalltext link email-link">
+                itztonye@gmail.com
                 <svg width={16} height={16} viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M4.66669 11.3333L11.3334 4.66666" stroke="#A5A5A5" strokeWidth="0.666667" strokeLinecap="round" strokeLinejoin="round" />
                   <path d="M4.66669 4.66666H11.3334V11.3333" stroke="#A5A5A5" strokeWidth="0.666667" strokeLinecap="round" strokeLinejoin="round" />

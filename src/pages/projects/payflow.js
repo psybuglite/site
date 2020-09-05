@@ -38,20 +38,7 @@ const Payflow = props => {
               </AnimatePresence>
             </div>
             <div>
-              <p>
-                Vitae sed tellus ipsum at pulvinar risus. Turpis tellus,
-                adipiscing sit vitae risus, elementum facilisi urna. Amet ut at
-                nisi cursus enim at interdum. Tristique vitae quis faucibus
-                congue. Velit in nunc, imperdiet interdum id. Pellentesque
-                cursus malesuada tellus purus suspendisse at. Nec, at porttitor
-                quis netus vitae risus convallis sit. Nibh faucibus vitae in
-                phasellus sed integer. Quam eu libero neque, lobortis lectus
-                habitant adipiscing nulla. Vivamus scelerisque vitae massa nisi.
-                Habitant rhoncus praesent integer egestas. Nunc, feugiat tempor
-                nulla est hac et, egestas non. Pulvinar vulputate volutpat nam
-                donec dictum lacus molestie quis. Libero convallis amet,
-                molestie ac suscipit in eget. Cras curabitur nibh tellus eu
-                pretium dictum.
+              <p>Payflow is a financial wellness and inclusion platform that provides Employees with on-demand access to earned wages (EWA) anytime during the month before pay day. It also provides an easy way to save money for a rainy day and access to financial tools and education to manage your finances better to relieve financial stress.
               </p>
             </div>
           </div>

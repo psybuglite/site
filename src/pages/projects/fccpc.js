@@ -37,22 +37,11 @@ const Fccpc = props => {
                 ></motion.span>
               </AnimatePresence>
             </div>
-            <div>
-              <p>
-                Vitae sed tellus ipsum at pulvinar risus. Turpis tellus,
-                adipiscing sit vitae risus, elementum facilisi urna. Amet ut at
-                nisi cursus enim at interdum. Tristique vitae quis faucibus
-                congue. Velit in nunc, imperdiet interdum id. Pellentesque
-                cursus malesuada tellus purus suspendisse at. Nec, at porttitor
-                quis netus vitae risus convallis sit. Nibh faucibus vitae in
-                phasellus sed integer. Quam eu libero neque, lobortis lectus
-                habitant adipiscing nulla. Vivamus scelerisque vitae massa nisi.
-                Habitant rhoncus praesent integer egestas. Nunc, feugiat tempor
-                nulla est hac et, egestas non. Pulvinar vulputate volutpat nam
-                donec dictum lacus molestie quis. Libero convallis amet,
-                molestie ac suscipit in eget. Cras curabitur nibh tellus eu
-                pretium dictum.
-              </p>
+            <div className="mediumtext">
+              <p>The federal agency for consumer protection in Nigeria website design and development was done to push the agency's activities and what it stood for in service of Nigerians into the public eye.</p>
+              <p>Before the project was initiated, many consumers in the public were not aware of the rights they had as consumers of goods and services and the protection act that was put in place for their benefit</p>
+              <p>Most of the content from their old site as well as newly created content for about the agency had to be put in the same place.</p>
+              
             </div>
           </div>
 
@@ -66,6 +55,7 @@ const Fccpc = props => {
           </div>
 
           <div className="wrapper-y will-grow project-description">
+          <p className="mediumtext maxwidth-tb">Informative and other instructional materials were also placed on the website for visitors and consumers in readily accessible formats.</p>
             <div className="project-feature-image bg-brandblue">
               <Img fluid={props.data.fccpcHowTo.childImageSharp.fluid} alt="" />
             </div>
@@ -87,6 +77,7 @@ const Fccpc = props => {
           </div>
 
           <div className="wrapper-y will-grow project-description">
+          <p className="mediumtext maxwidth-tb">Updates on the agency's activities, from press releases, publications, as well as news and events were all accounted for.</p>
             <div className="project-feature-image bg-brandblue">
               <Img
                 fluid={props.data.fccpcReleases.childImageSharp.fluid}

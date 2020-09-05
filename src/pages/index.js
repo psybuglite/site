@@ -217,10 +217,10 @@ const IndexPage = props => {
             </p>
             <div className="email-grid">
               <a
-                href="mailto:hi@dennisdickson.com"
+                href="mailto:itztonye@gmail.com"
                 className="smalltext link email-link"
               >
-                hi@dennisdickson.com
+                itztonye@gmail.com
                 <svg
                   width={16}
                   height={16}
