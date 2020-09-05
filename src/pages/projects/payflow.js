@@ -38,7 +38,7 @@ const Payflow = props => {
               </AnimatePresence>
             </div>
             <div>
-              <p>Payflow is a financial wellness and inclusion platform that provides Employees with on-demand access to earned wages (EWA) anytime during the month before pay day. It also provides an easy way to save money for a rainy day and access to financial tools and education to manage your finances better to relieve financial stress.
+              <p className="mediumtext">Payflow is a financial wellness and inclusion platform that provides Employees with on-demand access to earned wages (EWA) anytime during the month before pay day. It also provides an easy way to save money for a rainy day and access to financial tools and education to manage your finances better to relieve financial stress.
               </p>
             </div>
           </div>

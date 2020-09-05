@@ -38,7 +38,6 @@ const IndexPage = props => {
         scrub: 1,
       },
       x: 0,
-      ease: "none",
     })
     gsap.from(".work-right-span", {
       scrollTrigger: {
@@ -46,7 +45,6 @@ const IndexPage = props => {
         scrub: 1,
       },
       x: 0,
-      ease: "none",
     })
     gsap.from(".trust", {
       scrollTrigger: {

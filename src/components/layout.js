@@ -198,8 +198,7 @@ const Layout = ({ children }) => {
     }
 
     initCanvas()
-
-    document.body.style.position = "relative"
+    
   }, []); // eslint-disable-line
   return (
     <StaticQuery
