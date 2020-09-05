@@ -60,11 +60,8 @@ const Festivesave = props => {
           </div>
 
           <div className="wrapper-y will-grow grid is-multi-col mostly-2">
-            <div className="">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel,
-              perferendis sit recusandae commodi impedit eaque ipsum optio autem
-              magni, incidunt eius iusto sint nam. Magni, laborum labore.
-              Libero, dolore fugiat.</p>
+            <div className="smalltext">
+              <p>Default savings plans include the four major festive periods in Nigeria. Savings will be made periodically over a period of time and withdrawal will be available just in time for the festive period.</p>
             </div>
             <div className="project-feature-image bg-brandblue">
               <Img
@@ -75,11 +72,10 @@ const Festivesave = props => {
           </div>
 
           <div className="wrapper-y will-grow grid is-multi-col mostly-2">
-            <div className="">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel,
-              perferendis sit recusandae commodi impedit eaque ipsum optio autem
-              magni, incidunt eius iusto sint nam. Magni, laborum labore.
-              Libero, dolore fugiat.
+            <div className="smalltext">
+              <p>
+                All savings and funds can be tracked as interests on savings accumulate over time.
+              </p>
             </div>
             <div className="project-feature-image bg-brandblue">
               <Img
@@ -106,10 +102,9 @@ const Festivesave = props => {
 
           <div className="wrapper-y will-grow grid is-multi-col mostly-2">
             <div className="">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel,
-              perferendis sit recusandae commodi impedit eaque ipsum optio autem
-              magni, incidunt eius iusto sint nam. Magni, laborum labore.
-              Libero, dolore fugiat.
+              <p>
+                Savings can be made automatically or manually, depending on the preference of the person saving for the festive season.
+              </p>
             </div>
             <div className="project-feature-image bg-brandblue">
               <Img

@@ -199,8 +199,11 @@ const Layout = ({ children }) => {
 
     initCanvas()
 
+    const loadContainer = document.querySelector(".load-container")
     document.body.style.position = "static"
-  }, []); // eslint-disable-line
+    loadContainer.style.display = "none"
+    
+  }, []);
   return (
     <StaticQuery
       query={graphql`
@@ -215,6 +218,14 @@ const Layout = ({ children }) => {
       render={data => (
         <>
           <div className="main-layout">
+            <div className="load-container">
+               <div className="absolute-middle d-flx flex-dir-col al-i-c">
+                 <svg width="50" height="50" className="spin loader" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                   <rect width="50" height="50" fill="#0F52BA"/>
+                 </svg>
+                 <p className="mt-2 tx-c">Loading... please, be gentle</p>
+               </div>
+             </div>
             <div className="cursor cursor--small"></div>
             <canvas className="cursor cursor--canvas"></canvas>
             <div>
