@@ -2,10 +2,12 @@ import React from "react"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
 import { motion, AnimatePresence } from "framer-motion"
+import SEO from "../../components/seo"
 
 const Ajoo = (props) => {
   return (
     <>
+      <SEO title="Ajoo | Projects | Dennis Dickson" />
       <section className="width-100-pc page-padding">
         <div className="maxwidth-xl mx-auto wrapper">
           <div className="project-feature-image mb-2 bg-brandblue desired-height-3rd">
@@ -22,7 +24,7 @@ const Ajoo = (props) => {
                 Ajoo
               </h2>
               <p className="mediumtext co-primary">Crowdfunding</p>
-              <p className="mediumtext">Website and Web App Design</p>
+              <p className="mediumtext">Website Design</p>
               <AnimatePresence>
                 <motion.span
                   layoutId="block"
@@ -39,9 +41,15 @@ const Ajoo = (props) => {
             </div>
             <div>
               <p>
-                Vitae sed tellus ipsum at pulvinar risus. Turpis tellus, adipiscing sit vitae risus, elementum facilisi urna. Amet ut at nisi cursus enim at interdum. Tristique vitae quis faucibus congue. Velit in nunc, imperdiet interdum id. Pellentesque cursus malesuada tellus purus suspendisse at. Nec, at porttitor quis netus vitae risus convallis sit. Nibh faucibus vitae in phasellus sed integer. Quam eu libero neque, lobortis lectus habitant adipiscing nulla.
+              We are building a community where people with critical financial needs get the necessary assistance from well meaning Nigerians.  
 
-                Vivamus scelerisque vitae massa nisi. Habitant rhoncus praesent integer egestas. Nunc, feugiat tempor nulla est hac et, egestas non. Pulvinar vulputate volutpat nam donec dictum lacus molestie quis. Libero convallis amet, molestie ac suscipit in eget. Cras curabitur nibh tellus eu pretium dictum.
+              Start fundraising in minutes. No goal requirements, no deadlines.
+
+              Partnership with reliable and trusted organizations and volunteers.
+
+              Our campaign coaches will answer your questions in 5 minutes, day or night.
+
+              The Ajoo Safety Guarantee protects your donations and supporters.
               </p>
             </div>
           </div>

@@ -115,7 +115,7 @@ module.exports = {
         background_color: `#00090F`,
         theme_color: `#0F52BA`,
         display: `minimal-ui`,
-        icon: `src/images/tonye-icon.png`,
+        icon: `src/images/icon.png`,
         icons: [
           {
             src: `icons/icon-48x48.png`,

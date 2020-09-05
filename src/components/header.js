@@ -54,7 +54,7 @@ const Header = () => {
             <ul className="none main-nav d-flx al-i-c">
               <li className="my-h">
                 <Link
-                  to="/about"
+                  to="/about/"
                   className="tx-c d-blk py-h link"
                   activeClassName="is-active"
                   onClick={closeMenu}
@@ -64,7 +64,7 @@ const Header = () => {
               </li>
               <li className="my-h">
                 <Link
-                  to="/projects"
+                  to="/projects/"
                   className="tx-c d-blk py-h link"
                   activeClassName="is-active"
                   onClick={closeMenu}
@@ -74,7 +74,7 @@ const Header = () => {
               </li>
               <li className="my-h">
                 <Link
-                  to="/writing"
+                  to="/writing/"
                   partiallyActive={true}
                   className="tx-c d-blk py-h link"
                   activeClassName="is-active"
@@ -85,7 +85,7 @@ const Header = () => {
               </li>
               <li className="my-h">
                 <Link
-                  to="/contact"
+                  to="/contact/"
                   partiallyActive={true}
                   className="tx-c d-blk py-h link"
                   activeClassName="is-active"

@@ -2,10 +2,12 @@ import React from "react"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
 import { motion, AnimatePresence } from "framer-motion"
+import SEO from "../../components/seo"
 
 const Fluidcoins = (props) => {
   return (
     <>
+      <SEO title="Fluidcoins | Projects | Dennis Dickson" />
         <section className="width-100-pc page-padding">
           <div className="maxwidth-xl mx-auto wrapper">
             <div className="project-feature-image mb-2 bg-brandblue desired-height-3rd">
@@ -21,8 +23,8 @@ const Fluidcoins = (props) => {
                 <h2 className="largertext mt-0 co-white ff-aquire">
                   fluidcoins
                 </h2>
-                <p className="mediumtext co-primary">SAAS</p>
-                <p className="mediumtext">Mobile App Design</p>
+                <p className="mediumtext co-primary">Crypto Wallet</p>
+                <p className="mediumtext">UI/UX Design</p>
               <AnimatePresence>
                 <motion.span
                   layoutId="block"

@@ -197,3 +197,20 @@ body
   display: block
   @media #{$smallup}
     display: none
+
+.work-left-span
+  transform: translateX(-30px)
+  @media #{$smallup}
+    transform: translateX(-100px)
+  @media #{$mediumup}
+    transform: translateX(-150px)
+  @media #{$largeup}
+    transform: translateX(-300px)
+.work-right-span
+  transform: translateX(30px)
+  @media #{$smallup}
+    transform: translateX(100px)
+  @media #{$mediumup}
+    transform: translateX(150px)
+  @media #{$largeup}
+    transform: translateX(300px)

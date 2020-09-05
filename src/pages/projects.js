@@ -72,11 +72,11 @@ const Projects = props => {
               </div>
               <div>
                 <p className="largetext co-white ff-aquire">
-                  Consumer Protection Agency Website
+                  Consumer Protection
                 </p>
                 <p className="mediumtext">
                   <span className="">Agency</span> <br />
-                  <span className="">Website Design</span>
+                  <span className="">Website Design &amp; Development</span>
                 </p>
                 <Link className="co-sweetblue d-ibl py-1 link" to="/projects/fccpc">
                   View Project
@@ -122,7 +122,7 @@ const Projects = props => {
                 <p className="largetext co-white ff-aquire">Ajoo</p>
                 <p className="mediumtext">
                   <span className="">Crowdfunding</span> <br />
-                  <span className="">Web Design</span>
+                  <span className="">Website Design</span>
                 </p>
                 <Link className="co-sweetblue d-ibl py-1 link" to="/projects/ajoo">
                   View Project
@@ -143,7 +143,7 @@ const Projects = props => {
                 <p className="largetext co-white ff-aquire">FLUIDCOINS</p>
                 <p className="mediumtext">
                   <span className="">Crypto Wallet</span> <br />
-                  <span className="">Product Design</span>
+                  <span className="">UI/UX Design</span>
                 </p>
                 <Link
                   className="co-sweetblue d-ibl py-1 link"
@@ -168,7 +168,7 @@ const Projects = props => {
                 <p className="mediumtext">
                   <span className="">Recruitment</span>
                   <br />
-                  <span className="">Website and Web App Design</span>
+                  <span className="">Website Design</span>
                 </p>
                 <Link
                   className="co-sweetblue d-ibl py-1 link"

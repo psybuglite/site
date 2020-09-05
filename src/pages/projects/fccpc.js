@@ -2,10 +2,12 @@ import React from "react"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
 import { motion, AnimatePresence } from "framer-motion"
+import SEO from "../../components/seo"
 
 const Fccpc = props => {
   return (
     <>
+      <SEO title="FCCPC | Projects | Dennis Dickson" />
       <section className="width-100-pc page-padding">
         <div className="maxwidth-xl mx-auto wrapper">
           <div className="project-feature-image mb-2 bg-brandblue desired-height-3rd">
@@ -18,9 +20,9 @@ const Fccpc = props => {
           </div>
           <div className="wrapper-y project-description grid is-multi-col mostly-2">
             <div className="">
-              <h2 className="largertext mt-0 co-white ff-aquire">fccpc</h2>
-              <p className="mediumtext co-primary">SAAS</p>
-              <p className="smalltext">Website Design</p>
+              <h2 className="largertext mt-0 co-white ff-aquire">Consumer Protection</h2>
+              <p className="mediumtext co-primary">Agency</p>
+              <p className="smalltext">Website Design &amp; Development</p>
               <AnimatePresence>
                 <motion.span
                   layoutId="block"

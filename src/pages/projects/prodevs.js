@@ -2,10 +2,12 @@ import React from "react"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
 import { motion, AnimatePresence } from "framer-motion"
+import SEO from "../../components/seo"
 
 const Prodevs = props => {
   return (
     <>
+      <SEO title="Prodevs | Projects | Dennis Dickson" />
       <section className="width-100-pc page-padding">
         <div className="maxwidth-xl mx-auto wrapper">
           <div className="project-feature-image mb-2 bg-brandblue desired-height-3rd">
@@ -18,9 +20,9 @@ const Prodevs = props => {
           </div>
           <div className="wrapper-y project-description grid is-multi-col mostly-2">
             <div className="">
-              <h2 className="largertext mt-0 co-white ff-aquire">prodevs</h2>
-              <p className="mediumtext co-primary">SAAS</p>
-              <p className="mediumtext">Mobile App Design</p>
+              <h2 className="largertext mt-0 co-white ff-aquire">Prodevs</h2>
+              <p className="mediumtext co-primary">Recruitment</p>
+              <p className="mediumtext">Website Design</p>
               <AnimatePresence>
                 <motion.span
                   layoutId="block"
@@ -36,21 +38,8 @@ const Prodevs = props => {
               </AnimatePresence>
             </div>
             <div>
-              <p>
-                Vitae sed tellus ipsum at pulvinar risus. Turpis tellus,
-                adipiscing sit vitae risus, elementum facilisi urna. Amet ut at
-                nisi cursus enim at interdum. Tristique vitae quis faucibus
-                congue. Velit in nunc, imperdiet interdum id. Pellentesque
-                cursus malesuada tellus purus suspendisse at. Nec, at porttitor
-                quis netus vitae risus convallis sit. Nibh faucibus vitae in
-                phasellus sed integer. Quam eu libero neque, lobortis lectus
-                habitant adipiscing nulla. Vivamus scelerisque vitae massa nisi.
-                Habitant rhoncus praesent integer egestas. Nunc, feugiat tempor
-                nulla est hac et, egestas non. Pulvinar vulputate volutpat nam
-                donec dictum lacus molestie quis. Libero convallis amet,
-                molestie ac suscipit in eget. Cras curabitur nibh tellus eu
-                pretium dictum.
-              </p>
+              <p>Prodevs is a recruitment and outsourcing company that helps other companies and business owners get the help they need with modern technologies through highly skilled individuals available in their pool of talents.</p>
+              <p>By giving managers and business owners the same platform to meet technical talent, Prodevs aims to restructure the hiring process for technical individuals.</p>
             </div>
           </div>
 

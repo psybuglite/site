@@ -32,6 +32,22 @@ const IndexPage = props => {
       duration: 0.3,
     })
 
+    gsap.from(".work-left-span", {
+      scrollTrigger: {
+        trigger: ".work-left-span",
+        scrub: 1,
+      },
+      x: 0,
+      ease: "none",
+    })
+    gsap.from(".work-right-span", {
+      scrollTrigger: {
+        trigger: ".work-right-span",
+        scrub: 1,
+      },
+      x: 0,
+      ease: "none",
+    })
     gsap.from(".trust", {
       scrollTrigger: {
         trigger: ".trust",
@@ -331,7 +347,7 @@ const IndexPage = props => {
                 </p>
                 <Link
                   className="co-sweetblue d-ibl py-1 link"
-                  to="/projects/payflow"
+                  to="/projects/payflow/"
                 >
                   View Project
                 </Link>
@@ -353,7 +369,7 @@ const IndexPage = props => {
                   <span className="">Crowdfunding</span> <br />
                   <span className="">Website Design</span>
                 </p>
-                <Link className="co-sweetblue d-ibl py-1 link" to="/projects/fccpc">
+                <Link className="co-sweetblue d-ibl py-1 link" to="/projects/ajoo/">
                   View Project
                 </Link>
               </div>
@@ -377,7 +393,7 @@ const IndexPage = props => {
                 </p>
                 <Link
                   className="co-sweetblue d-ibl py-1 link"
-                  to="/projects/festivesave"
+                  to="/projects/festivesave/"
                 >
                   View Project
                 </Link>
