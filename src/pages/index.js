@@ -97,7 +97,7 @@ const IndexPage = props => {
               </AnimatePresence>
             </div>
             <p className="maxwidth-tb hero-text mediumtext">
-             In consice terms, I'm a UI/UX designer, frontend feveloper, writer, and teacher. I love good storytelling in different entertainment mediums like movies and anime.
+             In consice terms, I'm a UI/UX designer, frontend developer, writer, and teacher. I love good storytelling in different entertainment mediums like movies and anime.
             </p>
           </div>
         </div>
@@ -481,9 +481,9 @@ const IndexPage = props => {
       </section>
       {/* End of Trusted Clients */}
 
-      {/* Beginning of UI Stories */}
+      {/* Beginning of Writing */}
       <WritingHome />
-      {/* End of UI Stories */}
+      {/* End of Writing */}
 
       {/* Beginning of FAQs */}
       <section className="main-wrap mx-auto pos-r section-wrapper-y will-grow mb-3">

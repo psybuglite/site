@@ -65,7 +65,7 @@ const Writing = ({ data, pageContext }) => {
               ></motion.span>
             </AnimatePresence>
             <span className="writing-heading">
-              UI Stories
+              Writing
             </span>
           </h2>
           <div className="wrapper">
