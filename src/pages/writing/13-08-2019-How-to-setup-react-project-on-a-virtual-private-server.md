@@ -3,7 +3,7 @@ path: "/writing/react-website-on-virtual-private-server"
 date: 2019-08-13T17:12:33.962Z
 title: "How to Host a React Site on a Virtual Private Server"
 tags: ["React", "Cloud"]
-featimage: "../../images/gatsby-build.png"
+featimage: "../../images/react-banner.png"
 ---
 
 So, you've finished building up the UI for your React project and you want to host it up on a remote machine. In this article, we'll be using Google Cloud Platform to host our sample React website.

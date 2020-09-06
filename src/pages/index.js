@@ -484,7 +484,7 @@ const IndexPage = props => {
               <h3 className="co-white mb-2">
                 What do you do outside of work?
               </h3>
-              <p className="largetext">
+              <p className="emoji-size">
                <span role="img" aria-label="video game" className="prefix  is-even-wider">🎮</span>
                <span role="img" aria-label="judo" className="suffix is-even-wider">🥋</span>
               </p>
