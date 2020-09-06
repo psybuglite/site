@@ -10,13 +10,21 @@ const Festivesave = props => {
       <SEO title="Festivesave | Projects | Dennis Dickson" />
       <section className="width-100-pc page-padding">
         <div className="maxwidth-xl mx-auto wrapper">
-          <div className="project-feature-image mb-2 bg-brandblue desired-height-3rd">
-            <Img
-              imgStyle={{ objectFit: "cover" }}
-              style={{ height: "100%" }}
-              fluid={props.data.festivesaveFeatureImage.childImageSharp.fluid}
-              alt=""
-            />
+          <div className="project-feature-image mb-2 desired-height-3rd">
+            <AnimatePresence>
+              <motion.div
+                  layoutId="festivesave-feature"
+                  layout
+                  style={{ height: "100%" }}
+              >
+              <Img
+                imgStyle={{ objectFit: "cover" }}
+                style={{ height: "100%" }}
+                fluid={props.data.festivesaveFeatureImage.childImageSharp.fluid}
+                alt="festivesave"
+              />
+              </motion.div>
+            </AnimatePresence>
           </div>
           <div className="wrapper-y grid is-multi-col mostly-2">
             <div className="">

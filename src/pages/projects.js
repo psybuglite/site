@@ -9,7 +9,6 @@ const Projects = props => {
   useEffect(() => {
     const workTl = gsap.timeline()
     workTl.to(".work-heading", { opacity: 1, y: 0, duration: 0.5, delay: 0.2 })
-    workTl.to(".project", { opacity: 1, y: 0, duration: 0.5, stagger: 0.3 })
   }, [])
 
   return (
@@ -37,14 +36,22 @@ const Projects = props => {
             </AnimatePresence>
           </h2>
           <div className="wrapper-y will-grow">
-            <div className="slide-project wrapper-y will-grow project project-item">
-              <div className="project-feature-image bg-brandblue desired-height-1qtr">
-                <Img
-                  imgStyle={{ objectFit: "cover" }}
-                  style={{ height: "100%" }}
-                  fluid={props.data.payflowFeature.childImageSharp.fluid}
-                  alt=""
-                />
+            <div className="slide-project wrapper-y will-grow project-item">
+              <div className="project-feature-image desired-height-1qtr">
+                <AnimatePresence>
+                  <motion.div
+                    layoutId="payflow-feature"
+                    layout
+                    style={{ height: "100%" }}
+                    >
+                    <Img
+                      imgStyle={{ objectFit: "cover" }}
+                      style={{ height: "100%" }}
+                      fluid={props.data.payflowFeature.childImageSharp.fluid}
+                      alt="Payflow"
+                    />
+                  </motion.div>
+                </AnimatePresence>
               </div>
               <div>
                 <p className="largetext co-white ff-aquire">Payflow</p>
@@ -61,14 +68,22 @@ const Projects = props => {
               </div>
             </div>
 
-            <div className="slide-project wrapper-y will-grow project project-item">
-              <div className="project-feature-image bg-brandblue desired-height-1qtr">
-                <Img
-                  imgStyle={{ objectFit: "cover" }}
-                  style={{ height: "100%" }}
-                  fluid={props.data.fccpcFeature.childImageSharp.fluid}
-                  alt=""
-                />
+            <div className="slide-project wrapper-y will-grow project-item">
+              <div className="project-feature-image desired-height-1qtr">
+              <AnimatePresence>
+                  <motion.div
+                    layoutId="fccpc-feature"
+                    layout
+                    style={{ height: "100%" }}
+                    >
+                    <Img
+                      imgStyle={{ objectFit: "cover" }}
+                      style={{ height: "100%" }}
+                      fluid={props.data.fccpcFeature.childImageSharp.fluid}
+                      alt="fccpc"
+                    />
+                  </motion.div>
+                </AnimatePresence>
               </div>
               <div>
                 <p className="largetext co-white ff-aquire">
@@ -84,14 +99,22 @@ const Projects = props => {
               </div>
             </div>
 
-            <div className="slide-project wrapper-y will-grow project project-item">
-              <div className="project-feature-image bg-brandblue desired-height-1qtr">
-                <Img
-                  imgStyle={{ objectFit: "cover" }}
-                  style={{ height: "100%" }}
-                  fluid={props.data.festivesaveFeature.childImageSharp.fluid}
-                  alt=""
-                />
+            <div className="slide-project wrapper-y will-grow project-item">
+              <div className="project-feature-image desired-height-1qtr">
+              <AnimatePresence>
+                  <motion.div
+                    layoutId="festivesave-feature"
+                    layout
+                    style={{ height: "100%" }}
+                    >
+                    <Img
+                      imgStyle={{ objectFit: "cover" }}
+                      style={{ height: "100%" }}
+                      fluid={props.data.festivesaveFeature.childImageSharp.fluid}
+                      alt="festivesave"
+                    />
+                  </motion.div>
+                </AnimatePresence>
               </div>
               <div>
                 <p className="largetext co-white ff-aquire">Festivesave</p>
@@ -109,14 +132,22 @@ const Projects = props => {
               </div>
             </div>
 
-            <div className="slide-project wrapper-y will-grow project project-item">
-              <div className="project-feature-image bg-brandblue desired-height-1qtr">
-                <Img
-                  imgStyle={{ objectFit: "cover" }}
-                  style={{ height: "100%" }}
-                  fluid={props.data.ajooFeature.childImageSharp.fluid}
-                  alt=""
-                />
+            <div className="slide-project wrapper-y will-grow project-item">
+              <div className="project-feature-image desired-height-1qtr">
+                <AnimatePresence>
+                  <motion.div
+                    layoutId="ajoo-feature"
+                    layout
+                    style={{ height: "100%" }}
+                    >
+                    <Img
+                      imgStyle={{ objectFit: "cover" }}
+                      style={{ height: "100%" }}
+                      fluid={props.data.ajooFeature.childImageSharp.fluid}
+                      alt="ajoo"
+                    />
+                  </motion.div>
+                </AnimatePresence>
               </div>
               <div>
                 <p className="largetext co-white ff-aquire">Ajoo</p>
@@ -130,17 +161,25 @@ const Projects = props => {
               </div>
             </div>
 
-            <div className="slide-project wrapper-y will-grow project project-item">
-              <div className="project-feature-image bg-brandblue desired-height-1qtr">
-                <Img
-                  imgStyle={{ objectFit: "cover" }}
-                  style={{ height: "100%" }}
-                  fluid={props.data.fluidcoinsFeature.childImageSharp.fluid}
-                  alt=""
-                />
+            <div className="slide-project wrapper-y will-grow project-item">
+              <div className="project-feature-image desired-height-1qtr">
+              <AnimatePresence>
+                  <motion.div
+                    layoutId="fluidcoins-feature"
+                    layout
+                    style={{ height: "100%" }}
+                    >
+                    <Img
+                      imgStyle={{ objectFit: "cover" }}
+                      style={{ height: "100%" }}
+                      fluid={props.data.fluidcoinsFeature.childImageSharp.fluid}
+                      alt="fluidcoins"
+                    />
+                  </motion.div>
+                </AnimatePresence>
               </div>
               <div>
-                <p className="largetext co-white ff-aquire">FLUIDCOINS</p>
+                <p className="largetext co-white ff-aquire">Fluidcoins</p>
                 <p className="mediumtext">
                   <span className="">Crypto Wallet</span> <br />
                   <span className="">UI/UX Design</span>
@@ -154,14 +193,22 @@ const Projects = props => {
               </div>
             </div>
 
-            <div className="slide-project wrapper-y will-grow project project-item">
-              <div className="project-feature-image bg-brandblue desired-height-1qtr">
-                <Img
-                  imgStyle={{ objectFit: "cover" }}
-                  style={{ height: "100%" }}
-                  fluid={props.data.prodevsFeature.childImageSharp.fluid}
-                  alt=""
-                />
+            <div className="slide-project wrapper-y will-grow project-item">
+              <div className="project-feature-image desired-height-1qtr">
+                <AnimatePresence>
+                  <motion.div
+                    layoutId="prodevs-feature"
+                    layout
+                    style={{ height: "100%" }}
+                    >
+                    <Img
+                      imgStyle={{ objectFit: "cover" }}
+                      style={{ height: "100%" }}
+                      fluid={props.data.prodevsFeature.childImageSharp.fluid}
+                      alt="prodevs"
+                    />
+                  </motion.div>
+                </AnimatePresence>
               </div>
               <div>
                 <p className="largetext co-white ff-aquire">Prodevs</p>
