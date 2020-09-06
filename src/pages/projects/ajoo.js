@@ -23,7 +23,7 @@ const Ajoo = (props) => {
               <h2 className="largertext mt-0 co-white ff-aquire">
                 Ajoo
               </h2>
-              <p className="mediumtext co-primary">Crowdfunding</p>
+              <p className="mediumtext co-sweetblue">Crowdfunding</p>
               <p className="smalltext">Website Design</p>
               <AnimatePresence>
                 <motion.span

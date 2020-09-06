@@ -23,7 +23,7 @@ const Fccpc = props => {
               <h2 className="largertext mt-0 co-white ff-aquire">
                 Consumer Protection
               </h2>
-              <p className="mediumtext co-primary">Agency</p>
+              <p className="mediumtext co-sweetblue">Agency</p>
               <p className="smalltext">Website Design &amp; Development</p>
               <AnimatePresence>
                 <motion.span

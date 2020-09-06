@@ -53,7 +53,7 @@ const Projects = props => {
                   <span className="">Mobile App Design</span>
                 </p>
                 <Link
-                  className="co-sweetblue d-ibl py-1 link"
+                  className="co-sweetblue d-ibl py-h mt-h link"
                   to="/projects/payflow"
                 >
                   View Project
@@ -78,7 +78,7 @@ const Projects = props => {
                   <span className="">Agency</span> <br />
                   <span className="">Website Design &amp; Development</span>
                 </p>
-                <Link className="co-sweetblue d-ibl py-1 link" to="/projects/fccpc">
+                <Link className="co-sweetblue d-ibl py-h mt-h link" to="/projects/fccpc">
                   View Project
                 </Link>
               </div>
@@ -101,7 +101,7 @@ const Projects = props => {
                   <span className="">Product Design</span>
                 </p>
                 <Link
-                  className="co-sweetblue d-ibl py-1 link"
+                  className="co-sweetblue d-ibl py-h mt-h link"
                   to="/projects/festivesave"
                 >
                   View Project
@@ -124,7 +124,7 @@ const Projects = props => {
                   <span className="">Crowdfunding</span> <br />
                   <span className="">Website Design</span>
                 </p>
-                <Link className="co-sweetblue d-ibl py-1 link" to="/projects/ajoo">
+                <Link className="co-sweetblue d-ibl py-h mt-h link" to="/projects/ajoo">
                   View Project
                 </Link>
               </div>
@@ -146,7 +146,7 @@ const Projects = props => {
                   <span className="">UI/UX Design</span>
                 </p>
                 <Link
-                  className="co-sweetblue d-ibl py-1 link"
+                  className="co-sweetblue d-ibl py-h mt-h link"
                   to="/projects/fluidcoins"
                 >
                   View Project
@@ -171,7 +171,7 @@ const Projects = props => {
                   <span className="">Website Design</span>
                 </p>
                 <Link
-                  className="co-sweetblue d-ibl py-1 link"
+                  className="co-sweetblue d-ibl py-h mt-h link"
                   to="/projects/prodevs"
                 >
                   View Project

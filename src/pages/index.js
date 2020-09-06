@@ -25,12 +25,8 @@ const IndexPage = props => {
     indexTl.to(".greeting", { opacity: 1, y: 0, duration: 0.3, delay: 0.5})
     indexTl.to(".very-large-text", { opacity: 1, y: 0, duration: 0.2 })
     indexTl.to(".hero-text", { opacity: 1, y: 0, duration: 0.2 })
-    indexTl.to(".social-links a", {
-      opacity: 1,
-      y: 0,
-      stagger: 0.2,
-      duration: 0.3,
-    })
+    indexTl.to(".social-links a", { opacity: 1, y: 0, stagger: 0.2, duration: 0.3 })
+    indexTl.to(".scrolltext", { opacity: 1, duration: 0.2 })
 
     gsap.from(".work-left-span", {
       scrollTrigger: {
@@ -101,14 +97,14 @@ const IndexPage = props => {
               </AnimatePresence>
             </div>
             <p className="maxwidth-tb hero-text mediumtext">
-              Egestas semper lorem sit quis vestibulum nulla sit quis. At
-              aliquam, arcu scelerisque cursus. Amet cursus risus libero, id
-              volutpat in. Sem orci.
+             In consice terms, I'm a UI/UX designer, frontend feveloper, writer, and teacher. I love good storytelling in different entertainment mediums like movies and anime.
             </p>
           </div>
         </div>
-        <div className="w-100 d-flx py-1 al-i-c j-c-sb wrapper-x absolute-hero">
-          <div className="blue-block spin"></div>
+        <div className="w-100 d-flx py-1 al-i-fe j-c-sb wrapper-x absolute-hero">
+          <div className="pos-r">
+            <p className="scrolltext">Scroll</p>
+          </div>
           <div className="d-flx al-i-c social-links">
             <a
               href="https://linkedin.com/in/psybug"
@@ -269,8 +265,8 @@ const IndexPage = props => {
               </h3>
               <p className="mt-1 tx-c">
                 For the past couple of years, I have been teaming up with
-                creative teams, from web startups to industries to help build
-                their brand &amp; website.
+                creative teams, from startups to industries to design
+                their brands &amp; websites.
               </p>
             </div>
             <div className="d-flx flex-dir-col al-i-c">
@@ -289,9 +285,7 @@ const IndexPage = props => {
                 Development
               </h3>
               <p className="mt-1 tx-c">
-                For the past couple of years, I have been teaming up with
-                creative teams, from web startups to industries to help build
-                their brand &amp; website.
+               My mobile app development work is mainly done with React Native.  
               </p>
             </div>
             <div className="d-flx flex-dir-col al-i-c">
@@ -310,9 +304,7 @@ const IndexPage = props => {
                 Development
               </h3>
               <p className="mt-1 tx-c">
-                For the past couple of years, I have been teaming up with
-                creative teams, from web startups to industries to help build
-                their brand &amp; website.
+                My frontend work in has recently been centered around React and React-based frameworks like Gatsby.js and Next.js
               </p>
             </div>
           </div>
@@ -480,39 +472,21 @@ const IndexPage = props => {
               <p>
                 I’m working alongside other designers and engineers creating a
                 design system for Protocoh. Having multiple projects under the
-                same umbrella really needed it. I recommend that you check out{" "}
-                <strong>
-                  <em>
-                    <a
+                same umbrella really needed it. I recommend that you check out <a
                       href="https://www.smashingmagazine.com/design-systems-book/"
                       className="link inline-link"
                     >
                       Alla Khomaltova’s book
-                    </a>
-                  </em>
-                </strong>{" "}
-                on Design Systems if you’re new to the topic.{" "}
+                    </a> on Design Systems if you’re new to the topic.
               </p>
             </div>
             <div>
               <h3 className="co-white mb-2">
-                What are you doing in September?
+                What do you do outside of work?
               </h3>
-              <p>
-                I’m working alongside other designers and engineers creating a
-                design system for Protocoh. Having multiple projects under the
-                same umbrella really needed it. I recommend that you check out{" "}
-                <strong>
-                  <em>
-                    <a
-                      href="https://www.smashingmagazine.com/design-systems-book/"
-                      className="link inline-link"
-                    >
-                      Alla Khomaltova’s book
-                    </a>
-                  </em>
-                </strong>{" "}
-                on Design Systems if you’re new to the topic.{" "}
+              <p className="largetext">
+               <span role="img" aria-label="video game" className="prefix  is-even-wider">🎮</span>
+               <span role="img" aria-label="judo" className="suffix is-even-wider">🥋</span>
               </p>
             </div>
           </div>

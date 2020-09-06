@@ -21,7 +21,7 @@ const Prodevs = props => {
           <div className="wrapper-y grid is-multi-col mostly-2">
             <div className="">
               <h2 className="largertext mt-0 co-white ff-aquire">Prodevs</h2>
-              <p className="mediumtext co-primary">Recruitment</p>
+              <p className="mediumtext co-sweetblue">Recruitment</p>
               <p className="smalltext">Website Design</p>
               <AnimatePresence>
                 <motion.span

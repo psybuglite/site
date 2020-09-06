@@ -21,9 +21,9 @@ const Fluidcoins = (props) => {
             <div className="wrapper-y   grid is-multi-col mostly-2">
               <div className="">
                 <h2 className="largertext mt-0 co-white ff-aquire">
-                  fluidcoins
+                  Fluidcoins
                 </h2>
-                <p className="mediumtext co-primary">Crypto Wallet</p>
+                <p className="mediumtext co-sweetblue">Crypto Wallet</p>
                 <p className="mediumtext">UI/UX Design</p>
               <AnimatePresence>
                 <motion.span
@@ -39,11 +39,15 @@ const Fluidcoins = (props) => {
                 ></motion.span>
               </AnimatePresence>
               </div>
-              <div>
+              <div className="smalltext">
                 <p>
-                  Vitae sed tellus ipsum at pulvinar risus. Turpis tellus, adipiscing sit vitae risus, elementum facilisi urna. Amet ut at nisi cursus enim at interdum. Tristique vitae quis faucibus congue. Velit in nunc, imperdiet interdum id. Pellentesque cursus malesuada tellus purus suspendisse at. Nec, at porttitor quis netus vitae risus convallis sit. Nibh faucibus vitae in phasellus sed integer. Quam eu libero neque, lobortis lectus habitant adipiscing nulla.
-
-                  Vivamus scelerisque vitae massa nisi. Habitant rhoncus praesent integer egestas. Nunc, feugiat tempor nulla est hac et, egestas non. Pulvinar vulputate volutpat nam donec dictum lacus molestie quis. Libero convallis amet, molestie ac suscipit in eget. Cras curabitur nibh tellus eu pretium dictum.
+                An easy, fast and reliable way to start both short and long-term Bitcoin investments
+                </p>
+                <p>
+                Automated recurrent purchases mean more cryptocurrency in your portfolio.
+                </p>
+                <p>
+                Sell and buy Bitcoin anytime. Pause automated recurrent cryptocurrency purchases.
                 </p>
               </div>
             </div>
@@ -56,22 +60,17 @@ const Fluidcoins = (props) => {
                 <Img fluid={props.data.fluidcoinsOnboarding2.childImageSharp.fluid} alt="" />
               </div>
             </div>
+
+            <div className="maxwidth-tb smalltext">
+                <p>Buy Bitcoin instantly or from a round up of your debit transactions </p>
+            </div>
             
             <div className="wrapper-y will-grow grid is-multi-col mostly-2">
-              <div className="">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, perferendis sit recusandae commodi impedit eaque ipsum optio autem magni, incidunt eius iusto sint nam. Magni, laborum labore. Libero, dolore fugiat.
+            <div className="project-feature-image bg-brandblue">
+                <Img fluid={props.data.fluidcoinsEmptywallet.childImageSharp.fluid} alt=""/>
               </div>
               <div className="project-feature-image bg-brandblue">
                 <Img fluid={props.data.fluidcoinsWallet.childImageSharp.fluid} alt=""/>
-              </div>
-            </div>
-
-            <div className="wrapper-y will-grow grid is-multi-col mostly-2">
-              <div className="">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, perferendis sit recusandae commodi impedit eaque ipsum optio autem magni, incidunt eius iusto sint nam. Magni, laborum labore. Libero, dolore fugiat.
-              </div>
-              <div className="project-feature-image bg-brandblue">
-                <Img fluid={props.data.fluidcoinsEmptywallet.childImageSharp.fluid} alt=""/>
               </div>
             </div>
 
@@ -86,7 +85,6 @@ const Fluidcoins = (props) => {
 
             <div className="wrapper-y will-grow grid is-multi-col mostly-2">
               <div className="">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, perferendis sit recusandae commodi impedit eaque ipsum optio autem magni, incidunt eius iusto sint nam. Magni, laborum labore. Libero, dolore fugiat.
               </div>
               <div className="project-feature-image bg-brandblue">
                 <Img fluid={props.data.fluidcoinsFingerprint.childImageSharp.fluid} alt=""/>

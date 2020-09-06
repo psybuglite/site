@@ -23,7 +23,7 @@ const Festivesave = props => {
               <h2 className="largertext mt-0 co-white ff-aquire">
                 festivesave
               </h2>
-              <p className="mediumtext co-primary">SAAS</p>
+              <p className="mediumtext co-sweetblue">SAAS</p>
               <p className="smalltext">Mobile App Design</p>
               <AnimatePresence>
                 <motion.span
