@@ -52,7 +52,7 @@ const About = () => {
                 <ul className="none">
                   <li className="my-2">
                     <p className="m-0">
-                      <a href="https://protocoh.com" className="link co-sweetblue">Protocoh</a>  |  Frontend Developer
+                      <a href="https://protocoh.com" target="_blank" className="link co-sweetblue">Protocoh</a>  |  Frontend Developer
                     </p>
                     <p className="m-0 smalltext">
                       March 2020 - Present 
@@ -60,7 +60,7 @@ const About = () => {
                   </li>
                   <li className="my-2">
                     <p className="m-0">
-                      <a href="https://mkobo.com.ng" className="link co-sweetblue">Mkobo</a>  |  Product Designer 
+                      <a href="https://mkobo.com.ng" target="_blank" className="link co-sweetblue">Mkobo</a>  |  Product Designer 
                     </p>
                     <p className="m-0 smalltext">
                       November 2018 - February 2020 
@@ -68,7 +68,7 @@ const About = () => {
                   </li>
                   <li className="my-2">
                     <p className="m-0">
-                      <a href="https://softcom.ng" className="link co-sweetblue">Softcom</a>  |  UI Designer and Developer
+                      <a href="https://softcom.ng" target="_blank" className="link co-sweetblue">Softcom</a>  |  UI Designer and Developer
                     </p>
                     <p className="m-0 smalltext">
                       February 2018 - November 2018 
