@@ -344,7 +344,7 @@ const IndexPage = props => {
                   <span className="">Product Design</span>
                 </p>
                 <Link
-                  className="co-sweetblue d-ibl py-1 link"
+                  className="co-sweetblue d-ibl link-underline py-1 link"
                   to="/projects/payflow/"
                 >
                   View Project
@@ -375,7 +375,7 @@ const IndexPage = props => {
                   <span className="">Crowdfunding</span> <br />
                   <span className="">Website Design</span>
                 </p>
-                <Link className="co-sweetblue d-ibl py-1 link" to="/projects/ajoo/">
+                <Link className="co-sweetblue d-ibl link-underline py-1 link" to="/projects/ajoo/">
                   View Project
                 </Link>
               </div>
@@ -406,7 +406,7 @@ const IndexPage = props => {
                   <span className="">Product Design</span>
                 </p>
                 <Link
-                  className="co-sweetblue d-ibl py-1 link"
+                  className="co-sweetblue d-ibl link-underline py-1 link"
                   to="/projects/festivesave/"
                 >
                   View Project

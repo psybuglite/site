@@ -52,7 +52,34 @@ const About = () => {
                 <ul className="none">
                   <li className="my-2">
                     <p className="m-0">
-                      <a href="https://protocoh.com" target="_blank" rel="noreferrer"  className="link co-sweetblue">Protocoh</a>  |  Frontend Developer
+                      <a href="https://protocoh.com" target="_blank" rel="noreferrer"
+                        className="d-ibl social-link hover-outline co-sweetblue ff-aquire link"
+                        title="Protocoh"
+                      >
+                        Protocoh
+                        <svg
+                          width={16}
+                          height={16}
+                          viewBox="0 0 16 16"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M4.66669 11.3333L11.3334 4.66666"
+                            stroke="#A5A5A5"
+                            strokeWidth="0.666667"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
+                          <path
+                            d="M4.66669 4.66666H11.3334V11.3333"
+                            stroke="#A5A5A5"
+                            strokeWidth="0.666667"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
+                        </svg>
+                      </a>  |  Frontend Developer
                     </p>
                     <p className="m-0 smalltext">
                       March 2020 - Present 
@@ -60,7 +87,33 @@ const About = () => {
                   </li>
                   <li className="my-2">
                     <p className="m-0">
-                      <a href="https://mkobo.com.ng" target="_blank" rel="noreferrer"  className="link co-sweetblue">Mkobo</a>  |  Product Designer 
+                      <a href="https://mkobo.com.ng" target="_blank" rel="noreferrer"  className="d-ibl social-link hover-outline co-sweetblue ff-aquire link"
+                        title="Mkobo"
+                      >
+                        Mkobo
+                        <svg
+                          width={16}
+                          height={16}
+                          viewBox="0 0 16 16"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M4.66669 11.3333L11.3334 4.66666"
+                            stroke="#A5A5A5"
+                            strokeWidth="0.666667"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
+                          <path
+                            d="M4.66669 4.66666H11.3334V11.3333"
+                            stroke="#A5A5A5"
+                            strokeWidth="0.666667"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
+                        </svg>
+                      </a>  |  Product Designer 
                     </p>
                     <p className="m-0 smalltext">
                       November 2018 - February 2020 
@@ -68,7 +121,33 @@ const About = () => {
                   </li>
                   <li className="my-2">
                     <p className="m-0">
-                      <a href="https://softcom.ng" target="_blank" rel="noreferrer"  className="link co-sweetblue">Softcom</a>  |  UI Designer and Developer
+                      <a href="https://softcom.ng" target="_blank" rel="noreferrer"  className="d-ibl social-link hover-outline co-sweetblue ff-aquire link"
+                        title="Softcom"
+                      >
+                        Softcom
+                        <svg
+                          width={16}
+                          height={16}
+                          viewBox="0 0 16 16"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M4.66669 11.3333L11.3334 4.66666"
+                            stroke="#A5A5A5"
+                            strokeWidth="0.666667"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
+                          <path
+                            d="M4.66669 4.66666H11.3334V11.3333"
+                            stroke="#A5A5A5"
+                            strokeWidth="0.666667"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
+                        </svg>
+                      </a>  |  Frontend Designer and Developer
                     </p>
                     <p className="m-0 smalltext">
                       February 2018 - November 2018 
