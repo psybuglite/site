@@ -416,7 +416,7 @@ const IndexPage = props => {
           </div>
           <div className="d-flx j-c-c pb-2">
             <Link
-              to="/writing"
+              to="/projects/"
               className="p-h ff-aquire co-white social-link hover-outline link"
               title="More Articles"
             >
