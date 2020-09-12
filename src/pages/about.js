@@ -38,9 +38,7 @@ const About = () => {
                 Hi, I'm Dennis. 
               </p>
               <p>
-                I'm a front-end developer and UI Designer. Other
-                names for people who do what I do are front-end designers, UI
-                developers, UI engineers, or design engineers.
+                I'm a front-end developer and UI designer.
               </p>
               <p>
                 With more than 4 years of experience working in design and
