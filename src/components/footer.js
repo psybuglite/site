@@ -7,7 +7,7 @@ const Footer = () =>  (
         <div className="bg-branddark">
           <div className="footer-grid">
             <div>
-              <p className="">Dennis Dickson</p>
+              <p className="">Tonye Dickson</p>
               <h3 className="ff-aquire co-white">UI Engineer</h3>
               <ul className="footer-links my-2">
                 <li className="my-h">
@@ -67,7 +67,7 @@ const Footer = () =>  (
               </a>
             </div>
             <p className="picotext">
-              Dennis Dickson &copy; 2016 - 2020
+              Tonye Dickson &copy; 2016 - 2020
             </p>
           </div>
         </div>

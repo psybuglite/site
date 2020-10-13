@@ -11,7 +11,7 @@ const TagsPage = ({
   },
 }) => (
   <>
-    <SEO title="Tags | Writing | Dennis Dickson" />
+    <SEO title="Tags | Writing | Tonye Dickson" />
     <section className="width-100-pc page-padding">
       <div className=" maxwidth-sl desired-height-1qtr wrapper-x writing-m-top mx-auto">
         <AnimatePresence>

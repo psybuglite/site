@@ -37,7 +37,7 @@ const Header = () => {
         <nav className="d-flx j-c-sb fw-w al-i-c">
           <Link to="/" className="link">
             <div className="logo-area d-flx al-i-c">
-              <img src={icon} className="small-avatar" alt="Dennis Dickson" />
+              <img src={icon} className="small-avatar" alt="Tonye Dickson" />
             </div>
           </Link>
           <div className={mobileClasses()}>

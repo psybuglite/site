@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Dennis Dickson | UI Engineer.`,
-    description: `Dennis Dickson | UI Engineer.`,
+    title: `Tonye Dickson | UI Engineer.`,
+    description: `Tonye Dickson | UI Engineer.`,
     author: `@psybuglite`,
     siteUrl: `https://tonyedickson.com`,
   },
@@ -109,8 +109,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Dennis Dickson`,
-        short_name: `Dennis`,
+        name: `Tonye Dickson`,
+        short_name: `Tonye`,
         start_url: `/`,
         background_color: `#00090F`,
         theme_color: `#0F52BA`,

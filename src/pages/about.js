@@ -35,7 +35,7 @@ const About = () => {
             </AnimatePresence>
             <div className="about-text">
               <p>
-                Hi, I'm Dennis. 
+                Hi, I'm Tonye. 
               </p>
               <p>
                 I'm a front-end developer and UI designer.

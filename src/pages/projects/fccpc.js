@@ -7,7 +7,7 @@ import SEO from "../../components/seo"
 const Fccpc = props => {
   return (
     <>
-      <SEO title="FCCPC | Projects | Dennis Dickson" />
+      <SEO title="FCCPC | Projects | Tonye Dickson" />
       <section className="width-100-pc page-padding">
         <div className="maxwidth-xl mx-auto wrapper">
           <div className="project-feature-image mb-2 desired-height-3rd">

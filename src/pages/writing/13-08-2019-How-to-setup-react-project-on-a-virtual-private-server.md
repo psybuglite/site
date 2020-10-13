@@ -22,13 +22,13 @@ For Unix-like devices (Mac OS or Linux)
 For example
 
 ```bash
-ssh dennis@computer
+ssh Tonye@computer
 ```
 
 or
 
 ```bash
-ssh dennis@127.0.0.1
+ssh Tonye@127.0.0.1
 ```
 
 ## Step 3: Install Apache

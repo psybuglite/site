@@ -1,9 +1,9 @@
 {
-  "name": "Dennis-Dickson",
+  "name": "Tonye-Dickson",
   "private": true,
   "description": "UI Engineer",
   "version": "0.1.0",
-  "author": "Dennis Dickson <itztonye@gmail.com>",
+  "author": "Tonye Dickson <itztonye@gmail.com>",
   "dependencies": {
     "@deckdeckgo/highlight-code": "^1.1.4",
     "disable-scroll": "^0.5.1",

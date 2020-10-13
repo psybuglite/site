@@ -76,7 +76,7 @@ const IndexPage = props => {
         <div className="min-height-100-vh d-flx flex-dir-col j-c-c wrapper-x">
           <div className="d-flx flex-dir-col j-c-c offset-hero">
             <p className="largetext mb-0 greeting">
-              Hello. I’m Dennis Dickson.
+              Hello. I’m Tonye Dickson.
             </p>
             <div className="d-flx block-parent">
               <h1 className="very-large-text block-parent co-white d-ibl ff-aquire">

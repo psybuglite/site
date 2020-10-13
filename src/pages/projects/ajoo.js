@@ -7,7 +7,7 @@ import SEO from "../../components/seo"
 const Ajoo = (props) => {
   return (
     <>
-      <SEO title="Ajoo | Projects | Dennis Dickson" />
+      <SEO title="Ajoo | Projects | Tonye Dickson" />
       <section className="width-100-pc page-padding">
         <div className="maxwidth-xl mx-auto wrapper">
           <div className="project-feature-image mb-2 desired-height-3rd">
