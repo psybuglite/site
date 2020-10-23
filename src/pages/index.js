@@ -494,7 +494,7 @@ const IndexPage = props => {
       <WritingHome />
       {/* End of Writing */}
 
-      {/* Beginning of FAQs */}
+      {/* Beginning of FAQs
       <section className="main-wrap mx-auto pos-r section-wrapper-y will-grow mb-3">
         <div className="wrapper-x">
           <div className="faqs-bg faqs-grid">
@@ -523,7 +523,7 @@ const IndexPage = props => {
           </div>
         </div>
       </section>
-      {/* End of FAQs */}
+      End of FAQs */}
     </>
   )
 }
