@@ -48,6 +48,41 @@ const About = () => {
               <div className="pt-2">
                 <h3 className="ff-aquire co-white">Work history</h3>
                 <ul className="none">
+                <li className="my-2">
+                    <p className="m-0">
+                      <a href="https://roava.app" target="_blank" rel="noreferrer"
+                        className="d-ibl social-link hover-outline co-sweetblue ff-aquire link"
+                        title="Protocoh"
+                      >
+                        Roava
+                        <svg
+                          width={16}
+                          height={16}
+                          viewBox="0 0 16 16"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M4.66669 11.3333L11.3334 4.66666"
+                            stroke="#A5A5A5"
+                            strokeWidth="0.666667"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
+                          <path
+                            d="M4.66669 4.66666H11.3334V11.3333"
+                            stroke="#A5A5A5"
+                            strokeWidth="0.666667"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
+                        </svg>
+                      </a>  |  Product Designer
+                    </p>
+                    <p className="m-0 smalltext">
+                      December 2020 - Present 
+                    </p>
+                  </li>
                   <li className="my-2">
                     <p className="m-0">
                       <a href="https://protocoh.com" target="_blank" rel="noreferrer"
@@ -80,7 +115,7 @@ const About = () => {
                       </a>  |  Frontend Developer
                     </p>
                     <p className="m-0 smalltext">
-                      March 2020 - Present 
+                      Jan 2020 - Present 
                     </p>
                   </li>
                   <li className="my-2">
@@ -114,7 +149,7 @@ const About = () => {
                       </a>  |  Product Designer 
                     </p>
                     <p className="m-0 smalltext">
-                      November 2018 - February 2020 
+                      Nov 2018 - Feb 2020 
                     </p>
                   </li>
                   <li className="my-2">
@@ -148,7 +183,7 @@ const About = () => {
                       </a>  |  Frontend Designer and Developer
                     </p>
                     <p className="m-0 smalltext">
-                      February 2018 - November 2018 
+                      Feb 2018 - Nov 2018 
                     </p>
                   </li>
                 </ul>
