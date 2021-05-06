@@ -67,7 +67,7 @@ const Footer = () =>  (
               </a>
             </div>
             <p className="picotext">
-              Tonye Dickson &copy; 2016 - 2020
+              Tonye Dickson &copy; 2016 - 2021
             </p>
           </div>
         </div>
