@@ -31,7 +31,7 @@
     "gatsby-transformer-sharp": "^2.3.2",
     "gatsby-v2-plugin-page-transitions": "^1.0.0",
     "gsap": "^3.11.3",
-    "node-sass": "^4.14.1",
+    "node-sass": "^7.0.0",
     "paper-jsdom-canvas": "^0.12.11",
     "prop-types": "^15.7.2",
     "react": "^16.11.0",
